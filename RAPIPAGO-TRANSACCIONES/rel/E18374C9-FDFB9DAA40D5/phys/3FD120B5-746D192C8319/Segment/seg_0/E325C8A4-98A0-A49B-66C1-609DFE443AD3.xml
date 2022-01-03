@@ -1,0 +1,11 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SegmentOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.SegmentOraclev10g" name="Storage91" directorySegmentName="seg_0" id="E325C8A4-98A0-A49B-66C1-609DFE443AD3">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:43 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<initrans>2</initrans>
+<maxTrans>255</maxTrans>
+<scInitialExtent>31457280</scInitialExtent>
+<scMaxExtents>2147483645</scMaxExtents>
+<scNextExtent>1048576</scNextExtent>
+</SegmentOraclev10g>

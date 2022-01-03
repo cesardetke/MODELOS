@@ -1,0 +1,82 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F200496B-10AA-F705-D5F1-4C96B9612E99" name="RP OP CAJA BUSCO ID">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:44:12 UTC</createdTime>
+<generatorID>10847817-E67D-D15F-CB87-E07470181001</generatorID>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<engineerTo>
+<item key="E18374C9-589B-C4DD-3216-FDFB9DAA40D5" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID OPERACION CAJA" id="0BBB8E1A-3178-8305-13AB-3B8C243D7093">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-22 11:44:19 UTC</createdTime>
+<generatorID>B2BE70FB-8D89-A559-171E-0FF1AFA75A66</generatorID>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<engineerTo>
+<item key="E18374C9-589B-C4DD-3216-FDFB9DAA40D5" value="true"/>
+</engineerTo>
+<referedAttribute>6DD91B5C-61E1-9991-7B79-1EB2BF343511</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="AUD DATE INSERT" id="C61CE2D3-D60F-3297-8B3C-47CF6F39D0E3">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:44:12 UTC</createdTime>
+<generatorID>40BB2E9E-0203-4129-E7F9-3B48FC68D612</generatorID>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<engineerTo>
+<item key="E18374C9-589B-C4DD-3216-FDFB9DAA40D5" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<defaultValue>to_char(sysdate,&apos;yyyy-mm-dd HH24:MI:SS&apos;)</defaultValue>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="AUD USER INSERT" id="269E42C2-65EE-FF7E-AEBD-482E4737AE13">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:44:12 UTC</createdTime>
+<generatorID>2F91D5A7-F6F3-3598-46E7-CB07B00DF6B1</generatorID>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<engineerTo>
+<item key="E18374C9-589B-C4DD-3216-FDFB9DAA40D5" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<defaultValue>substr(user,1,30)</defaultValue>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="1DA8103B-C024-0DD7-9B54-2AB44D8B0246" name="PK OP CAJA BUSCO ID">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:44:12 UTC</createdTime>
+<generatorID>42DD7969-190B-12B5-48E5-C482BD27F098</generatorID>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<engineerTo>
+<item key="E18374C9-589B-C4DD-3216-FDFB9DAA40D5" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>0BBB8E1A-3178-8305-13AB-3B8C243D7093</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="T_RP_REGULARIZA" directorySegmentName="seg_0" id="F84D674D-D785-75D8-0693-00D5B49DF2D4">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjSchema>RAPIPAGO</sourceObjSchema>
+<sourceObjName>T_RP_REGULARIZA</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-21 17:50:24 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<actions>INSERT, UPDATE</actions>
+<body><![CDATA[DECLARE
+EsRegularizacion NUMBER(1);
+SucursalSinMonedaWinco NUMBER(2) := 0;
+vInstancia VARCHAR2(100);
+IdAgente VARCHAR2(30);
+BEGIN
+    vInstancia:=RAPIPAGO.RP_FUNCIONES_UTILES.TRAER_INSTANCIA;
+    CASE vInstancia
+        WHEN 'DESARROLLO' THEN IdAgente := '27999154691900000567';
+        WHEN 'TESTING'    THEN IdAgente := '27999154691900000567';
+        WHEN 'PRODUCCION' THEN IdAgente := '0812030928nkUEBSJOAz';
+    END CASE;    
+    IF INSERTING AND :NEW.TIPO_OPERACION=3 THEN
+        SELECT NVL(COUNT(1),0)
+        INTO EsRegularizacion 
+        FROM RAPIPAGO.RP_PUESTO P, RAPIPAGO.RP_AGENTE_SUCURSAL S
+        WHERE  P.ID_AGENTE_SUCURSAL=S.ID_AGENTE_SUCURSAL
+        AND P.ID_PUESTO =:NEW.ID_PUESTO
+        AND P.WF_STATUS='HAB'
+        AND P.ESTADO_FISICO='ACR'
+        AND P.ES_PUESTO_HOMOLOGACION ='Y'        
+        AND S.ID_AGENTE=IdAgente;
+        IF EsRegularizacion>0 THEN            
+            :NEW.TIPO_OPERACION:=12;
+        END IF;
+    END IF;
+
+    IF UPDATING AND :OLD.ID_PUESTO <> :NEW.ID_PUESTO THEN
+        /*SIGNIFICA QUE SEGURAMENTE SE TRATA DE UNA REGULARIZACION PORQUE SE ESTA MODIFICANDO DESDE BACKOFFICE*/
+
+        SELECT  NVL(COUNT(*), 0)
+        INTO    SucursalSinMonedaWinco
+        FROM    RAPIPAGO.RP_AGENTE_SUCURSAL S
+                INNER JOIN RAPIPAGO.RP_PUESTO P ON P.ID_PUESTO = :NEW.ID_PUESTO
+                AND P.ID_AGENTE_SUCURSAL = S.ID_AGENTE_SUCURSAL
+        WHERE   NOT EXISTS (
+                    SELECT  1
+                    FROM    RAPIPAGO.RP_AGENTE_TIPO_VALOR_SUCURSAL TVS
+                    WHERE   TVS.ID_AGENTE_SUCURSAL = S.ID_AGENTE_SUCURSAL
+                    AND     TVS.IS_DELETED = 'N'
+                );
+        
+        IF SucursalSinMonedaWinco > 0 THEN /*SI NO EXISTE MONEDA WINCO ASOCIADA*/
+            GIRE.PKG_CORREOS.ENVIO_CORREO('AdministraciondelocalesTM@gire.com', 'ERROR - FALTA MONEDA WINCO - VA A FALLAR VALREC AGENTES', 'La Sucursal no tiene Moneda WINCO asignada', 'TRIGGER REGULARIZACION');
+            GIRE.PKG_CORREOS.ENVIO_CORREO('IMPLE_AGENTES@gire.com', 'ERROR - FALTA MONEDA WINCO - VA A FALLAR VALREC AGENTES', 'La Sucursal no tiene Moneda WINCO asignada', 'TRIGGER REGULARIZACION');
+            GIRE.PKG_CORREOS.ENVIO_CORREO('lsrapi@gire.com', 'ERROR - FALTA MONEDA WINCO - VA A FALLAR VALREC AGENTES', 'La Sucursal no tiene Moneda WINCO asignada', 'TRIGGER REGULARIZACION');
+            RAISE_APPLICATION_ERROR(-20835, 'La Sucursal no tiene Moneda WINCO asignada', TRUE);
+        END IF;
+        
+    END IF; 
+
+
+ EXCEPTION
+ WHEN OTHERS THEN
+       GIRE.PKG_CORREOS.ENVIO_CORREO('IMPLE_AGENTES@gire.com', 'ERROR - Trigger RAPIPAGO.T_RP_REGULARIZA - '||vInstancia, SUBSTR(SQLERRM,1,1000), 'TRIGGER REGULARIZACION');
+       GIRE.PKG_CORREOS.ENVIO_CORREO('AdministraciondelocalesTM@gire.com', 'ERROR - Trigger RAPIPAGO.T_RP_REGULARIZA - '||vInstancia, SUBSTR(SQLERRM,1,1000), 'TRIGGER REGULARIZACION');
+       GIRE.PKG_CORREOS.ENVIO_CORREO('lsrapi@gire.com', 'ERROR - Trigger RAPIPAGO.T_RP_REGULARIZA - '||vInstancia, SUBSTR(SQLERRM,1,1000), 'TRIGGER REGULARIZACION');
+       RAISE;
+END ;]]></body>
+<triggerTime>BEFORE</triggerTime>
+<owner>C3810AD6-77BE-D400-48EC-B9BB46870C6A</owner>
+<table>A6A98450-9EB0-D20D-7BB4-0C1333251345</table>
+</TriggerOraclev10g>

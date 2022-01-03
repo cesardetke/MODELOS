@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="5ABE84CD-5523-8DCE-F096-525FD0538D39" containerWithKeyObject="EC069348-056E-B34E-06D6-D6865FA297C1" localFKIndex="86FDCB97-5D19-1FD8-8B79-A0BC3706E2F6" name="FK_RP_AUX_COBRANZA_1">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjSchema>RAPIPAGO</sourceObjSchema>
+<sourceObjName>FK_RP_AUX_COBRANZA_1</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-21 21:47:55 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<importedID>E6BEB0CC-B6D7-83C3-0DCC-1593B451DAE5</importedID>
+<referredTableLongName>RAPIPAGO.RP_TRANSACCION_ITEM</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>1CEEF360-67ED-8AF6-B19F-B33E26D4EB0B</referredTableID>
+<keyObject>DBAA65AB-C0BA-A97F-A997-C07809FDAB9C</keyObject>
+<referredKeyID>DBAA65AB-C0BA-A97F-A997-C07809FDAB9C</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_TRANSACCION_ITEM</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

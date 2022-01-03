@@ -1,0 +1,208 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D383DCA0-9A34-DD4D-A25F-2A3411554B52" schemaObject="DAD3332D-B34A-011F-44C4-4EE7A39EDF3A" name="DEL_RP_TRANS_ITEM_COD_ANULA">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjSchema>RAPIPAGO</sourceObjSchema>
+<sourceObjName>DEL_RP_TRANS_ITEM_COD_ANULA</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:22 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_TRANS_ITEM_COD_ANULA" id="BEBA12B0-6228-92F6-110B-51035A9197CB">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjSchema>DEL_RP_TRANS_ITEM_COD_ANULA</sourceObjSchema>
+<sourceObjName>ID_TRANS_ITEM_COD_ANULA</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:27 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_TRANSACCION_ITEM" id="566A63F5-708C-3665-8FF2-0CB690FE40A6">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjSchema>DEL_RP_TRANS_ITEM_COD_ANULA</sourceObjSchema>
+<sourceObjName>ID_TRANSACCION_ITEM</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:27 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_SEGURIDAD" id="1D543E27-8E50-05DE-3E7C-B97A3E8D773D">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjSchema>DEL_RP_TRANS_ITEM_COD_ANULA</sourceObjSchema>
+<sourceObjName>COD_SEGURIDAD</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:27 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NRO_ORDEN" id="276BE5C8-19CA-746A-62D4-34E9E78AC86E">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjSchema>DEL_RP_TRANS_ITEM_COD_ANULA</sourceObjSchema>
+<sourceObjName>NRO_ORDEN</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:27 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,20,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IS_DELETED" id="88A493AF-D529-4538-A6AF-BA28504030B3">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjSchema>DEL_RP_TRANS_ITEM_COD_ANULA</sourceObjSchema>
+<sourceObjName>IS_DELETED</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:27 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_ENV" id="597F4247-E8FE-A70D-E943-34C327C9703D">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjSchema>DEL_RP_TRANS_ITEM_COD_ANULA</sourceObjSchema>
+<sourceObjName>ID_ENV</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:27 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5 BYTE</dataTypeSize>
+<ownDataTypeParameters>5 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AUD_DATE_INSERT" id="73B21917-D7A7-FD83-7533-84FF135A2745">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjSchema>DEL_RP_TRANS_ITEM_COD_ANULA</sourceObjSchema>
+<sourceObjName>AUD_DATE_INSERT</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:27 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>19 BYTE</dataTypeSize>
+<ownDataTypeParameters>19 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AUD_USER_INSERT" id="1F1D0481-C823-5C8B-0782-E913426AC349">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjSchema>DEL_RP_TRANS_ITEM_COD_ANULA</sourceObjSchema>
+<sourceObjName>AUD_USER_INSERT</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:27 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AUD_DATE_UPDATE" id="D1C9E4A1-2C49-6F84-2E00-FF37DA9A3EBE">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjSchema>DEL_RP_TRANS_ITEM_COD_ANULA</sourceObjSchema>
+<sourceObjName>AUD_DATE_UPDATE</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:27 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>19 BYTE</dataTypeSize>
+<ownDataTypeParameters>19 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AUD_USER_UPDATE" id="028FD0BF-5E0E-2469-BE39-A08689CB276B">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjSchema>DEL_RP_TRANS_ITEM_COD_ANULA</sourceObjSchema>
+<sourceObjName>AUD_USER_UPDATE</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:27 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USER_DELETE" id="9B2995DE-0D41-1F79-F677-2846B998032D">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjSchema>DEL_RP_TRANS_ITEM_COD_ANULA</sourceObjSchema>
+<sourceObjName>USER_DELETE</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:27 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_DELETE" id="41CFC06B-68D8-84E1-C21F-148FC8E641A5">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjSchema>DEL_RP_TRANS_ITEM_COD_ANULA</sourceObjSchema>
+<sourceObjName>FECHA_DELETE</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:27 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>19 BYTE</dataTypeSize>
+<ownDataTypeParameters>19 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+</Table>

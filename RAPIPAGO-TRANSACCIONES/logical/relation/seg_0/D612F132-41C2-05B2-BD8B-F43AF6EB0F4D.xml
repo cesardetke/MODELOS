@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="RP_BANCO_TX-FP-CHE" directorySegmentName="seg_0" id="D612F132-41C2-05B2-BD8B-F43AF6EB0F4D">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-21 21:53:38 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<engineerTo>
+<item key="E18374C9-589B-C4DD-3216-FDFB9DAA40D5" value="true"/>
+</engineerTo>
+<sourcePk>3D7A37A8-21C6-59B0-1120-DFDC6FEDFF80</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>1EE4AA0D-0D4B-FF24-69BF-BF33A31C1B7D</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>00058168-C03E-1832-E4F9-298175482B0A</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

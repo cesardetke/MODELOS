@@ -1,0 +1,29 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="T_RP_TRANSACCION_QIWI" directorySegmentName="seg_0" id="FA669600-F0B1-DC20-7C2A-B3D59F1D5A66">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjSchema>RAPIPAGO</sourceObjSchema>
+<sourceObjName>T_RP_TRANSACCION_QIWI</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:52 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<actions>INSERT, UPDATE</actions>
+<body><![CDATA[BEGIN
+  IF (UPDATING) THEN
+        :new.AUD_DATE_UPDATE             := TO_CHAR(SYSDATE, 'YYYY-MM-DD HH24:MI:SS');
+    :new.AUD_USER_UPDATE               := SUBSTR(USER,1,19);
+
+  END IF;
+  
+  if INSERTING then
+       :new.AUD_DATE_INSERT               := TO_CHAR(SYSDATE, 'YYYY-MM-DD HH24:MI:SS'); 
+:new.AUD_USER_INSERT               := SUBSTR(USER,1,19);
+  END IF;
+EXCEPTION
+     WHEN OTHERS THEN
+       -- 
+       RAISE ;
+END ;]]></body>
+<triggerTime>BEFORE</triggerTime>
+<owner>C3810AD6-77BE-D400-48EC-B9BB46870C6A</owner>
+<table>998810FB-DBCE-9AD7-845D-FB1C83C084AF</table>
+</TriggerOraclev10g>

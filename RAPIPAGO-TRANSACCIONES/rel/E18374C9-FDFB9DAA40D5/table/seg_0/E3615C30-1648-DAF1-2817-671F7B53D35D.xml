@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E3615C30-1648-DAF1-2817-671F7B53D35D" schemaObject="DAD3332D-B34A-011F-44C4-4EE7A39EDF3A" name="RP_TRANSACCION_ITEM_VALREC_EMP">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjSchema>RAPIPAGO</sourceObjSchema>
+<sourceObjName>RP_TRANSACCION_ITEM_VALREC_EMP</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:23 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_TRANSACCION_ITEM" id="6DDA39AF-84F9-CA09-67E7-631D9F686C8A">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjSchema>RP_TRANSACCION_ITEM_VALREC_EMP</sourceObjSchema>
+<sourceObjName>ID_TRANSACCION_ITEM</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:39 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9AEA5FAC-28EE-F821-909B-29F026833EBD" referredColumn="7FA63BA6-B7A1-4A24-780B-DC97B984AC19"/>
+</associations>
+</Column>
+<Column name="ID_PROCESO_VALREC" id="30354C36-440D-43A0-E92A-81E75B1A5C41">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjSchema>RP_TRANSACCION_ITEM_VALREC_EMP</sourceObjSchema>
+<sourceObjName>ID_PROCESO_VALREC</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:39 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_PROCESO" id="16B4868A-9E75-B6A7-2224-FD24A3F906A6">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjSchema>RP_TRANSACCION_ITEM_VALREC_EMP</sourceObjSchema>
+<sourceObjName>FECHA_PROCESO</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:39 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E7463D34-D8B8-C610-A934-0D4BCCB7EC6C" name="PK_RP_TRANSACCION_ITEM_VALREC_">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjSchema>RAPIPAGO</sourceObjSchema>
+<sourceObjName>PK_RP_TRANSACCION_ITEM_VALREC_</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:49 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6DDA39AF-84F9-CA09-67E7-631D9F686C8A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4A5E6A2E-7CCC-C784-5BD7-0DEEAA5715CA" schemaObject="DAD3332D-B34A-011F-44C4-4EE7A39EDF3A" name="IX1_RP_TRANSACCION_ITEM_VALREC">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjSchema>RAPIPAGO</sourceObjSchema>
+<sourceObjName>IX1_RP_TRANSACCION_ITEM_VALREC</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:44 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6DDA39AF-84F9-CA09-67E7-631D9F686C8A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1AC607E0-2DAA-77B8-E0C4-4565570B2019" name="FK1_RP_TRANSACCION_ITEM_VALREC">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:54 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6DDA39AF-84F9-CA09-67E7-631D9F686C8A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

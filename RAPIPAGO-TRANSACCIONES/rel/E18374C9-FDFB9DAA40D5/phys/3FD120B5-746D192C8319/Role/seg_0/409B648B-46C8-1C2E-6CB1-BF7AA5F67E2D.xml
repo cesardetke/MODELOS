@@ -1,0 +1,38 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<RoleOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.RoleOraclev10g" name="WEBRAPI_USER" directorySegmentName="seg_0" id="409B648B-46C8-1C2E-6CB1-BF7AA5F67E2D">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjName>WEBRAPI_USER</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:58 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<permissions>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions105" id="C66C3449-473F-CE0A-54EF-C1CDA17C159D">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:59 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<privileges>DELETE, INSERT, SELECT, UPDATE</privileges>
+<table>C6A79352-AFB5-62F2-AAF6-65760B32FF11</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions124" id="61195B88-814A-C927-376A-F72F637E70F3">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-21 21:18:29 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<privileges>SELECT</privileges>
+<materializedView>AECD78B4-FDE3-AA01-1410-0AF5FFFB95F7</materializedView>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions58" id="C426D0CD-72C3-DBD2-496A-742CCED63955">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:58 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<privileges>INSERT, SELECT, UPDATE</privileges>
+<table>AE3ECC46-8EEA-774B-3A74-D927C42A7B4D</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions97" id="B2F3DBB1-B9F7-26EC-68C3-492731A2D207">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:59 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<privileges>SELECT</privileges>
+<table>132B0F89-4752-5E6B-4A49-8E1E5E2EA042</table>
+</Permission>
+</permissions>
+</RoleOraclev10g>

@@ -1,0 +1,42 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="T_RP_AUX_COBRANZA" directorySegmentName="seg_0" id="5B521006-9E6C-7F48-1894-8B3D9C5DD2A2">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjSchema>RAPIPAGO</sourceObjSchema>
+<sourceObjName>T_RP_AUX_COBRANZA</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-21 21:47:39 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<actions>INSERT, UPDATE</actions>
+<body><![CDATA[DECLARE
+lCantidad   NUMBER(1);
+BEGIN
+
+  IF (UPDATING) THEN
+        :new.AUD_DATE_UPDATE := TO_CHAR(SYSDATE, 'YYYY-MM-DD HH24:MI:SS');
+  END IF;
+  
+  IF INSERTING then
+       :new.AUD_DATE_INSERT := TO_CHAR(SYSDATE, 'YYYY-MM-DD HH24:MI:SS');
+       
+        SELECT  NVL(COUNT(*), 0)
+        INTO    lCantidad
+        FROM    RAPIPAGO.RP_TRANSACCION_ITEM I
+        WHERE   I.ID_TRANSACCION_ITEM = :NEW.ID_TRANSACCION_ITEM
+        AND     I.ID_GRUPO_PROCESO IN ('0812030936ZEVbDxwbfY') /*MEDIFE*/
+        AND     I.ID_TRANSACCION_ITEM_REFERENCIA IS NULL;
+
+        IF lCantidad > 0 AND :NEW.NRO_REFERENCIA_FACTURA IS NOT NULL AND :NEW.DATO_ADICIONAL IS NULL THEN
+            :NEW.DATO_ADICIONAL := :NEW.IDENTIFICADOR_SF||'#'||:NEW.NRO_REFERENCIA_FACTURA;
+        END IF;
+        
+  END IF;  
+
+ EXCEPTION
+ WHEN OTHERS THEN
+       -- Consider logging the error and then re-raise
+       RAISE;
+END ;]]></body>
+<triggerTime>BEFORE</triggerTime>
+<owner>C3810AD6-77BE-D400-48EC-B9BB46870C6A</owner>
+<table>EC069348-056E-B34E-06D6-D6865FA297C1</table>
+</TriggerOraclev10g>

@@ -1,0 +1,38 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<RoleOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.RoleOraclev10g" name="ROLE_LINK_WB" directorySegmentName="seg_0" id="8B8D9147-A23F-9D32-2370-767C065501A8">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjName>ROLE_LINK_WB</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:59 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<permissions>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions142" id="C7BCF935-B72D-8BAC-0D17-FC068E4D6151">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:59 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<privileges>SELECT</privileges>
+<table>A175BAEC-BC4A-5108-F1CE-184695ECBAB8</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions174" id="23C081B4-7886-8E2B-DA40-8945C1F1D237">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:27:00 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<privileges>SELECT</privileges>
+<table>1CEEF360-67ED-8AF6-B19F-B33E26D4EB0B</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions180" id="3BE5393B-556D-2FA3-FBB6-859449E7CC5D">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-21 17:56:44 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<privileges>SELECT</privileges>
+<table>A6A98450-9EB0-D20D-7BB4-0C1333251345</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions209" id="1A15774D-313C-C667-A518-D73E39ECD394">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:27:00 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<privileges>SELECT</privileges>
+<table>75573F48-80F8-0187-D2B6-3D0417545A86</table>
+</Permission>
+</permissions>
+</RoleOraclev10g>

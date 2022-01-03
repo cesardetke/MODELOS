@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_REV-TX_REV-TX-FP" directorySegmentName="seg_0" id="F8D2C304-D3A5-E8F9-BE98-DD12535FB886">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-22 20:07:35 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<engineerTo>
+<item key="E18374C9-589B-C4DD-3216-FDFB9DAA40D5" value="true"/>
+</engineerTo>
+<sourcePk>85299B73-0450-895E-AD3B-F6505ECCF71E</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>7C028FB0-F721-4495-E5A6-4A02DA92D014</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>A0A2D4A1-B457-5EA3-0BEC-96E1055B7456</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

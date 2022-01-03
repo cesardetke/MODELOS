@@ -1,0 +1,199 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="75BF16CB-5354-ACE5-C36F-DC17DC35B234" name="RP GRUPO PROCESO">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-22 14:30:45 UTC</createdTime>
+<generatorID>E97244ED-348F-1E99-E576-9DA587F91701</generatorID>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<engineerTo>
+<item key="E18374C9-589B-C4DD-3216-FDFB9DAA40D5" value="true"/>
+</engineerTo>
+<typeID>4</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID GRUPO PROCESO" id="E5B5A084-DDC8-FB94-7D03-A7C77E733498">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-22 14:30:45 UTC</createdTime>
+<generatorID>EE66173A-2E29-324E-BE50-747D34B4F56C</generatorID>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<engineerTo>
+<item key="E18374C9-589B-C4DD-3216-FDFB9DAA40D5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DESCRIPCION" id="786A5BBC-A0FC-C93C-F84C-0CD75A2D8172">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-22 14:30:45 UTC</createdTime>
+<generatorID>32BE5836-5C42-147D-E529-81A29626C553</generatorID>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<engineerTo>
+<item key="E18374C9-589B-C4DD-3216-FDFB9DAA40D5" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ENTIDAD GIRENET" id="72A722E0-65C7-006E-14B3-E8F388F1CB6B">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-22 14:30:45 UTC</createdTime>
+<generatorID>B20D40A9-33E6-97B6-5B8A-CBC14687F084</generatorID>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<engineerTo>
+<item key="E18374C9-589B-C4DD-3216-FDFB9DAA40D5" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,20,0</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID TIPO SALIDA" id="BA571C11-2460-85BC-F20F-8FB56715AAE5">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-22 14:30:45 UTC</createdTime>
+<generatorID>10E3B349-4669-E9A7-0997-0C91C609F8D4</generatorID>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<engineerTo>
+<item key="E18374C9-589B-C4DD-3216-FDFB9DAA40D5" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="IS DELETED" id="C6B921CD-049B-FC91-7B4D-276FBA03670B">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-22 14:30:45 UTC</createdTime>
+<generatorID>0FE713E8-B505-2BE1-C120-32F9DC662751</generatorID>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<engineerTo>
+<item key="E18374C9-589B-C4DD-3216-FDFB9DAA40D5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID ENV" id="7A65148C-0D5F-3E6D-78E8-355B7E93EE21">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-22 14:30:45 UTC</createdTime>
+<generatorID>30F825CA-F435-6A3C-3F71-8A648C2B7040</generatorID>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<engineerTo>
+<item key="E18374C9-589B-C4DD-3216-FDFB9DAA40D5" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5 BYTE</dataTypeSize>
+<ownDataTypeParameters>5 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="AUD DATE INSERT" id="5DB1BF2C-57C7-8A83-F73E-28EF4725DE64">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-22 14:30:45 UTC</createdTime>
+<generatorID>FC2BACA4-2C8D-50DF-A9B0-97EF9161B773</generatorID>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<engineerTo>
+<item key="E18374C9-589B-C4DD-3216-FDFB9DAA40D5" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>19 BYTE</dataTypeSize>
+<ownDataTypeParameters>19 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="AUD USER INSERT" id="1AF0AB27-0B30-0E7A-8550-701911D387D7">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-22 14:30:45 UTC</createdTime>
+<generatorID>38D993BB-EB81-536D-9ADD-6492AE20E232</generatorID>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<engineerTo>
+<item key="E18374C9-589B-C4DD-3216-FDFB9DAA40D5" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="AUD DATE UPDATE" id="3D2217CF-53AC-85A2-020C-E47705C9BD26">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-22 14:30:45 UTC</createdTime>
+<generatorID>DFCD3462-79ED-EF0F-2E03-872DDF5C0486</generatorID>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<engineerTo>
+<item key="E18374C9-589B-C4DD-3216-FDFB9DAA40D5" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>19 BYTE</dataTypeSize>
+<ownDataTypeParameters>19 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="AUD USER UPDATE" id="9940231B-B5C4-34BC-783E-626A8868E3EA">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-22 14:30:45 UTC</createdTime>
+<generatorID>3E810215-AD3C-95E1-2FA2-203B7683B61F</generatorID>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<engineerTo>
+<item key="E18374C9-589B-C4DD-3216-FDFB9DAA40D5" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PREPROC COMISION" id="46368300-046C-2A08-6BAE-236D30491B28">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-22 14:30:45 UTC</createdTime>
+<generatorID>CFB3107A-061B-F06D-2827-63EF9F70FE24</generatorID>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<engineerTo>
+<item key="E18374C9-589B-C4DD-3216-FDFB9DAA40D5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="4A322CD3-9524-3DC1-C296-271B603AAF89" name="PK RP GRUPO PROCESO">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-22 14:30:45 UTC</createdTime>
+<generatorID>6C848C8F-D915-1E60-7EC0-BF48A7569341</generatorID>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<engineerTo>
+<item key="E18374C9-589B-C4DD-3216-FDFB9DAA40D5" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E5B5A084-DDC8-FB94-7D03-A7C77E733498</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

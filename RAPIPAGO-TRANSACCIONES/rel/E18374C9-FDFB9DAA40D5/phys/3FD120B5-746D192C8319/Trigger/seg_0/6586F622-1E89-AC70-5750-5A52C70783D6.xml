@@ -1,0 +1,212 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="T_RP_TRANSACCION_ITEM" directorySegmentName="seg_0" id="6586F622-1E89-AC70-5750-5A52C70783D6">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjSchema>RAPIPAGO</sourceObjSchema>
+<sourceObjName>T_RP_TRANSACCION_ITEM</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:52 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<actions>INSERT, UPDATE</actions>
+<body><![CDATA[DECLARE
+   wid_grupo_contable            rp_transaccion_item.id_grupo_contable%TYPE;
+   wid_grupo_proceso             rp_transaccion_item.id_grupo_proceso%TYPE;
+   wid_empresa_central           rp_transaccion_item.id_empresa_central%TYPE;
+   wcantidad                     NUMBER;
+   /*** Quitar estos campos - ya no se utilizan *****/
+   wid_empresa_puesto_comision   rp_transaccion_item.id_empresa_puesto_comision%TYPE;
+   wtasa_iva_comision            rp_transaccion_item.TASA_IVA_COMISION%TYPE;
+   wimp_comision_empresa         rp_transaccion_item.IMP_COMISION_EMPRESA%TYPE;
+   /************************************************/
+   dFecha                        DATE;
+   soporte                       number;
+   usuarioErroneo                exception;
+   vInstancia VARCHAR2(100);
+----
+   codEmpresa                    RAPIPAGO.RP_EMPRESA_PUESTO.COD_EMPRESA_PUESTO%TYPE;
+   descEmpresa                   RAPIPAGO.RP_EMPRESA_PUESTO.DESCRIPCION%TYPE;
+   codSucursal                   RAPIPAGO.RP_AGENTE_SUCURSAL.COD_SUCURSAL%TYPE;
+   nombreSucursal                RAPIPAGO.RP_AGENTE_SUCURSAL.NOMBRE%TYPE;
+   stringMail                    VARCHAR2(1000);
+BEGIN
+   dFecha := SYSDATE;
+   stringMail := '';
+   IF (UPDATING) THEN
+      :NEW.aud_date_update := TO_CHAR (dFecha, 'YYYY-MM-DD HH24:MI:SS');
+      :NEW.aud_user_update := SUBSTR (USER, 1, 30);
+   END IF;
+
+   IF INSERTING THEN
+      IF :NEW.aud_date_insert IS NULL THEN
+         :NEW.aud_date_insert := TO_CHAR (dFecha, 'YYYY-MM-DD HH24:MI:SS');
+      END IF;
+
+      IF :NEW.cod_validacion IS NULL THEN
+         :NEW.cod_validacion :=
+            TRIM (LPAD (TO_CHAR (:NEW.nro_operacion), 10, ' '));
+      END IF;
+   END IF;
+
+   IF INSERTING THEN
+      ------------------- INICIO para el ID_GRUPO_CONTABLE -------------------
+      BEGIN
+         SELECT   g.id_grupo_contable
+           INTO   wid_grupo_contable
+           FROM   rp_empr_puesto_grp_contable g
+          WHERE   g.id_empresa_puesto = :NEW.id_empresa_puesto
+                  AND g.id_empr_puesto_grp_contable NOT IN
+                           (SELECT   id_empr_puesto_grp_contable
+                              FROM   rp_empr_puesto_grp_cont_filtro fb
+                             WHERE   fb.id_codigo_barra =:NEW.id_codigo_barra
+                                     AND fb.is_deleted = 'N'
+                                     AND fb.id_env = 'RPPRI')
+                  AND g.id_empr_puesto_grp_contable NOT IN
+                           (SELECT   id_empr_puesto_grp_contable
+                              FROM   rp_empr_puesto_grp_cont_filtro fbm
+                             WHERE   fbm.id_empr_puesto_modalidad =:NEW.id_empr_puesto_modalidad
+                                     AND fbm.is_deleted = 'N'
+                                     AND fbm.id_env = 'RPPRI')
+                  AND g.is_deleted = 'N'
+                  AND g.id_env = 'RPPRI';
+      EXCEPTION
+         WHEN OTHERS
+         THEN
+            wid_grupo_contable := 'idGrupoContable';
+      END;
+
+      --------
+      :NEW.id_grupo_contable := NVL (wid_grupo_contable, 'idGrupoContable');
+
+      -------------------- FIN para el ID_GRUPO_CONTABLE ---------------------
+      ------------------------------------------------------------------------
+      ------------------------------------------------------------------------
+      ------------------------------------------------------------------------
+      ------------------- INICIO para el ID_GRUPO_PROCESO --------------------
+      BEGIN
+         SELECT   g.id_grupo_proceso
+           INTO   wID_GRUPO_PROCESO
+           FROM   rp_empr_puesto_grupo_proceso g
+          WHERE   g.id_empresa_puesto = :new.id_empresa_puesto
+                  AND g.id_empr_puesto_grupo_proceso NOT IN
+                           (SELECT   id_empr_puesto_grupo_proceso
+                              FROM   rp_empr_puesto_grp_proc_filtro fb
+                             WHERE   fb.id_codigo_barra =:new.id_codigo_barra
+                                     AND fb.id_empr_puesto_modalidad is null
+                                     AND fb.is_deleted = 'N'
+                                     AND fb.id_env = 'RPPRI')
+                  AND g.id_empr_puesto_grupo_proceso NOT IN
+                           (SELECT   id_empr_puesto_grupo_proceso
+                              FROM   rp_empr_puesto_grp_proc_filtro fbm
+                             WHERE   fbm.id_empr_puesto_modalidad =:new.id_empr_puesto_modalidad
+                                     AND fbm.id_codigo_barra is null
+                                     AND fbm.is_deleted = 'N'
+                                     AND fbm.id_env = 'RPPRI')
+                  AND g.id_empr_puesto_grupo_proceso NOT IN
+                           (SELECT   id_empr_puesto_grupo_proceso
+                              FROM   rp_empr_puesto_grp_proc_filtro fbm
+                             WHERE   fbm.id_empr_puesto_modalidad =:new.id_empr_puesto_modalidad
+                                     AND fbm.id_codigo_barra = :new.id_codigo_barra
+                                     AND fbm.is_deleted = 'N'
+                                     AND fbm.id_env = 'RPPRI')
+                  AND g.is_deleted = 'N'
+                  AND g.id_env = 'RPPRI';
+      EXCEPTION
+         WHEN OTHERS THEN
+            wid_grupo_contable := 'ID_GRUPO_PROCESO';
+      END;
+
+      :NEW.id_grupo_proceso := NVL (wid_grupo_proceso, 'ID_GRUPO_PROCESO');
+
+      --------------------- FIN para el ID_GRUPO_PROCESO ---------------------
+      ------------------------------------------------------------------------
+      ------------------------------------------------------------------------
+      ------------------------------------------------------------------------
+      ------------------ INICIO para el ID_EMPRESA_CENTRAL -------------------
+      BEGIN
+         SELECT   epec.id_empresa_central
+           INTO   wid_empresa_central
+           FROM   rp_empresa_puesto_empresa_cent epec, rp_codigo_barra cb
+          WHERE   cb.id_codigo_barra = :NEW.id_codigo_barra
+                  AND epec.id_empresa_puesto_empresa_cent = cb.id_empresa_puesto_empresa_cent
+                  AND epec.id_env = 'RPPRI'
+                  AND epec.is_deleted = 'N'
+                  AND cb.id_env = 'RPPRI'
+                  AND cb.is_deleted = 'N'
+                  AND ROWNUM = 1;
+
+         :NEW.id_empresa_central := wid_empresa_central;
+      EXCEPTION
+         WHEN OTHERS THEN
+            BEGIN
+               SELECT   id_empresa_central
+                 INTO   wid_empresa_central
+                 FROM   rp_empresa_puesto_empresa_cent
+                WHERE       id_empresa_puesto = :NEW.id_empresa_puesto
+                        AND default_empresa_central = 'Y'
+                        AND id_env = 'RPPRI'
+                        AND is_deleted = 'N'
+                        AND ROWNUM = 1;
+
+               :NEW.id_empresa_central := wid_empresa_central;
+            END;
+      END;
+
+      ------------------ F I N  para el ID_EMPRESA_CENTRAL -------------------
+
+      ----------------- INICIO  para el FONDO_PROPIO -------------------------
+      SELECT   COUNT(1)
+        INTO   wcantidad
+        FROM            rp_transaccion d
+                     INNER JOIN
+                        rp_puesto c
+                     ON (D.ID_PUESTO = C.ID_PUESTO)
+                  INNER JOIN
+                     RP_AGENTE_SUCURSAL B
+                  ON (B.ID_AGENTE_SUCURSAL = C.ID_AGENTE_SUCURSAL)
+               INNER JOIN
+                  rp_empr_puesto_fondo_propio Z
+               ON (    Z.ID_AGENTE = B.ID_AGENTE
+                   AND Z.is_deleted = 'N'
+                   AND Z.id_empresa_puesto = :NEW.id_empresa_puesto)
+       WHERE       D.ID_TRANSACCION = :NEW.ID_TRANSACCION
+               AND d.is_deleted = 'N'
+               AND ROWNUM = 1;
+
+      IF wcantidad >= 1 THEN
+         :NEW.fondo_propio := 'Y';
+      ELSE
+         :NEW.fondo_propio := 'N';
+      END IF;
+   ------------------ F I N  para el FONDO_PROPIO -------------------------
+   END IF;
+
+   IF INSERTING THEN
+      -- insert into rapipago.rp_transaccion_item_comision(ID_TRANSACCION_ITEM) values (:new.ID_TRANSACCION_ITEM);
+
+      SELECT   RPUES.ID_AGENTE_SUCURSAL,
+               RPas.ID_AGENTE,
+               RPPROV.ID_ZONA_GEOGRAFICA,
+               RPPROV.ID_ZONA_MARKETING,
+               RPPROV.ID_ZONA_ESTADISTICA,
+               RPPROV.ID_PROVINCIA_PARTIDO,
+               TO_CHAR (dFecha, 'YYYY-MM') mes_presentacion
+        INTO   :new.ID_AGENTE_SUCURSAL,
+               :new.ID_AGENTE,
+               :new.ID_ZONA_GEOGRAFICA,
+               :new.ID_ZONA_MARKETING,
+               :new.ID_ZONA_ESTADISTICA,
+               :new.ID_PROVINCIA_PARTIDO,
+               :new.mes_presentacion
+        FROM   RAPIPAGO.RP_TRANSACCION TR
+               -- INNER JOIN RAPIPAGO.RP_TRANSACCION_ITEM       RPTI                ON (TR.ID_TRANSACCION = RPTI.ID_TRANSACCION and RPTI.ID_TRANSACCION_ITEM = :NEW.ID_TRANSACCION_ITEM )
+               INNER JOIN RAPIPAGO.RP_PUESTO RPUES                  ON (RPUES.ID_PUESTO = TR.ID_PUESTO)
+               INNER JOIN RAPIPAGO.RP_AGENTE_SUCURSAL RPAS          ON (RPUES.ID_AGENTE_SUCURSAL = RPAS.ID_AGENTE_SUCURSAL)
+               INNER JOIN RAPIPAGO.RP_PROV_PARTIDO_LOCALIDAD RPPROV ON (RPPROV.ID_PROV_PARTIDO_LOCALIDAD = RPAS.ID_PROV_PARTIDO_LOCALIDAD)
+               INNER JOIN RAPIPAGO.rp_empresa_central EC            ON (:new.id_empresa_central = ec.id_empresa_central)
+       WHERE   TR.ID_TRANSACCION = :new.ID_TRANSACCION;
+  END IF;
+
+END;]]></body>
+<triggerTime>BEFORE</triggerTime>
+<owner>C3810AD6-77BE-D400-48EC-B9BB46870C6A</owner>
+<table>1CEEF360-67ED-8AF6-B19F-B33E26D4EB0B</table>
+</TriggerOraclev10g>

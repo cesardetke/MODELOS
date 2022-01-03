@@ -1,0 +1,31 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<UserOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UserOraclev10g" name="COCOA" directorySegmentName="seg_0" id="3EAA8B63-E66B-5C09-6414-6CBD1606134F">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjName>COCOA</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:27:00 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<permissions>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions125" id="B260E336-A2C5-B91B-FA8E-3FA0D1867B9B">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-21 21:18:29 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<privileges>SELECT</privileges>
+<materializedView>AECD78B4-FDE3-AA01-1410-0AF5FFFB95F7</materializedView>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions177" id="00897218-A8B1-42A4-D62F-F18C0F8D7033">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:27:00 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<privileges>SELECT</privileges>
+<table>1CEEF360-67ED-8AF6-B19F-B33E26D4EB0B</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions90" id="54625FAC-52CD-D8A1-B31D-305B82BBDE09">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-21 21:47:55 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<privileges>SELECT</privileges>
+<table>EC069348-056E-B34E-06D6-D6865FA297C1</table>
+</Permission>
+</permissions>
+</UserOraclev10g>

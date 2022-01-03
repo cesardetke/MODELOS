@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<RoleOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.RoleOraclev10g" name="STO_USER" directorySegmentName="seg_0" id="A11C6969-21D9-2976-8EF8-C19AEC039CC8">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjName>STO_USER</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-21 21:15:53 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<permissions>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions116" id="7D7068F0-CE9B-93B0-9C34-758EDF01B7CB">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-21 21:18:29 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<privileges>SELECT</privileges>
+<materializedView>AECD78B4-FDE3-AA01-1410-0AF5FFFB95F7</materializedView>
+</Permission>
+</permissions>
+</RoleOraclev10g>

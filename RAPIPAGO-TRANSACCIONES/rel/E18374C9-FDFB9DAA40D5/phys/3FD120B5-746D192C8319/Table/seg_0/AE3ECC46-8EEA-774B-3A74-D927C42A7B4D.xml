@@ -1,0 +1,107 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="REVERSAS_PENDIENTES_STO" directorySegmentName="seg_0" id="AE3ECC46-8EEA-774B-3A74-D927C42A7B4D">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:22 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<schemaObject>DAD3332D-B34A-011F-44C4-4EE7A39EDF3A</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>7AF020F0-D872-AB52-95D5-4449EF5584F0</segment>
+<tableSpace>75E5B1E9-777F-C6F5-E709-721115864E5E</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="COD_RESPUESTA_PAGO" id="04740899-586A-2D2E-45FA-B5FD486D9C8D">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:30 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="INSTANCIA_WEBRAPI" id="14DE58E7-49D5-D23B-1CDA-B8BA7538540C">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:30 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FH_INSERT" id="21363669-280B-F63A-93F5-0740017D5B91">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:30 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DATO_ADICIONAL" id="26F6B904-C202-5298-5A82-AE2E4210D784">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:30 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FH_ENVIO_EMPRESA" id="3CB86FF3-7CD0-F692-AA1A-782659B05623">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:30 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DESCRIPCION_RESPUESTA_PAGO" id="3D4A55E4-2919-1726-2D90-7D632DE652A7">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:30 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COD_BARRA" id="54D2DCFC-6C22-F82C-600E-35FD74953C25">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:29 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COD_TRANSACCION" id="6C34D50F-1F9C-B902-50A0-3780FC7203F2">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:29 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="REFERENCIA_FACTURA" id="6D53DC92-1A49-9DA3-210F-C16A8CC07CB3">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:29 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FH_RESPUESTA_EMPRESA" id="82907DA6-8DA2-14A7-38DD-A9139061D295">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:30 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="USUARIO" id="83A4CBAC-918C-6753-C045-87F783D31AEB">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:30 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DESCRIPCION_RESPUESTA_REVERSA" id="BB867D36-18BF-A897-E56C-B1C11671A14B">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:30 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COD_RESPUESTA_EMPRESA" id="CE359228-A9A3-27F0-0934-1A1F56C53D76">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:30 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COD_RESPUESTA_REVERSA" id="D5A931DA-2C5A-DDB0-35A0-1C1562A95449">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:30 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COD_OPERATORIA" id="E08718BE-43D5-8194-0176-BC8750D47D85">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:29 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FH_ACTUALIZACION" id="F5E14EAC-E4B6-A9D7-0D45-A5BC08EA6C3B">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:30 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COD_CLIENTE" id="F780D71E-2AF0-4212-FE81-48984156EDC3">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:29 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="IMPORTE_COBRADO" id="FF6D1E36-A574-3005-A802-4650C9A73FA7">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:29 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+</TableProxyOraclev12c>

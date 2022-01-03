@@ -1,0 +1,38 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<RoleOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.RoleOraclev10g" name="WEB_SERVICES_ADMIN" directorySegmentName="seg_0" id="F3F951B7-2F58-7515-9F6F-B958DA0F2C49">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjName>WEB_SERVICES_ADMIN</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:59 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<permissions>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions100" id="CAA1C43A-CF31-9F8D-F004-BD4BC5FB7FFF">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:59 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<privileges>SELECT</privileges>
+<table>132B0F89-4752-5E6B-4A49-8E1E5E2EA042</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions187" id="4AE357FE-7D64-70D2-DF87-C815A6DCF279">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:27:00 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<privileges>SELECT</privileges>
+<table>1CEEF360-67ED-8AF6-B19F-B33E26D4EB0B</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions190" id="B5C4ECCD-76FF-8758-47CC-4FED4FC96AD3">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-21 17:56:44 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<privileges>SELECT</privileges>
+<table>A6A98450-9EB0-D20D-7BB4-0C1333251345</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions267" id="0C0E8580-945C-E197-7BA4-A974320D153B">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:27:00 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<privileges>SELECT</privileges>
+<table>169B6EAF-B7A7-3090-A4EA-161CB8DB8853</table>
+</Permission>
+</permissions>
+</RoleOraclev10g>

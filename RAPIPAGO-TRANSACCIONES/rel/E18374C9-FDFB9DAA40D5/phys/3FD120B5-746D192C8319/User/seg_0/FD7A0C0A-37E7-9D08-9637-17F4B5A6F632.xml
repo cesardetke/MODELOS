@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<UserOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UserOraclev10g" name="RAPITRAMITE" directorySegmentName="seg_0" id="FD7A0C0A-37E7-9D08-9637-17F4B5A6F632">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjName>RAPITRAMITE</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-21 21:15:53 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<permissions>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions135" id="70DAE40E-6397-DBDB-BEB5-BE6C9BA50943">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-21 21:18:29 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<privileges>SELECT</privileges>
+<materializedView>AECD78B4-FDE3-AA01-1410-0AF5FFFB95F7</materializedView>
+</Permission>
+</permissions>
+</UserOraclev10g>

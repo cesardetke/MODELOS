@@ -1,0 +1,84 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="DEL_RP_TRANSACCION_ITEM_TICKET" directorySegmentName="seg_0" id="21910762-F100-A537-AB52-B0B1B2F42E00">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:22 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<schemaObject>DAD3332D-B34A-011F-44C4-4EE7A39EDF3A</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>6162D465-E31F-41B0-04AD-9917233D504E</segment>
+<tableSpace>D86F3145-A3F2-2975-577E-C543299F0728</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="AUD_USER_UPDATE" id="0FF15485-CC10-2C2A-EFB2-FF7456CE6A66">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:27 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FECHA_DELETE" id="121EF54E-3B62-CA2F-9F44-F9C9DE9EBA8C">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:27 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="USER_DELETE" id="6920D07F-FD3E-07EB-810E-0A026463561B">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:27 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_TRANSACCION_ITEM" id="786CF803-A792-02D1-2739-DD32AFDAFEE1">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:27 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="AUD_USER_INSERT" id="A6A32F75-E1AB-E431-A697-201F61F645C9">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:27 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_TRANSACCION_ITEM_TICKET" id="C1200729-610A-E17C-64A0-5C83E541F277">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:27 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="AUD_DATE_INSERT" id="C2903F43-ACDB-CA66-5152-33F24A63283F">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:27 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TICKET" id="C8A92A00-6EDB-F18E-BEE2-1AF651EC340D">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:27 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="IS_DELETED" id="F3668D60-B21F-9CEC-E20E-B702579C7DA1">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:27 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="AUD_DATE_UPDATE" id="F585E758-44DA-C2A8-CB11-CF56A0242CBF">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:27 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_ENV" id="F7B1DDBB-5DF1-7A0C-699A-CFD0D8EFDE8C">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:27 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<lobStorages>
+<LobStorage class="oracle.dbtools.crest.model.design.storage.oracle.v11g.LobStorageOraclev11g" name="SYS_LOB0048287442C00009$$" id="15505D0B-03C3-98AD-453C-BFAA11015988">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:54 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<cache>NOCACHE</cache>
+<chunk>8192</chunk>
+<column>TICKET</column>
+<logging>YES</logging>
+<tableSpace>813B8C0B-7BCE-289E-050D-E9E250E4B0B1</tableSpace>
+</LobStorage>
+</lobStorages>
+</TableProxyOraclev12c>

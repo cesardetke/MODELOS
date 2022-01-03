@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK1_RP_TRANSACCION_ITEM_VALREC" directorySegmentName="seg_0" id="C478C275-C33A-D2B9-2EC1-FE83FECE9BBD">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-21 18:17:31 UTC</createdTime>
+<generatorID>9AEA5FAC-28EE-F821-909B-29F026833EBD</generatorID>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<engineerTo>
+<item key="E18374C9-589B-C4DD-3216-FDFB9DAA40D5" value="true"/>
+</engineerTo>
+<sourcePk>4648D2F8-E4C3-C005-6043-F13403937ADE</sourcePk>
+<dominantRole>C84FCB3E-C574-AF02-E253-3E41B72D1CE8</dominantRole>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>C84FCB3E-C574-AF02-E253-3E41B72D1CE8</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>3115EC35-3BEF-E317-996B-3952E88AA617</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,201 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4CEA3704-5BD6-9110-954C-00749EC235A2" schemaObject="DAD3332D-B34A-011F-44C4-4EE7A39EDF3A" name="RP_REV_TRX_FORMA_PAGO_TAR">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjSchema>RAPIPAGO</sourceObjSchema>
+<sourceObjName>RP_REV_TRX_FORMA_PAGO_TAR</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-21 17:56:44 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<importedID>1E0B7E0C-214B-77AC-66C5-5A0AC2B3F1ED</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_TRANSACCION_FORMA_PAGO_TAR" id="245A34CF-CED3-A2C7-DA9C-23E075BAE7AF">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjSchema>RP_REV_TRX_FORMA_PAGO_TAR</sourceObjSchema>
+<sourceObjName>ID_TRANSACCION_FORMA_PAGO_TAR</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-21 17:56:44 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<importedID>D4A16CC1-E844-D652-4F42-6DDA6E649A8C</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_TRANSACCION_FORMA_PAGO" id="E244D38A-86E1-55D5-5388-F8A549921E12">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjSchema>RP_REV_TRX_FORMA_PAGO_TAR</sourceObjSchema>
+<sourceObjName>ID_TRANSACCION_FORMA_PAGO</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-21 17:56:44 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<importedID>6075A92B-063F-D74D-FC6E-99B3FDEE0AA2</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NRO_CUPON" id="47C42521-F358-F74D-C795-97EF48B9AB41">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjSchema>RP_REV_TRX_FORMA_PAGO_TAR</sourceObjSchema>
+<sourceObjName>NRO_CUPON</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-21 17:56:44 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<importedID>3D7CACDF-1FF6-0F87-360E-CBC172A0B907</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NRO_AUTORIZACION" id="99A78A92-8456-15D1-5CF1-093248C3CCDA">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjSchema>RP_REV_TRX_FORMA_PAGO_TAR</sourceObjSchema>
+<sourceObjName>NRO_AUTORIZACION</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-21 17:56:44 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<importedID>07312017-CCF7-C366-33EE-59030531BE16</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CANTIDAD_CUOTAS" id="CF5D2838-6B2F-747D-DCDC-82BCC79B1CEE">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjSchema>RP_REV_TRX_FORMA_PAGO_TAR</sourceObjSchema>
+<sourceObjName>CANTIDAD_CUOTAS</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-21 17:56:44 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<importedID>B8CDA6D4-C418-FCEB-3DD6-ABC9022D87F1</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,20,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IS_DELETED" id="4F0DFC78-B713-EE8C-ABFC-B3BD8A5DED8E">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjSchema>RP_REV_TRX_FORMA_PAGO_TAR</sourceObjSchema>
+<sourceObjName>IS_DELETED</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-21 17:56:44 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<importedID>5081CE5C-0DB8-23EB-6F58-EB51F72F0F1A</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_ENV" id="B4D87494-528D-2742-9B21-2CDD4A55EF5B">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjSchema>RP_REV_TRX_FORMA_PAGO_TAR</sourceObjSchema>
+<sourceObjName>ID_ENV</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-21 17:56:44 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<importedID>314A0F44-94B9-359F-18CC-99AB302311FD</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5 BYTE</dataTypeSize>
+<ownDataTypeParameters>5 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AUD_DATE_INSERT" id="5482B937-CBF6-002E-3DC5-1655B930754A">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjSchema>RP_REV_TRX_FORMA_PAGO_TAR</sourceObjSchema>
+<sourceObjName>AUD_DATE_INSERT</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-21 17:56:44 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<importedID>AB790BAF-7C20-2BD8-5057-04323BBD5EA0</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>19 BYTE</dataTypeSize>
+<ownDataTypeParameters>19 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AUD_USER_INSERT" id="F38AC291-BEB7-80BD-1306-36C3BD6CC42F">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjSchema>RP_REV_TRX_FORMA_PAGO_TAR</sourceObjSchema>
+<sourceObjName>AUD_USER_INSERT</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-21 17:56:44 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<importedID>79B2539C-B585-EB03-DD6D-B36F71BF7A7F</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AUD_DATE_UPDATE" id="73AF654B-B5F3-4951-B9C8-AA7A00A9E857">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjSchema>RP_REV_TRX_FORMA_PAGO_TAR</sourceObjSchema>
+<sourceObjName>AUD_DATE_UPDATE</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-21 17:56:44 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<importedID>4939C84A-0AF3-F520-2FDD-A703C8FD4C2A</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>19 BYTE</dataTypeSize>
+<ownDataTypeParameters>19 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AUD_USER_UPDATE" id="C88BB6E4-A1B2-FA73-61A6-321D45B24D8E">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjSchema>RP_REV_TRX_FORMA_PAGO_TAR</sourceObjSchema>
+<sourceObjName>AUD_USER_UPDATE</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-21 17:56:44 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<importedID>24C85F62-8197-BA14-E4A2-C3DBEA81301E</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+</Table>

@@ -1,0 +1,30 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="T_RP_TRANSACCION_PENDIENTE" directorySegmentName="seg_0" id="5B11843A-403B-BBEA-3C7C-98DDD14240E8">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjSchema>RAPIPAGO</sourceObjSchema>
+<sourceObjName>T_RP_TRANSACCION_PENDIENTE</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:52 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<actions>INSERT, UPDATE</actions>
+<body><![CDATA[DECLARE
+dFecha DATE;
+BEGIN
+   dFecha := SYSDATE;
+   IF (UPDATING) THEN
+      :NEW.aud_date_update := TO_CHAR (dFecha, 'YYYY-MM-DD HH24:MI:SS');
+      :NEW.aud_user_update := SUBSTR (USER, 1, 30);
+   END IF;
+
+   IF INSERTING THEN
+      IF :NEW.aud_date_insert IS NULL THEN
+         :NEW.aud_date_insert := TO_CHAR (dFecha, 'YYYY-MM-DD HH24:MI:SS');
+         :NEW.aud_user_insert := SUBSTR (USER, 1, 30);
+      END IF;
+   END IF;
+
+END;]]></body>
+<triggerTime>BEFORE</triggerTime>
+<owner>C3810AD6-77BE-D400-48EC-B9BB46870C6A</owner>
+<table>29688EF4-4729-007C-6049-863A68E471F1</table>
+</TriggerOraclev10g>

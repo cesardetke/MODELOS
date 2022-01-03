@@ -1,0 +1,97 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="DEL_RP_TRX_FORMA_PAGO_CHE" directorySegmentName="seg_0" id="E419470B-A230-95CD-D664-B915FB907DBC">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:22 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<schemaObject>DAD3332D-B34A-011F-44C4-4EE7A39EDF3A</schemaObject>
+<logging>NO</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>7AF020F0-D872-AB52-95D5-4449EF5584F0</segment>
+<tableSpace>75E5B1E9-777F-C6F5-E709-721115864E5E</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="NRO_CHEQUE" id="019B66EC-2BED-419E-735E-FF32F31812FD">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:28 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CLEARING" id="01E4639A-4C0D-6EF6-A83B-D9F5A53EFD5E">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:28 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="IS_DELETED" id="15187D18-6630-F292-63B5-681C54DEBF9A">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:28 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="AUD_DATE_INSERT" id="46522B94-1394-5441-10EC-1BDCBA648B90">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:28 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="AUD_DATE_UPDATE" id="4E31B709-7032-27ED-49AD-201CE174C050">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:28 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="USER_DELETE" id="56839591-DC0B-C9A2-3A45-57F2A9E8FA79">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:28 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="AUD_USER_INSERT" id="62790D66-41A3-C722-337C-D7E9EBA5E8AA">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:28 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FECHA_DELETE" id="75318C4F-893E-2603-62D1-8BE45A97605A">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:28 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_TRANSACCION_FORMA_PAGO" id="AA730AE1-13FD-0305-FB96-79941B42F47C">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:28 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_TRANSACCION_FORMA_PAGO_CHE" id="AE724BA1-401D-421E-77DC-B85C91BF2C18">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:27 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_OPERACION_CAJA" id="B02D7279-87DD-1286-9398-F767EC1CA309">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:28 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="AUD_USER_UPDATE" id="C6911F56-ADAF-1C1D-071F-36ACA47C115A">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:28 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_ENV" id="CC928DFE-A5C7-5E38-D3E7-6D42ADE4BB8E">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:28 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_BANCO" id="E1EED3CF-9743-B0A9-A3A1-4883B5933F48">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:28 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SUCURSAL_BANCO" id="E99C8DD7-3445-CAAD-49D4-CA26302AFF78">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:28 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FECHA_EMISION" id="F90FA7A5-5829-A92B-E319-C79CB4578E46">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:28 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+</TableProxyOraclev12c>

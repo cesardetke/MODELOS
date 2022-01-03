@@ -1,0 +1,28 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="T_RP_PUESTO_TRANSACCION" directorySegmentName="seg_0" id="E81C04D3-5F6D-F3F0-F804-464EB22D88D1">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjSchema>RAPIPAGO</sourceObjSchema>
+<sourceObjName>T_RP_PUESTO_TRANSACCION</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:51 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<actions>INSERT, UPDATE</actions>
+<body><![CDATA[BEGIN
+  IF (UPDATING) THEN
+        :new.AUD_DATE_UPDATE               := TO_CHAR(SYSDATE, 'YYYY-MM-DD HH24:MI:SS');
+  END IF;
+  
+  if INSERTING then
+       :new.AUD_DATE_INSERT               := TO_CHAR(SYSDATE, 'YYYY-MM-DD HH24:MI:SS'); 
+  END IF;
+
+ EXCEPTION
+ WHEN OTHERS THEN
+       -- Consider logging the error and then re-raise
+       RAISE;
+END ; 
+]]></body>
+<triggerTime>BEFORE</triggerTime>
+<owner>C3810AD6-77BE-D400-48EC-B9BB46870C6A</owner>
+<table>132B0F89-4752-5E6B-4A49-8E1E5E2EA042</table>
+</TriggerOraclev10g>

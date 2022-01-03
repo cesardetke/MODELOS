@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<RoleOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.RoleOraclev10g" name="DEPURADOR_USER" directorySegmentName="seg_0" id="459AF45A-B102-A2EA-91C7-823FB43F2275">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjName>DEPURADOR_USER</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:27:00 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<permissions>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions237" id="7D24CFD9-39D1-5C30-2B89-97AB1AA45A11">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:27:00 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<privileges>DELETE, SELECT</privileges>
+<table>29688EF4-4729-007C-6049-863A68E471F1</table>
+</Permission>
+</permissions>
+</RoleOraclev10g>

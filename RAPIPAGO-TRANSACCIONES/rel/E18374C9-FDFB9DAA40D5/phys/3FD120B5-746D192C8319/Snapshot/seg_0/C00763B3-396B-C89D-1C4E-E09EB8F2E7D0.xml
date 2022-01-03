@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SnapshotOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.SnapshotOraclev11g" name="RP_BANCO" directorySegmentName="seg_0" id="C00763B3-396B-C89D-1C4E-E09EB8F2E7D0">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjSchema>RAPIPAGO</sourceObjSchema>
+<sourceObjName>RP_BANCO</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-21 21:47:55 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<schemaObject>DAD3332D-B34A-011F-44C4-4EE7A39EDF3A</schemaObject>
+<action>ON DEMAND</action>
+<build>DEFERRED</build>
+<defaultSegment>NO</defaultSegment>
+<refresh>YES</refresh>
+<refreshType>COMPLETE</refreshType>
+<subquery><![CDATA[SELECT "RP_BANCO"."ID_BANCO" "ID_BANCO","RP_BANCO"."DESCRIPCION" "DESCRIPCION","RP_BANCO"."IS_DELETED" "IS_DELETED","RP_BANCO"."ID_ENV" "ID_ENV","RP_BANCO"."AUD_DATE_INSERT" "AUD_DATE_INSERT","RP_BANCO"."AUD_USER_INSERT" "AUD_USER_INSERT","RP_BANCO"."AUD_DATE_UPDATE" "AUD_DATE_UPDATE","RP_BANCO"."AUD_USER_UPDATE" "AUD_USER_UPDATE","RP_BANCO"."COD_BANCO" "COD_BANCO" FROM "RAPIPAGO"."RP_BANCO"@LINK_BK "RP_BANCO" ]]></subquery>
+<subqueryChanged>false</subqueryChanged>
+<subqueryNeedsMigration>false</subqueryNeedsMigration>
+<tablespace>75E5B1E9-777F-C6F5-E709-721115864E5E</tablespace>
+<useIndex>YES</useIndex>
+<with></with>
+</SnapshotOraclev11g>

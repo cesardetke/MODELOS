@@ -1,0 +1,6 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SchemaObject class="oracle.dbtools.crest.model.design.relational.SchemaObject" name="RAPIPAGO" directorySegmentName="seg_0" id="DAD3332D-B34A-011F-44C4-4EE7A39EDF3A">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:21 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+</SchemaObject>

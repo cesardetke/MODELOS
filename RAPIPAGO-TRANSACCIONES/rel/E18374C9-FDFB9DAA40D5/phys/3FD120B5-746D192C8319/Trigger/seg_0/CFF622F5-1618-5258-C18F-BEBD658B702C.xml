@@ -1,0 +1,37 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="T_RP_TRANSACCION_ITEM_COMISION" directorySegmentName="seg_0" id="CFF622F5-1618-5258-C18F-BEBD658B702C">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjSchema>RAPIPAGO</sourceObjSchema>
+<sourceObjName>T_RP_TRANSACCION_ITEM_COMISION</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:52 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<actions>INSERT, UPDATE</actions>
+<body><![CDATA[BEGIN
+
+  IF UPDATING THEN
+       if (:new.ID_EMPRESA_PUESTO_COMISION <> :old.ID_EMPRESA_PUESTO_COMISION)
+          or
+          (:new.ID_EMPRESA_PUESTO_COMISION is not null and :old.ID_EMPRESA_PUESTO_COMISION is null)
+        then
+        :NEW.IMP_COMISION_EMPRESA_ESTIMADO  := :NEW.IMP_COMISION_EMPRESA ;
+        :NEW.ID_EMPRESA_PUESTO_COM_ESTIMADO := :NEW.ID_EMPRESA_PUESTO_COMISION ; 
+        :NEW.TASA_IVA_COMISION_ESTIMADA     := :NEW.TASA_IVA_COMISION;
+     END IF;
+  END IF;
+
+  IF UPDATING THEN
+     :new.AUD_DATE_UPDATE               := TO_CHAR(SYSDATE, 'YYYY-MM-DD HH24:MI:SS');
+     :new.AUD_USER_UPDATE               := substr(user, 1, 30);
+  END IF;
+  
+  if INSERTING then
+     :new.AUD_DATE_INSERT               := TO_CHAR(SYSDATE, 'YYYY-MM-DD HH24:MI:SS'); 
+     :new.AUD_USER_INSERT               := substr(user, 1, 30);
+  END IF;
+ 
+ END;]]></body>
+<triggerTime>BEFORE</triggerTime>
+<owner>C3810AD6-77BE-D400-48EC-B9BB46870C6A</owner>
+<table>5E8ED98E-FEF2-E368-E0AD-658F8683516C</table>
+</TriggerOraclev10g>

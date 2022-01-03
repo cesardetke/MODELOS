@@ -1,0 +1,23 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="T_RP_TRANSACCION_ITEM2" directorySegmentName="seg_0" id="43770FFF-178A-9F8C-B363-2AE93281014D">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjSchema>RAPIPAGO</sourceObjSchema>
+<sourceObjName>T_RP_TRANSACCION_ITEM2</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:52 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<actions>INSERT</actions>
+<body><![CDATA[BEGIN
+
+   if inserting then
+      if :new.ID_TRANSACCION_ITEM_REFERENCIA is null then 
+         insert into rapipago.rp_transaccion_item_comision (ID_TRANSACCION_ITEM, MES_PRESENTACION)
+         values (:new.ID_TRANSACCION_ITEM, :new.MES_PRESENTACION); 
+      END IF;
+    END IF;
+ END; 
+]]></body>
+<triggerTime>AFTER</triggerTime>
+<owner>C3810AD6-77BE-D400-48EC-B9BB46870C6A</owner>
+<table>1CEEF360-67ED-8AF6-B19F-B33E26D4EB0B</table>
+</TriggerOraclev10g>

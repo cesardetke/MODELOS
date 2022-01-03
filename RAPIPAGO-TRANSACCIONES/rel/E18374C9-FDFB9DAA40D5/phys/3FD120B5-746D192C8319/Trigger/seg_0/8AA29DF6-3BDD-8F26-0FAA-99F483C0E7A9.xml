@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="T_RP_TRANSACCION_FORMA_PAGO_D" directorySegmentName="seg_0" id="8AA29DF6-3BDD-8F26-0FAA-99F483C0E7A9">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjSchema>RAPIPAGO</sourceObjSchema>
+<sourceObjName>T_RP_TRANSACCION_FORMA_PAGO_D</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:52 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<actions>INSERT, UPDATE</actions>
+<body><![CDATA[BEGIN
+  if INSERTING then
+     :new.AUD_DATE_INSERT               := :new.AUD_DATE_INSERT; 
+  END IF;
+
+ EXCEPTION
+ WHEN OTHERS THEN
+       RAISE;
+END ;]]></body>
+<triggerTime>BEFORE</triggerTime>
+<owner>C3810AD6-77BE-D400-48EC-B9BB46870C6A</owner>
+<table>9B6AC1FA-CEC1-5396-CA07-EB7280D1133D</table>
+</TriggerOraclev10g>

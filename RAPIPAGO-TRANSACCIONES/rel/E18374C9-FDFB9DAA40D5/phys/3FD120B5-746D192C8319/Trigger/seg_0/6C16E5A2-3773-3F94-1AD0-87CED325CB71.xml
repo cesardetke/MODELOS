@@ -1,0 +1,45 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="T_ACTUALIZO_GIRE_WS_CALL_LOG" directorySegmentName="seg_0" id="6C16E5A2-3773-3F94-1AD0-87CED325CB71">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjSchema>RAPIPAGO</sourceObjSchema>
+<sourceObjName>T_ACTUALIZO_GIRE_WS_CALL_LOG</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:51 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<actions>INSERT</actions>
+<body><![CDATA[DECLARE
+EXISTE NUMBER(1):=0;
+lws_call_id NUMBER := 0;
+lws_call_service VARCHAR2(200 byte) := 'http://rpservice.gire.com/ws/RapipagoService/getSucursalAbiertaByUsuario';
+lws_call_request VARCHAR2(4000 byte) := '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><ns2:getSucursalAbiertaByUsuario xmlns:ns2="http://api.service.rpservices.gire.com/"><arg0>vUSR</arg0></ns2:getSucursalAbiertaByUsuario>';
+lws_call_response VARCHAR2(4000 byte) := '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><ns2:getSucursalAbiertaByUsuarioResponse xmlns:ns2="http://api.service.rpservices.gire.com/"><return>vSUC</return></ns2:getSucursalAbiertaByUsuarioResponse>';
+lws_call_tec_error NUMBER(15,5) := 0;
+lws_sucursal NUMBER(20);
+lws_user_id VARCHAR2(25 byte);
+BEGIN
+    IF :NEW.TIPO_OPERACION = 2 THEN        
+        SELECT COUNT(1) INTO EXISTE FROM THUBAN.GIRE_WS_CALL_LOG@LINK_THUBAN_GL TH
+        WHERE TH.WS_USER_ID = :NEW.AUD_USER_INSERT AND TH.WS_CALL_DATE = TO_CHAR(SYSDATE,'YYYY-MM-DD');
+        IF EXISTE = 0 THEN
+            --  GUARDO EL USUARIO = AUD_USER_INSERT
+            lws_user_id := :NEW.AUD_USER_INSERT;
+            --  BUSCO LA SUCURSAL DEL PUESTO DE LA OPERACION DE CAJA
+            SELECT MAX(A.COD_SUCURSAL) INTO lws_sucursal 
+            FROM RAPIPAGO.RP_AGENTE_SUCURSAL A, RAPIPAGO.RP_PUESTO P 
+            WHERE P.ID_AGENTE_SUCURSAL=A.ID_AGENTE_SUCURSAL AND A.IS_DELETED='N' AND P.IS_DELETED='N' AND P.ID_PUESTO=:NEW.ID_PUESTO;
+            --  INCREMENTO SEQUENCE DE THUBAN 
+            EXECUTE IMMEDIATE 'SELECT THUBAN.WSLOG.NEXTVAL@LINK_THUBAN_GL FROM DUAL' INTO lws_call_id;
+            --  INSERTO USUARIO EN THUBAN
+            INSERT INTO THUBAN.GIRE_WS_CALL_LOG@LINK_THUBAN_GL (WS_CALL_ID, WS_CALL_SERVICE, WS_CALL_DATE, WS_CALL_HOUR, WS_CALL_REQUEST, WS_CALL_RESPONSE, WS_CALL_TEC_ERROR, WS_USER_ID)
+            VALUES(lws_call_id,lws_call_service,to_char(sysdate,'yyyy-mm-dd'),to_char(sysdate,'hh24.mi.ss'),replace(lws_call_request,'vUSR',lws_user_id),replace(lws_call_response,'vSUC',lws_sucursal),lws_call_tec_error,lws_user_id); 
+        END IF;
+    END IF;
+ EXCEPTION
+ WHEN OTHERS THEN
+       -- Consider logging the error and then re-raise
+       RAISE;
+END ;]]></body>
+<triggerTime>AFTER</triggerTime>
+<owner>C3810AD6-77BE-D400-48EC-B9BB46870C6A</owner>
+<table>FDBAFA29-DD2E-058A-4C29-5511D9A76485</table>
+</TriggerOraclev10g>

@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SnapshotOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.SnapshotOraclev11g" name="RP_GRUPO_PROCESO" directorySegmentName="seg_0" id="5583EA31-DB2A-2246-ECCD-76A2202979EA">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjSchema>RAPIPAGO</sourceObjSchema>
+<sourceObjName>RP_GRUPO_PROCESO</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-22 12:55:10 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<schemaObject>DAD3332D-B34A-011F-44C4-4EE7A39EDF3A</schemaObject>
+<action>ON DEMAND</action>
+<defaultSegment>NO</defaultSegment>
+<refresh>YES</refresh>
+<refreshType>COMPLETE</refreshType>
+<subquery><![CDATA[SELECT "RP_GRUPO_PROCESO"."ID_GRUPO_PROCESO" "ID_GRUPO_PROCESO","RP_GRUPO_PROCESO"."DESCRIPCION" "DESCRIPCION","RP_GRUPO_PROCESO"."ENTIDAD_GIRENET" "ENTIDAD_GIRENET","RP_GRUPO_PROCESO"."ID_TIPO_SALIDA" "ID_TIPO_SALIDA","RP_GRUPO_PROCESO"."IS_DELETED" "IS_DELETED","RP_GRUPO_PROCESO"."ID_ENV" "ID_ENV","RP_GRUPO_PROCESO"."AUD_DATE_INSERT" "AUD_DATE_INSERT","RP_GRUPO_PROCESO"."AUD_USER_INSERT" "AUD_USER_INSERT","RP_GRUPO_PROCESO"."AUD_DATE_UPDATE" "AUD_DATE_UPDATE","RP_GRUPO_PROCESO"."AUD_USER_UPDATE" "AUD_USER_UPDATE","RP_GRUPO_PROCESO"."PREPROC_COMISION" "PREPROC_COMISION" FROM "RAPIPAGO"."RP_GRUPO_PROCESO"@LINK_BK "RP_GRUPO_PROCESO"]]></subquery>
+<subqueryChanged>false</subqueryChanged>
+<subqueryNeedsMigration>false</subqueryNeedsMigration>
+<tablespace>75E5B1E9-777F-C6F5-E709-721115864E5E</tablespace>
+<useIndex>YES</useIndex>
+<with></with>
+</SnapshotOraclev11g>

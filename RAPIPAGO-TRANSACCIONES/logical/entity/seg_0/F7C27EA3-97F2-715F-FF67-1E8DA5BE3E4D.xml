@@ -1,0 +1,49 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F7C27EA3-97F2-715F-FF67-1E8DA5BE3E4D" name="RP OPERACION CAJA HISTORICA">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-21 17:57:24 UTC</createdTime>
+<generatorID>C75D1CBE-53B7-0D3A-1ABD-F3792E14515B</generatorID>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<engineerTo>
+<item key="E18374C9-589B-C4DD-3216-FDFB9DAA40D5" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID OPERACION CAJA" id="504B54AA-ACA6-8FA6-473E-73C1C04A662B">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-21 21:54:34 UTC</createdTime>
+<generatorID>3625BA3F-A1F7-DBC5-51E6-C389CF446B2C</generatorID>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<engineerTo>
+<item key="E18374C9-589B-C4DD-3216-FDFB9DAA40D5" value="true"/>
+</engineerTo>
+<referedAttribute>6DD91B5C-61E1-9991-7B79-1EB2BF343511</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8A9C1A63-ED37-4440-F954-E871BC18FE94" name="RP OPERACION CAJA HISTORICA PK">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-21 21:54:34 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<engineerTo>
+<item key="E18374C9-589B-C4DD-3216-FDFB9DAA40D5" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>504B54AA-ACA6-8FA6-473E-73C1C04A662B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

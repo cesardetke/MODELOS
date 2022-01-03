@@ -1,0 +1,67 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="RP_REV_TRX_ITEM_COD_ANULA" directorySegmentName="seg_0" id="7CCFFCB6-06D1-1361-87FA-11DCE8CFF50E">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:23 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<schemaObject>DAD3332D-B34A-011F-44C4-4EE7A39EDF3A</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>7AF020F0-D872-AB52-95D5-4449EF5584F0</segment>
+<tableSpace>75E5B1E9-777F-C6F5-E709-721115864E5E</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="AUD_DATE_INSERT" id="12D3F9D4-83B3-0AAE-C651-DE9EE273E2B9">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:34 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="IS_DELETED" id="1361822B-9854-CA17-18B0-DBB8F7EFF5B6">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:34 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_ENV" id="15B99BD1-7523-EAAB-977C-7A080E551A59">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:34 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NRO_ORDEN" id="6D7B6A78-1064-1B9E-B976-CDFF10D3BA50">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:34 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="AUD_USER_UPDATE" id="72BCF461-AD04-F65B-217B-C3E1B309BF49">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:34 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="AUD_DATE_UPDATE" id="78D5A15D-64FE-DC75-6BCE-477624A3DAA8">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:34 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_TRANS_ITEM_COD_ANULA" id="87499EB0-BA9B-C616-D582-6155EC17453D">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:34 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COD_SEGURIDAD" id="92C68331-CAFB-DC00-16FB-944FCE71C4E1">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:34 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_TRANSACCION_ITEM" id="BA9E5017-98F6-E8B3-F064-4F06501CF035">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:34 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="AUD_USER_INSERT" id="C687D085-BBCF-79F0-A8BE-2C758C876F6D">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:34 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+</TableProxyOraclev12c>

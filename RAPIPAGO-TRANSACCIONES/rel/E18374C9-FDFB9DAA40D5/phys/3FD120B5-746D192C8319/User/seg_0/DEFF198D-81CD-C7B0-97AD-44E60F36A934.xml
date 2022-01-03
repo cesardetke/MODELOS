@@ -1,0 +1,24 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<UserOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UserOraclev10g" name="OP_LDRCRISOL" directorySegmentName="seg_0" id="DEFF198D-81CD-C7B0-97AD-44E60F36A934">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjName>OP_LDRCRISOL</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:27:00 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<permissions>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions241" id="CD1D6917-AB64-823F-AF9A-0DE6C3F09BDE">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:27:00 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<privileges>DELETE, INSERT, SELECT, UPDATE</privileges>
+<table>96750683-4054-4B0C-1E78-1A505A4376FA</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions244" id="BFF7A8ED-66B5-0C27-2C29-2CC28E8253C7">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:27:00 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<privileges>DELETE, INSERT, SELECT, UPDATE</privileges>
+<table>998810FB-DBCE-9AD7-845D-FB1C83C084AF</table>
+</Permission>
+</permissions>
+</UserOraclev10g>

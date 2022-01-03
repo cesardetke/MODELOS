@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SnapshotOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.SnapshotOraclev11g" name="RP_TIPO_PROCESO" directorySegmentName="seg_0" id="DEA15C0E-E6C5-8249-4215-377BBAFF885E">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjSchema>RAPIPAGO</sourceObjSchema>
+<sourceObjName>RP_TIPO_PROCESO</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-22 12:55:10 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<schemaObject>DAD3332D-B34A-011F-44C4-4EE7A39EDF3A</schemaObject>
+<action>ON DEMAND</action>
+<build>DEFERRED</build>
+<defaultSegment>NO</defaultSegment>
+<refresh>YES</refresh>
+<refreshType>COMPLETE</refreshType>
+<subquery><![CDATA[SELECT "RP_TIPO_PROCESO"."ID_TIPO_PROCESO" "ID_TIPO_PROCESO","RP_TIPO_PROCESO"."RUTINA_CLASE" "RUTINA_CLASE","RP_TIPO_PROCESO"."EJECUCION_MANUAL" "EJECUCION_MANUAL","RP_TIPO_PROCESO"."ES_REGENERABLE" "ES_REGENERABLE","RP_TIPO_PROCESO"."DESCRIPCION" "DESCRIPCION","RP_TIPO_PROCESO"."IS_DELETED" "IS_DELETED","RP_TIPO_PROCESO"."ID_ENV" "ID_ENV","RP_TIPO_PROCESO"."AUD_DATE_INSERT" "AUD_DATE_INSERT","RP_TIPO_PROCESO"."AUD_USER_INSERT" "AUD_USER_INSERT","RP_TIPO_PROCESO"."AUD_DATE_UPDATE" "AUD_DATE_UPDATE","RP_TIPO_PROCESO"."AUD_USER_UPDATE" "AUD_USER_UPDATE","RP_TIPO_PROCESO"."TIPO_SELECCION" "TIPO_SELECCION","RP_TIPO_PROCESO"."ES_REPROCESABLE" "ES_REPROCESABLE" FROM "RAPIPAGO"."RP_TIPO_PROCESO"@LINK_BK "RP_TIPO_PROCESO" ]]></subquery>
+<subqueryChanged>false</subqueryChanged>
+<subqueryNeedsMigration>false</subqueryNeedsMigration>
+<tablespace>75E5B1E9-777F-C6F5-E709-721115864E5E</tablespace>
+<useIndex>YES</useIndex>
+<with></with>
+</SnapshotOraclev11g>

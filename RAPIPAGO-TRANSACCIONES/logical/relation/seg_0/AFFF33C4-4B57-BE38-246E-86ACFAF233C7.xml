@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_GRUPO-PROCESO_TX-ITEM" directorySegmentName="seg_0" id="AFFF33C4-4B57-BE38-246E-86ACFAF233C7">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-22 16:29:25 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<engineerTo>
+<item key="E18374C9-589B-C4DD-3216-FDFB9DAA40D5" value="true"/>
+</engineerTo>
+<sourcePk>4A322CD3-9524-3DC1-C296-271B603AAF89</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>75BF16CB-5354-ACE5-C36F-DC17DC35B234</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>C84FCB3E-C574-AF02-E253-3E41B72D1CE8</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<RoleOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.RoleOraclev10g" name="HERMES_USER" directorySegmentName="seg_0" id="5444310D-2CBF-5FC5-222A-42FC1544CE4B">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjName>HERMES_USER</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-21 21:15:53 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<permissions>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions139" id="CDE1A3FD-959F-0347-1A3B-B172F328009C">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-21 21:18:29 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<privileges>SELECT</privileges>
+<materializedView>AECD78B4-FDE3-AA01-1410-0AF5FFFB95F7</materializedView>
+</Permission>
+</permissions>
+</RoleOraclev10g>

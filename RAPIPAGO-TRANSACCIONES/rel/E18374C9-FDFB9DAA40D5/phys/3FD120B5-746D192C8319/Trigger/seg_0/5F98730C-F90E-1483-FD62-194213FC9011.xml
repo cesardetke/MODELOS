@@ -1,0 +1,30 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="T_RP_TRANSACCION_FORMA_PAGO" directorySegmentName="seg_0" id="5F98730C-F90E-1483-FD62-194213FC9011">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjSchema>RAPIPAGO</sourceObjSchema>
+<sourceObjName>T_RP_TRANSACCION_FORMA_PAGO</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:52 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<actions>INSERT, UPDATE</actions>
+<body><![CDATA[BEGIN
+  IF (UPDATING) THEN
+        :new.AUD_DATE_UPDATE               := TO_CHAR(SYSDATE, 'YYYY-MM-DD HH24:MI:SS');
+  END IF;
+  
+  if INSERTING then    
+   IF :NEW.aud_date_insert is null THEN
+       :new.AUD_DATE_INSERT               := TO_CHAR(SYSDATE, 'YYYY-MM-DD HH24:MI:SS');
+   END IF;     
+  END IF;
+
+ EXCEPTION
+ WHEN OTHERS THEN
+       -- Consider logging the error and then re-raise
+       RAISE;
+END ; 
+]]></body>
+<triggerTime>BEFORE</triggerTime>
+<owner>C3810AD6-77BE-D400-48EC-B9BB46870C6A</owner>
+<table>A175BAEC-BC4A-5108-F1CE-184695ECBAB8</table>
+</TriggerOraclev10g>

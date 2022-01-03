@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="RP_TRANSACCION_FORMA_PAGO__R01" directorySegmentName="seg_0" id="69AF1811-F4B9-8C3B-D962-D0EF6F929096">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-21 21:21:50 UTC</createdTime>
+<generatorID>D705D796-FC41-17DE-29CF-7CC298462955</generatorID>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<engineerTo>
+<item key="E18374C9-589B-C4DD-3216-FDFB9DAA40D5" value="true"/>
+</engineerTo>
+<sourcePk>87A06D2F-F9F0-0315-E686-39059E763D48</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>20AEA823-FF3C-20BB-C090-BDD67BE84D83</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>27361BE2-53B4-98A1-862E-1A400621F575</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

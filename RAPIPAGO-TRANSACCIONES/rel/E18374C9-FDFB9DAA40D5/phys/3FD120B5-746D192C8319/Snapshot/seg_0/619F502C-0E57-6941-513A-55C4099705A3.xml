@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SnapshotOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.SnapshotOraclev11g" name="RP_TIPO_VALOR" directorySegmentName="seg_0" id="619F502C-0E57-6941-513A-55C4099705A3">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjSchema>RAPIPAGO</sourceObjSchema>
+<sourceObjName>RP_TIPO_VALOR</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-21 18:30:46 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<schemaObject>DAD3332D-B34A-011F-44C4-4EE7A39EDF3A</schemaObject>
+<action>ON DEMAND</action>
+<build>DEFERRED</build>
+<defaultSegment>NO</defaultSegment>
+<refresh>YES</refresh>
+<refreshType>COMPLETE</refreshType>
+<subquery><![CDATA[SELECT "RP_TIPO_VALOR"."ID_TIPO_VALOR" "ID_TIPO_VALOR","RP_TIPO_VALOR"."DESCRIPCION" "DESCRIPCION","RP_TIPO_VALOR"."CLASE_VALOR" "CLASE_VALOR","RP_TIPO_VALOR"."ID_MONEDA" "ID_MONEDA","RP_TIPO_VALOR"."IS_DELETED" "IS_DELETED","RP_TIPO_VALOR"."ID_ENV" "ID_ENV","RP_TIPO_VALOR"."AUD_DATE_INSERT" "AUD_DATE_INSERT","RP_TIPO_VALOR"."AUD_USER_INSERT" "AUD_USER_INSERT","RP_TIPO_VALOR"."AUD_DATE_UPDATE" "AUD_DATE_UPDATE","RP_TIPO_VALOR"."AUD_USER_UPDATE" "AUD_USER_UPDATE","RP_TIPO_VALOR"."COD_TIPO_VALOR" "COD_TIPO_VALOR","RP_TIPO_VALOR"."COD_MONEDA_WINCO" "COD_MONEDA_WINCO","RP_TIPO_VALOR"."ES_MONEDA_WINCO" "ES_MONEDA_WINCO","RP_TIPO_VALOR"."MONTO_MINIMO" "MONTO_MINIMO","RP_TIPO_VALOR"."ID_TARJETA" "ID_TARJETA","RP_TIPO_VALOR"."TIPO_VALOR_DEFAULT" "TIPO_VALOR_DEFAULT" FROM "RAPIPAGO"."RP_TIPO_VALOR"@LINK_BK "RP_TIPO_VALOR" ]]></subquery>
+<subqueryChanged>false</subqueryChanged>
+<subqueryNeedsMigration>false</subqueryNeedsMigration>
+<tablespace>75E5B1E9-777F-C6F5-E709-721115864E5E</tablespace>
+<useIndex>YES</useIndex>
+<with></with>
+</SnapshotOraclev11g>

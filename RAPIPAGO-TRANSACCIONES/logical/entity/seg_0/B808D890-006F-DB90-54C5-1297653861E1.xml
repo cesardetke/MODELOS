@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B808D890-006F-DB90-54C5-1297653861E1" name="RP TRX ITEM MAS DECIMALES">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-21 17:57:24 UTC</createdTime>
+<generatorID>08D744CC-8F70-EF6B-DF5F-60A1F8E81BDB</generatorID>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<engineerTo>
+<item key="E18374C9-589B-C4DD-3216-FDFB9DAA40D5" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID TRANSACCION ITEM" id="5BD89C3B-C3B0-0DEB-6899-671F9EB21590">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-21 18:55:10 UTC</createdTime>
+<generatorID>B4D34398-962F-BDE7-0A9C-A9B2752D0430</generatorID>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<engineerTo>
+<item key="E18374C9-589B-C4DD-3216-FDFB9DAA40D5" value="true"/>
+</engineerTo>
+<referedAttribute>84808F03-91E0-963B-4E40-A761BAC6F564</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="IMPORTE" id="7C6F069A-F262-762E-CFC3-ED98B7A00D1B">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-21 17:57:24 UTC</createdTime>
+<generatorID>8332D803-FAE2-D6C1-3111-F0F4C8CDB2B6</generatorID>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<engineerTo>
+<item key="E18374C9-589B-C4DD-3216-FDFB9DAA40D5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>28</dataTypePrecision>
+<dataTypeScale>8</dataTypeScale>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,28,8</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="1C554B7B-EE70-87EA-437C-C5A347ED53F0" name="RP TRX ITEM MAS DECIMALES PK">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-21 18:55:10 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<engineerTo>
+<item key="E18374C9-589B-C4DD-3216-FDFB9DAA40D5" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>5BD89C3B-C3B0-0DEB-6899-671F9EB21590</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

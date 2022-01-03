@@ -1,0 +1,24 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<RoleOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.RoleOraclev10g" name="SALPIN_ADMIN" directorySegmentName="seg_0" id="E5F0758A-5856-33E9-E086-AAF2E9AF58B0">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjName>SALPIN_ADMIN</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:27:01 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<permissions>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions131" id="6C56C532-9CA5-9DA1-C88B-D2821C06EC13">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-21 21:18:29 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<privileges>SELECT</privileges>
+<materializedView>AECD78B4-FDE3-AA01-1410-0AF5FFFB95F7</materializedView>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions282" id="9C41A789-56CF-8E96-5127-AB87E1DE68A5">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:27:01 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<privileges>INSERT, SELECT, UPDATE</privileges>
+<table>9461FBD0-BB54-888D-9E47-716E6FB3D866</table>
+</Permission>
+</permissions>
+</RoleOraclev10g>

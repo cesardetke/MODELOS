@@ -1,0 +1,45 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="T_RP_OPERACION_CAJA_2" directorySegmentName="seg_0" id="3F77A8B6-DB3B-A992-584E-3BE6186AA393">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjSchema>RAPIPAGO</sourceObjSchema>
+<sourceObjName>T_RP_OPERACION_CAJA_2</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:51 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<actions>INSERT</actions>
+<body><![CDATA[BEGIN
+-------------------------------------------------------------------------------
+  IF TRIM(:NEW.TIPO_OPERACION) = '9' then  
+        for Datos in (
+                     SELECT Item.ID_TRANSACCION_ITEM, Cab.ID_PUESTO, Item.Fecha_Lectura
+                       FROM RAPIPAGO.RP_TRANSACCION_ITEM Item, RAPIPAGO.RP_TRANSACCION Cab 
+                             WHERE Cab.ID_TRANSACCION = Item.ID_TRANSACCION
+                        and Item.ID_TRANSACCION_ITEM = (   
+                                                         SELECT max(Item.ID_TRANSACCION_ITEM) 
+                                                           FROM RAPIPAGO.RP_TRANSACCION Cab
+                                                          INNER JOIN RAPIPAGO.RP_TRANSACCION_ITEM Item ON (Cab.ID_TRANSACCION = Item.ID_TRANSACCION) 
+                                                          INNER JOIN RAPIPAGO.RP_PUESTO                 Pto ON (    Pto.ID_PUESTO = :NEW.ID_PUESTO )  
+                                                                                and Cab.AUD_USER_INSERT <> 'CONECTOR' -- and Pto.VERSION_RAPIPAGO = 'R35'
+                                                              and Cab.ID_PUESTO = Pto.ID_PUESTO
+                                                            AND Item.ID_EMPRESA_PUESTO = (SELECT EC.ID_EMPRESA_PUESTO FROM RAPIPAGO.RP_EMPRESA_PUESTO EC WHERE COD_EMPRESA_PUESTO=3640)
+                                                            AND SUBSTR(Item.AUD_DATE_INSERT,1,10) = TO_CHAR(TRUNC(SYSDATE),'YYYY-MM-DD')
+                                                        )
+                       )
+            Loop
+            Insert into RAPIPAGO.RP_TRANSACCION_PENDIENTE
+               (ID_TRANSACCION_PENDIENTE                           ,           ID_TRANSACCION_ITEM, COD_OPERATORIA, ENVIADO,           ID_PUESTO,                          FECHA_LECTURA)
+             Values
+               (RAPIPAGO.RP_FUNCIONES_CONECTOR_R2_R3.newid, Datos.ID_TRANSACCION_ITEM, '00260',    'N', Datos.ID_PUESTO, SUBSTR(Datos.FECHA_LECTURA,1,10));
+         end loop; 
+  end if;
+-------------------------------------------------------------------------------  
+ 
+EXCEPTION
+     WHEN OTHERS THEN
+       -- 
+       RAISE ;
+END ;]]></body>
+<triggerTime>AFTER</triggerTime>
+<owner>C3810AD6-77BE-D400-48EC-B9BB46870C6A</owner>
+<table>FDBAFA29-DD2E-058A-4C29-5511D9A76485</table>
+</TriggerOraclev10g>

@@ -1,0 +1,25 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="RAPIPAGO-TRANSACCIONES" id="434E0611-E325-84BF-C436-C606FEB5C8D9" version="3.5">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:12:23 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>434E0611-E325-84BF-C436-C606FEB5C8D9</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="4C82674F-2591-1024-A98B-A796478E99BF">
+<designStoragePath>C:\Users\cdetke\OneDrive\Documentos\Datos\Modelos\RAPIPAGO\TRANSACCIONES</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="2FDCBF5F-E725-ED04-FF44-7726F9389C42">
+<designStoragePath>C:\Users\cdetke\OneDrive\Documentos\Datos\Modelos\RAPIPAGO\TRANSACCIONES</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="B1210B46-F84C-5B0C-3A8E-286E4F0C2BA2">
+<designStoragePath>C:\Users\cdetke\OneDrive\Documentos\Datos\Modelos\RAPIPAGO\TRANSACCIONES</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="DAC2FDA3-EEC3-3660-107E-78210D06CC3C">
+<designStoragePath>C:\Users\cdetke\OneDrive\Documentos\Datos\Modelos\RAPIPAGO\TRANSACCIONES</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="89AC9632-2A72-968A-4491-7AD3019F38E5">
+<designStoragePath>C:\Users\cdetke\OneDrive\Documentos\Datos\Modelos\RAPIPAGO\TRANSACCIONES</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
+</OSDM_Design>

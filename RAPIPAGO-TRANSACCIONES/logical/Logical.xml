@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="5C655DAE-3510-4CF3-59FE-D3040933E8FA" mainViewID="B6AC8FC2-58A4-3731-A1CC-61E866AE9C50">
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:12:23 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

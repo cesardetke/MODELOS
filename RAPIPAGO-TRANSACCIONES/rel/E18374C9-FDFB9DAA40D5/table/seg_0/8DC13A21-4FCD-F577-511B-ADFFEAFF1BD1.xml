@@ -1,0 +1,157 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8DC13A21-4FCD-F577-511B-ADFFEAFF1BD1" schemaObject="DAD3332D-B34A-011F-44C4-4EE7A39EDF3A" name="RP_AMAZONA_TRANSACTION">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjSchema>RAPIPAGO</sourceObjSchema>
+<sourceObjName>RP_AMAZONA_TRANSACTION</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-22 12:55:10 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<importedID>C4A838B4-020B-473E-B040-EEE84D87D95B</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SEQUENCE_NUMBER" id="C224132E-F3B3-6248-BCB1-E68F83D4F458">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjSchema>RP_AMAZONA_TRANSACTION</sourceObjSchema>
+<sourceObjName>SEQUENCE_NUMBER</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-22 12:55:10 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<importedID>BC36E88B-B175-9E87-0B16-4385E00371CD</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>254 CHAR</dataTypeSize>
+<ownDataTypeParameters>254 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATA" id="DB3DC95A-8B50-B50D-15F0-6208F3BEB3AB">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjSchema>RP_AMAZONA_TRANSACTION</sourceObjSchema>
+<sourceObjName>DATA</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-22 12:55:10 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<importedID>61ECA1FB-E659-EB8E-729E-BEF18ECA0C81</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT028</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PARTITION_KEY" id="7FC4A496-2E5F-5B7E-0F4F-EB07EE0437C8">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjSchema>RP_AMAZONA_TRANSACTION</sourceObjSchema>
+<sourceObjName>PARTITION_KEY</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-22 12:55:10 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<importedID>A7016471-1B80-FF5B-7672-01C173C2AED3</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>254 CHAR</dataTypeSize>
+<ownDataTypeParameters>254 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATE_TIME" id="74608173-6D6C-D021-605D-A2C8E373ED2D">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjSchema>RP_AMAZONA_TRANSACTION</sourceObjSchema>
+<sourceObjName>DATE_TIME</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-22 12:55:10 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<importedID>85B43CC4-6C90-BA1D-BD17-4243DD481B87</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SAFE_ID" id="EF2050AA-0454-EFD8-E103-74DA8140329F">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjSchema>RP_AMAZONA_TRANSACTION</sourceObjSchema>
+<sourceObjName>SAFE_ID</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-22 12:55:10 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<importedID>A513192E-1AF6-9BFB-1036-1D1EFE543142</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>254 CHAR</dataTypeSize>
+<ownDataTypeParameters>254 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TYPE" id="C542F1C4-CFEB-F2F9-FBBF-FEA27212273D">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjSchema>RP_AMAZONA_TRANSACTION</sourceObjSchema>
+<sourceObjName>TYPE</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-22 12:55:10 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<importedID>104E0531-2D67-446B-6FF4-63C6AE6A1DB2</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>254 CHAR</dataTypeSize>
+<ownDataTypeParameters>254 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STATUS" id="4BAF0D87-EA5E-9F08-5F98-5A4F41BA2164">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjSchema>RP_AMAZONA_TRANSACTION</sourceObjSchema>
+<sourceObjName>STATUS</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-22 12:55:10 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<importedID>3906647E-9516-1F0F-3987-190B0D88BF73</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6A16639A-D81B-D44D-64E7-E45688F00F6C" name="PK_RP_AMAZONA_TRANSACTION">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjSchema>RAPIPAGO</sourceObjSchema>
+<sourceObjName>PK_RP_AMAZONA_TRANSACTION</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-22 12:55:10 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<importedID>0B163E97-BE43-1A05-6F49-C569419BA96A</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C224132E-F3B3-6248-BCB1-E68F83D4F458"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="294C7141-425E-ED08-09A4-5D8CE8D19160" schemaObject="DAD3332D-B34A-011F-44C4-4EE7A39EDF3A" name="PK_RP_AMAZONA_TRANSACTION">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjSchema>RAPIPAGO</sourceObjSchema>
+<sourceObjName>PK_RP_AMAZONA_TRANSACTION</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-22 12:55:10 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<importedID>1F79A2C5-EFEA-DC22-450F-D0046509F325</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C224132E-F3B3-6248-BCB1-E68F83D4F458"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

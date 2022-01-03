@@ -1,0 +1,309 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F8025A6F-71F2-83DB-88F4-6D1F76F86C6A" schemaObject="DAD3332D-B34A-011F-44C4-4EE7A39EDF3A" name="RP_PUESTOS_R35_TRX_FALTANTES">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjSchema>RAPIPAGO</sourceObjSchema>
+<sourceObjName>RP_PUESTOS_R35_TRX_FALTANTES</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-21 17:56:44 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<importedID>0AB35E60-231E-E7A3-29E0-6E4CBD750DE7</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="TIPO" id="934C3D89-5BD3-1608-06E3-9E8CF9932594">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjSchema>RP_PUESTOS_R35_TRX_FALTANTES</sourceObjSchema>
+<sourceObjName>TIPO</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-21 17:56:44 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<importedID>5B44EBC6-196E-D553-4AC6-ED0F7EE2798E</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_TRANSACCION" id="81118459-D0A3-AA52-4D26-513718A1EAFC">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjSchema>RP_PUESTOS_R35_TRX_FALTANTES</sourceObjSchema>
+<sourceObjName>ID_TRANSACCION</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-21 17:56:44 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<importedID>19BB5711-35AD-672A-6934-6366E846C2BF</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ACTUALIZADO" id="7642FCA1-30E3-5F97-2D64-D9B283BC7479">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjSchema>RP_PUESTOS_R35_TRX_FALTANTES</sourceObjSchema>
+<sourceObjName>ACTUALIZADO</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-21 17:56:44 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<importedID>1E9551DA-5E58-BE59-96C4-C2CDC665D43D</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TRANSACCION_GEMFIRE" id="3C634266-BB1A-9A54-0B9D-5693D869E16F">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjSchema>RP_PUESTOS_R35_TRX_FALTANTES</sourceObjSchema>
+<sourceObjName>TRANSACCION_GEMFIRE</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-21 17:56:44 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<importedID>B0852DE6-EAFB-06FF-DA09-A23ABB00C723</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OPERACION" id="44C92AD7-FAF5-A40B-29AF-1BC4973431A4">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjSchema>RP_PUESTOS_R35_TRX_FALTANTES</sourceObjSchema>
+<sourceObjName>OPERACION</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-21 17:56:44 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<importedID>B8A6C9E7-DD2C-EDAD-1939-16D013138EEC</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IMPORTE" id="29FF0857-A5B7-187D-DEB5-F21BCBB188E6">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjSchema>RP_PUESTOS_R35_TRX_FALTANTES</sourceObjSchema>
+<sourceObjName>IMPORTE</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-21 17:56:44 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<importedID>A9E554AF-FA57-C9E0-0787-2290B5A35FDB</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CANTIDAD" id="59E4114F-2C66-6DDA-C5DB-C387D7D26DBD">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjSchema>RP_PUESTOS_R35_TRX_FALTANTES</sourceObjSchema>
+<sourceObjName>CANTIDAD</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-21 17:56:44 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<importedID>E3683A19-592F-0A28-B605-8010B1D00638</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,38,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_PUESTO" id="3DE086DA-F1D6-5260-52C4-BD4596438615">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjSchema>RP_PUESTOS_R35_TRX_FALTANTES</sourceObjSchema>
+<sourceObjName>ID_PUESTO</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-21 17:56:44 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<importedID>AE8D0B92-C0ED-A450-E172-777F1E1A6806</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_TRANSACCION_ITEM" id="A090540C-845B-85C3-2112-00ED579CC72F">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjSchema>RP_PUESTOS_R35_TRX_FALTANTES</sourceObjSchema>
+<sourceObjName>ID_TRANSACCION_ITEM</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-21 17:56:44 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<importedID>603BD138-204C-8236-85BE-F714959B515A</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_LECTURA" id="F2D816E1-DCC3-4FB6-B603-9C8A62FB8098">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjSchema>RP_PUESTOS_R35_TRX_FALTANTES</sourceObjSchema>
+<sourceObjName>FECHA_LECTURA</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-21 17:56:44 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<importedID>20096BBD-76A0-B514-9D9D-90BC5CE70182</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>22 BYTE</dataTypeSize>
+<ownDataTypeParameters>22 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IMPORTE_ITEM" id="449E326A-A645-7AD9-F503-86EA18067FCB">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjSchema>RP_PUESTOS_R35_TRX_FALTANTES</sourceObjSchema>
+<sourceObjName>IMPORTE_ITEM</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-21 17:56:44 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<importedID>DE952050-0B4F-6EE9-1AE4-5BF0265ED21E</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ANULADO" id="D7EDB6E9-A383-CB2A-9A77-1E047CF862FD">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjSchema>RP_PUESTOS_R35_TRX_FALTANTES</sourceObjSchema>
+<sourceObjName>ANULADO</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-21 17:56:44 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<importedID>9DF1682F-9B5D-6782-5C3A-9EAD94D05559</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_EMPRESA_PUESTO" id="3721B2AA-7424-AD88-F2F4-4D72812F07F8">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjSchema>RP_PUESTOS_R35_TRX_FALTANTES</sourceObjSchema>
+<sourceObjName>ID_EMPRESA_PUESTO</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-21 17:56:44 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<importedID>90C6370B-F8E5-E4AC-3E72-7903DD596B27</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BARRA" id="A5892D51-BF78-E4BB-57C7-B9F5A07B1131">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjSchema>RP_PUESTOS_R35_TRX_FALTANTES</sourceObjSchema>
+<sourceObjName>BARRA</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-21 17:56:44 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<importedID>9471F1F3-6F0D-3AE0-2ECB-830D5D8780C3</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500 BYTE</dataTypeSize>
+<ownDataTypeParameters>500 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_TIPO_VALOR" id="D6F2F2F5-FFEF-C2AF-0D69-ACCF7AB6CE7D">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjSchema>RP_PUESTOS_R35_TRX_FALTANTES</sourceObjSchema>
+<sourceObjName>ID_TIPO_VALOR</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-21 17:56:44 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<importedID>7C39A9DC-F6D0-1B88-2382-A3D2A1368AD6</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IMPORTE_TIPO_VALOR" id="C51806B1-CF60-DEEA-2C05-06AEB7DF4247">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjSchema>RP_PUESTOS_R35_TRX_FALTANTES</sourceObjSchema>
+<sourceObjName>IMPORTE_TIPO_VALOR</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-21 17:56:44 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<importedID>B2911EF6-254A-C8BA-46AB-2A1BB9297301</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MARCA" id="3797112E-82E1-6B66-91C2-44C98BA46025">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjSchema>RP_PUESTOS_R35_TRX_FALTANTES</sourceObjSchema>
+<sourceObjName>MARCA</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-21 17:56:44 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<importedID>69919BF5-79E1-7E6B-1BAC-038EB39EC2BF</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+</Table>

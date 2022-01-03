@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SnapshotOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.SnapshotOraclev11g" name="RP_PUESTO" directorySegmentName="seg_0" id="AECD78B4-FDE3-AA01-1410-0AF5FFFB95F7">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjSchema>RAPIPAGO</sourceObjSchema>
+<sourceObjName>RP_PUESTO</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-21 21:18:29 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<schemaObject>DAD3332D-B34A-011F-44C4-4EE7A39EDF3A</schemaObject>
+<action>ON DEMAND</action>
+<defaultSegment>NO</defaultSegment>
+<refresh>YES</refresh>
+<refreshType>COMPLETE</refreshType>
+<subquery><![CDATA[SELECT "RP_PUESTO"."ID_PUESTO" "ID_PUESTO",
+       "RP_PUESTO"."PUESTO" "PUESTO",
+       "RP_PUESTO"."ID_AGENTE_SUCURSAL" "ID_AGENTE_SUCURSAL",
+       "RP_PUESTO"."IS_DELETED" "IS_DELETED",
+       "RP_PUESTO"."ID_ENV" "ID_ENV",
+       "RP_PUESTO"."AUD_DATE_INSERT" "AUD_DATE_INSERT",
+       "RP_PUESTO"."AUD_USER_INSERT" "AUD_USER_INSERT",
+       "RP_PUESTO"."AUD_DATE_UPDATE" "AUD_DATE_UPDATE",
+       "RP_PUESTO"."AUD_USER_UPDATE" "AUD_USER_UPDATE",
+       "RP_PUESTO"."SISTEMA_TIPO_AGENTE" "SISTEMA_TIPO_AGENTE",
+       "RP_PUESTO"."WF_STATUS" "WF_STATUS",
+       "RP_PUESTO"."VERSION_RAPIPAGO" "VERSION_RAPIPAGO",
+       "RP_PUESTO"."HORARIO_TRANSMISION" "HORARIO_TRANSMISION",
+       "RP_PUESTO"."FECHA_PRIMERA_ACTIVIDAD" "FECHA_PRIMERA_ACTIVIDAD",
+       "RP_PUESTO"."ES_PUESTO_HOMOLOGACION" "ES_PUESTO_HOMOLOGACION",
+       "RP_PUESTO"."HASH_PUESTO_FISICO" "HASH_PUESTO_FISICO",
+       "RP_PUESTO"."DATO_PUESTO_FISICO" "DATO_PUESTO_FISICO",
+       "RP_PUESTO"."PRECINTO" "PRECINTO",
+       "RP_PUESTO"."ESTADO_FISICO" "ESTADO_FISICO",
+       "RP_PUESTO"."TERMINAL_LC" "TERMINAL_LC",
+       "RP_PUESTO"."FECHA_HABILITACION" "FECHA_HABILITACION",
+       "RP_PUESTO"."FECHA_INSTALACION" "FECHA_INSTALACION",
+       "RP_PUESTO"."CODIGO_PUESTO_PRISMA" "CODIGO_PUESTO_PRISMA",
+       "RP_PUESTO"."ES_PUESTO_REGULARIZACION" "ES_PUESTO_REGULARIZACION",
+       "RP_PUESTO"."FECHA_CLAUSURA_DESDE" "FECHA_CLAUSURA_DESDE",
+       "RP_PUESTO"."FECHA_CLAUSURA_HASTA" "FECHA_CLAUSURA_HASTA",
+       "RP_PUESTO"."CODIGO_PUESTO_SEAC" "CODIGO_PUESTO_SEAC"
+  FROM "RAPIPAGO"."RP_PUESTO"@"LINK_BK" "RP_PUESTO"]]></subquery>
+<subqueryChanged>false</subqueryChanged>
+<subqueryNeedsMigration>false</subqueryNeedsMigration>
+<tablespace>75E5B1E9-777F-C6F5-E709-721115864E5E</tablespace>
+<useIndex>YES</useIndex>
+<with></with>
+</SnapshotOraclev11g>

@@ -1,0 +1,180 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="T_RP_DEVOLUCION_DEBITO_LINK" directorySegmentName="seg_0" id="20FB96E6-22CD-E951-2B41-19786C5FB08D">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjSchema>RAPIPAGO</sourceObjSchema>
+<sourceObjName>T_RP_DEVOLUCION_DEBITO_LINK</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:52 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<actions>INSERT</actions>
+<body><![CDATA[DECLARE
+EsSoloDebito NUMBER(1);
+vInstancia VARCHAR2(100);
+IdCodigoBarra VARCHAR2(30);
+L_CODIGO_CLIENTE NUMBER; 
+L_COD_ENTIDAD_EM NUMBER; 
+L_COD_ENTIDAD_AG NUMBER; 
+L_FACON_CIA NUMBER;
+L_CUIT VARCHAR2(11);
+L_COD_AGENTE NUMBER; 
+L_IMP_TOTAL NUMBER;
+L_CANTIDAD_REGISTROS NUMBER; 
+L_USUARIO VARCHAR2(20); 
+L_FONDEO_GIRE VARCHAR2(1); 
+L_FECHA_PROCESO VARCHAR2(10);
+L_COD_OPERATORIA VARCHAR2(5); 
+L_COD_EMPRESA_PUESTO NUMBER; 
+L_ID_EMPRESA_PUESTO VARCHAR2(30);
+L_EXISTE_FONDEO NUMBER;
+L_HABILITADO CHAR(1) :=0;
+L_TIPO_DEBITO VARCHAR2(10);
+L_EMP_OPERATORIA VARCHAR2(1);
+L_DESC_OPERATORIA VARCHAR2(10);
+L_PUESTO VARCHAR2(8);
+L_ERROR VARCHAR2(4000):='';
+L_ENTER VARCHAR2(10):=CHR(13)||CHR(10);
+ES_LINK NUMBER:=0;
+L_VERSION VARCHAR2(4);
+BEGIN
+    /* EN LA TABLA RAPIPAGO.RP_DEVOLUCION_DEBITO_PARAM SE ENCUENTRAN LOS PARAMETROS PARA EJECUTAR ESTE TRIGGER */
+    vInstancia:=RAPIPAGO.RP_FUNCIONES_UTILES.TRAER_INSTANCIA;    
+    --- BUSCO EL PUESTO
+    BEGIN
+        SELECT LPAD(P.PUESTO,6,'0'), VERSION_RAPIPAGO INTO L_PUESTO,L_VERSION  FROM RAPIPAGO.RP_PUESTO P 
+        INNER JOIN RAPIPAGO.RP_TRANSACCION T ON T.ID_PUESTO=P.ID_PUESTO AND T.ID_TRANSACCION=:NEW.ID_TRANSACCION;
+    EXCEPTION
+        WHEN OTHERS THEN
+            L_ERROR:=L_ERROR||L_ENTER||'Problemas al relacionar el ID_PUESTO de la transaccion :'||:NEW.ID_TRANSACCION||' Version: '||L_VERSION
+                     ||' - Ambiente='||vInstancia||L_ENTER||'Linea:'||$$PLSQL_line||' - '||SUBSTR(SQLERRM,1,1000);
+            RAISE_APPLICATION_ERROR(-20098,L_ERROR,True);
+    END;
+    BEGIN
+        SELECT NVL(COUNT(1),0) INTO ES_LINK
+        FROM HERMES.LINK_ENROLAMIENTO
+        WHERE PUESTO=L_PUESTO AND IS_DELETED='0';
+    EXCEPTION
+        WHEN OTHERS THEN
+            ES_LINK:=0;
+    END;
+    IF ES_LINK > 0 AND L_VERSION='WSP' AND :NEW.REFERENCIA_DEBITO IS NOT NULL THEN  ----  ESTOY FILTRANDO SOLO LO RAPIPOS, HAY QUE MODIFICAR ESTO SI SE PROPAGA LA DEVOLUCION
+        BEGIN
+                SELECT NVL(COUNT(1),0)
+                INTO EsSoloDebito 
+                FROM RAPIPAGO.RP_TRANSACCION T, RAPIPAGO.RP_PUESTO P, RAPIPAGO.RP_AGENTE_SUCURSAL A
+                WHERE T.ID_TRANSACCION=:NEW.ID_TRANSACCION
+                AND T.ID_PUESTO=P.ID_PUESTO
+                AND P.ID_AGENTE_SUCURSAL=A.ID_AGENTE_SUCURSAL 
+                AND A.SOLO_DEBITO='Y';
+         EXCEPTION
+            WHEN OTHERS THEN
+                L_ERROR:=L_ERROR||L_ENTER||'Problemas al consultar el atributo SOLO_DEBITO :'||:NEW.ID_TRANSACCION
+                         ||' - PUESTO: '||L_PUESTO||'  - Ambiente='||vInstancia||L_ENTER||'Linea:'||$$PLSQL_line||' - '||SUBSTR(SQLERRM,1,1000);
+                RAISE_APPLICATION_ERROR(-20098,L_ERROR,True);
+        END;
+        IF EsSoloDebito>0 THEN
+                --- BUSCO EMPRESA_OPERATORIA PARA SABER SI ES SAM o PEI
+--                BEGIN
+--                    SELECT DISTINCT HP.EMPRESA_OPERATORIA INTO L_EMP_OPERATORIA
+--                    FROM HERMES.HISTORICO_TRANSACCIONES HP 
+--                    WHERE TRUNC(HP.FH_ACTUALIZACION)=TO_DATE(SUBSTR(:NEW.FECHA_LECTURA,1,10),'YYYY-MM-DD')
+--                    AND HP.PUESTO=L_PUESTO AND HP.TRACE_NUMBER_CT=:NEW.REFERENCIA_DEBITO;
+--                EXCEPTION
+--                    WHEN OTHERS THEN
+--                        L_ERROR:=L_ERROR||L_ENTER||'Problemas al intentar encontrar la Empresa Operatoria para FECHA= '
+--                                 ||:NEW.FECHA_LECTURA||' - PUESTO= '||L_PUESTO||' - REFERENCIA_DEBITO='||:NEW.REFERENCIA_DEBITO||L_ENTER
+--                                 ||'VERSIO_PUESTO= '||L_VERSION||' - IMPORTE='||:NEW.IMPORTE||' - ID_CODIGO_BARRA='||:NEW.ID_CODIGO_BARRA||L_ENTER
+--                                 ||'Linea:'||$$PLSQL_line||' - '||SUBSTR(SQLERRM,1,1000);
+--                        RAISE_APPLICATION_ERROR(-20099,L_ERROR,True);
+--                END;
+                --- ACTUALIZO LA VARIABLE OPERATORIA
+                SELECT DECODE(3,'2','LINK','3','LINKPEI',NULL) INTO L_DESC_OPERATORIA FROM DUAL;
+                IF L_DESC_OPERATORIA IS NOT NULL THEN
+                    BEGIN
+                        CASE vInstancia
+                            WHEN 'DESARROLLO' THEN 
+                            SELECT TIPO_DEBITO, ID_CODIGO_BARRRA, CODIGO_CLIENTE, COD_ENTIDAD_EMPRESA, COD_ENTIDAD_AGENTE, FACON_CIA, CUIT, FONDEO_GIRE, COD_OPERATORIA, COD_EMPRESA_PUESTO, ID_EMPRESA_PUESTO, HABILITADO 
+                            INTO L_TIPO_DEBITO, IdCodigoBarra, L_CODIGO_CLIENTE, L_COD_ENTIDAD_EM, L_COD_ENTIDAD_AG, L_FACON_CIA, L_CUIT, L_FONDEO_GIRE, L_COD_OPERATORIA, L_COD_EMPRESA_PUESTO, L_ID_EMPRESA_PUESTO, L_HABILITADO
+                            FROM RAPIPAGO.RP_DEVOLUCION_DEBITO_PARAM
+                            WHERE TIPO_DEBITO=L_DESC_OPERATORIA AND AMBIENTE=vInstancia;
+                            WHEN 'TESTING' THEN
+                            SELECT TIPO_DEBITO, ID_CODIGO_BARRRA, CODIGO_CLIENTE, COD_ENTIDAD_EMPRESA, COD_ENTIDAD_AGENTE, FACON_CIA, CUIT, FONDEO_GIRE, COD_OPERATORIA, COD_EMPRESA_PUESTO, ID_EMPRESA_PUESTO, HABILITADO 
+                            INTO L_TIPO_DEBITO, IdCodigoBarra, L_CODIGO_CLIENTE, L_COD_ENTIDAD_EM, L_COD_ENTIDAD_AG, L_FACON_CIA, L_CUIT, L_FONDEO_GIRE, L_COD_OPERATORIA, L_COD_EMPRESA_PUESTO, L_ID_EMPRESA_PUESTO, L_HABILITADO
+                            FROM RAPIPAGO.RP_DEVOLUCION_DEBITO_PARAM
+                            WHERE TIPO_DEBITO=L_DESC_OPERATORIA AND AMBIENTE=vInstancia;
+                            WHEN 'PRODUCCION' THEN 
+                            SELECT TIPO_DEBITO, ID_CODIGO_BARRRA, CODIGO_CLIENTE, COD_ENTIDAD_EMPRESA, COD_ENTIDAD_AGENTE, FACON_CIA, CUIT, FONDEO_GIRE, COD_OPERATORIA, COD_EMPRESA_PUESTO, ID_EMPRESA_PUESTO, HABILITADO 
+                            INTO L_TIPO_DEBITO, IdCodigoBarra, L_CODIGO_CLIENTE, L_COD_ENTIDAD_EM, L_COD_ENTIDAD_AG, L_FACON_CIA, L_CUIT, L_FONDEO_GIRE, L_COD_OPERATORIA, L_COD_EMPRESA_PUESTO, L_ID_EMPRESA_PUESTO, L_HABILITADO
+                            FROM RAPIPAGO.RP_DEVOLUCION_DEBITO_PARAM
+                            WHERE TIPO_DEBITO=L_DESC_OPERATORIA AND AMBIENTE=vInstancia;
+                        END CASE;
+                    EXCEPTION
+                        WHEN OTHERS THEN
+                            L_ERROR:=L_ERROR||L_ENTER||'Problemas al construir la variables de entorno con la Tabla parametrica del Trigger - OPERATORIA='||L_DESC_OPERATORIA||' - Ambiente='||vInstancia||chr(13)||chr(10)
+                                    ||'Linea:'||$$PLSQL_line||' - '||SUBSTR(SQLERRM,1,1000);
+                            RAISE_APPLICATION_ERROR(-20100,L_ERROR,True);
+                    END;                     
+                    IF L_HABILITADO=1 THEN 
+                        IF INSERTING AND :NEW.ID_CODIGO_BARRA=IdCodigoBarra AND :NEW.ID_TRANSACCION_ITEM_REFERENCIA IS NULL THEN
+                            ----- Aca antes estaba la pregunta de si es SOLO_DEBITO        
+                           ------ aca estaba el IF de solo_debito
+                                L_IMP_TOTAL := ABS(:NEW.IMPORTE); 
+                                L_CANTIDAD_REGISTROS := 1; 
+                                L_USUARIO := SUBSTR(USER,1,20); 
+                                L_FECHA_PROCESO := TO_CHAR(SYSDATE,'YYYY-MM-DD');
+                                BEGIN                        
+                                    INSERT INTO FACON.FACTURAS_01975_000 (CLIENTE, DOCUMENTO, FACTURA, FH_DISPONIBILIDAD, FH_VENCIMIENTO1, IMPORTE_1, BARRA)
+                                    SELECT HP.TRACE_NUMBER_CT, HP.NUMERO_DOC, HP.CODIGO_TRANSACCION, TRUNC(SYSDATE+1), TRUNC(SYSDATE), :NEW.IMPORTE
+                                    , '5465'||HP.TRACE_NUMBER_CT||LPAD(HP.NUMERO_DOC,8,'0')||LPAD(ABS(:NEW.IMPORTE)*100,8,'0')||TO_CHAR(SYSDATE,'DDMMYYYY')||'01975'
+                                    FROM HERMES.HISTORICO_TRANSACCIONES HP 
+                                    WHERE TRUNC(HP.FH_ACTUALIZACION)=TO_DATE(SUBSTR(:NEW.FECHA_LECTURA,1,10),'YYYY-MM-DD')
+                                    AND HP.PUESTO=L_PUESTO AND HP.TRACE_NUMBER_CT=:NEW.REFERENCIA_DEBITO;
+                                EXCEPTION
+                                    WHEN OTHERS THEN
+                                        L_ERROR:=L_ERROR||L_ENTER||'FECHA= '||:NEW.FECHA_LECTURA||' - PUESTO= '||L_PUESTO||' - REFERENCIA_DEBITO= '||:NEW.REFERENCIA_DEBITO||l_Enter
+                                        ||'Linea:'||$$PLSQL_line||' - '||SUBSTR(SQLERRM,1,1000);
+                                        RAISE_APPLICATION_ERROR(-20101,L_ERROR,True);
+            --                            GIRE.PKG_CORREOS.ENVIO_CORREO('lsrapi@gire.com', 'ERROR - Trigger RAPIPAGO.T_RP_DEVOLUCION_DEBITO_LINK - '||vInstancia,L_ERROR,'TRIGGER DEVOLUCION LINK');
+                                END;
+                                BEGIN
+                                   --- INSERTO VALOR INICIAL DE PRE_FONDEO DE 0.01 PARA SUCURSALES SOLO DEBITO, SINO EN EL PRIMER PAGO NO TIENE SALDO
+                                   SELECT NVL(COUNT(1),0) INTO L_EXISTE_FONDEO 
+                                   FROM STO.RP_PRE_FONDEO
+                                   WHERE COD_OPERATORIA = L_COD_OPERATORIA;
+                                   IF L_EXISTE_FONDEO = 0 THEN
+                                      RAPIPAGO.FUERZO_PRE_FONDEO@LINK_BK(L_COD_ENTIDAD_EM, L_COD_ENTIDAD_AG, L_FACON_CIA, 0.01, L_USUARIO, L_FONDEO_GIRE, L_FECHA_PROCESO, L_COD_OPERATORIA, L_COD_EMPRESA_PUESTO, L_ID_EMPRESA_PUESTO);
+                                   END IF;
+                                EXCEPTION
+                                    WHEN OTHERS THEN
+                                        L_ERROR:=L_ERROR||L_ENTER||'Problemas al crear el saldo $0.01 de inicio - Linea:'||$$PLSQL_line||' - '||SUBSTR(SQLERRM,1,1000);
+                                        RAISE_APPLICATION_ERROR(-20102,L_ERROR,True);
+                                END;
+                                BEGIN                                                                                  
+                                    IF L_ID_EMPRESA_PUESTO IS NOT NULL THEN
+                                        RAPIPAGO.GENERAR_PRE_FONDEO@LINK_BK(L_CODIGO_CLIENTE, L_COD_ENTIDAD_EM, L_COD_ENTIDAD_AG, L_FACON_CIA, L_CUIT, L_COD_AGENTE, L_IMP_TOTAL, L_CANTIDAD_REGISTROS, L_USUARIO, L_FONDEO_GIRE, L_FECHA_PROCESO, L_COD_OPERATORIA, L_COD_EMPRESA_PUESTO, L_ID_EMPRESA_PUESTO);
+                                    END IF;
+                                EXCEPTION
+                                    WHEN OTHERS THEN
+                                        L_ERROR:=L_ERROR||L_ENTER||'Problemas en la Registración del PREFONDEO - Linea:'||$$PLSQL_line||' - '||SUBSTR(SQLERRM,1,1000);
+                                        RAISE_APPLICATION_ERROR(-20103,L_ERROR,True);
+                                END;
+                            -----   aca estab el  END IF de SOLO_DEBITO;
+                        END IF;
+                    END IF;
+                END IF;
+        END IF; --ES SOLO DEBITO
+    END IF;        
+ EXCEPTION
+ WHEN OTHERS THEN
+       L_ERROR:=L_ERROR||L_ENTER||'Linea:'||$$PLSQL_line||' - '||SUBSTR(SQLERRM,1,1000);
+    IF vInstancia = 'TESTING' THEN
+       GIRE.PKG_CORREOS.ENVIO_CORREO('lqa@gire.com', 'ERROR - Trigger RAPIPAGO.T_RP_DEVOLUCION_DEBITO_LINK - '||vInstancia, L_ERROR, 'TRIGGER DEVOLUCION LINK');
+       GIRE.PKG_CORREOS.ENVIO_CORREO('lsrapi@gire.com', 'ERROR - Trigger RAPIPAGO.T_RP_DEVOLUCION_DEBITO_LINK - '||vInstancia, L_ERROR, 'TRIGGER DEVOLUCION LINK');
+    ELSE IF vInstancia = 'PRODUCCION' THEN
+         GIRE.PKG_CORREOS.ENVIO_CORREO('lsrapi@gire.com', 'ERROR - Trigger RAPIPAGO.T_RP_DEVOLUCION_DEBITO_LINK - '||vInstancia, L_ERROR, 'TRIGGER DEVOLUCION LINK');
+       END IF;
+    END IF;
+END ;]]></body>
+<triggerTime>BEFORE</triggerTime>
+<owner>C3810AD6-77BE-D400-48EC-B9BB46870C6A</owner>
+<table>1CEEF360-67ED-8AF6-B19F-B33E26D4EB0B</table>
+</TriggerOraclev10g>

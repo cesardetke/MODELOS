@@ -1,0 +1,9 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<UserOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UserOraclev10g" name="RAPIPAGO" directorySegmentName="seg_0" id="C3810AD6-77BE-D400-48EC-B9BB46870C6A">
+<sourceConnName>OL_ALTA</sourceConnName>
+<sourceObjName>RAPIPAGO</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2021-12-17 12:26:21 UTC</createdTime>
+<ownerDesignName>RAPIPAGO-TRANSACCIONES</ownerDesignName>
+<schemaObject>DAD3332D-B34A-011F-44C4-4EE7A39EDF3A</schemaObject>
+</UserOraclev10g>
