@@ -27,8 +27,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>20 BYTE</dataTypeSize>
-<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<dataTypeSize>21 BYTE</dataTypeSize>
+<ownDataTypeParameters>21 BYTE,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="ID TRANSACCION FORMA PAGO" id="0BE85076-88A4-5471-CF38-608739D6134E">
 <createdBy>CDETKE</createdBy>
