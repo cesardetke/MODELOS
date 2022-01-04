@@ -1,0 +1,338 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5AAF8327-C498-28FB-B74C-E4097940B7CB" schemaObject="C0C160F1-50D4-D390-3DAB-5FE533DF40BB" name="WS_COBERTURA_MASIVA_DB">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RAPIPAGO</sourceObjSchema>
+<sourceObjName>WS_COBERTURA_MASIVA_DB</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:19 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CLAVE" id="5018853E-637F-5920-C881-81081EA90B07">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>WS_COBERTURA_MASIVA_DB</sourceObjSchema>
+<sourceObjName>CLAVE</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_EMPRESA_PUESTO_COBERTURA" id="E617085E-53EA-7802-C534-C536E099D8B1">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>WS_COBERTURA_MASIVA_DB</sourceObjSchema>
+<sourceObjName>ID_EMPRESA_PUESTO_COBERTURA</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_EMPRESA_PUESTO" id="209C723A-AE1C-3B9A-98CA-5C71F12EC479">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>WS_COBERTURA_MASIVA_DB</sourceObjSchema>
+<sourceObjName>ID_EMPRESA_PUESTO</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_AGENTE_SUCURSAL" id="44A29C2B-61AE-76A2-3A4E-7E9A2AD1FC99">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>WS_COBERTURA_MASIVA_DB</sourceObjSchema>
+<sourceObjName>ID_AGENTE_SUCURSAL</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_EMPR_PUESTO_MODALIDAD" id="8864326C-6636-4F8E-EE90-3D926693EF22">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>WS_COBERTURA_MASIVA_DB</sourceObjSchema>
+<sourceObjName>ID_EMPR_PUESTO_MODALIDAD</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_TIPO_VALOR" id="2174AE1F-1531-69CA-A02B-96F96A33EEEC">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>WS_COBERTURA_MASIVA_DB</sourceObjSchema>
+<sourceObjName>ID_TIPO_VALOR</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_CODIGO_BARRA" id="04206B32-1D9C-4308-C271-65CFDCB41672">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>WS_COBERTURA_MASIVA_DB</sourceObjSchema>
+<sourceObjName>ID_CODIGO_BARRA</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MIN_POS" id="4AFDD3D9-E968-6381-36BF-E5A72EBDB98E">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>WS_COBERTURA_MASIVA_DB</sourceObjSchema>
+<sourceObjName>MIN_POS</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>28</dataTypePrecision>
+<dataTypeScale>8</dataTypeScale>
+<ownDataTypeParameters>,28,8</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MAX_POS" id="DDEC76FB-78DB-5060-CA5A-43AFA64314E8">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>WS_COBERTURA_MASIVA_DB</sourceObjSchema>
+<sourceObjName>MAX_POS</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>28</dataTypePrecision>
+<dataTypeScale>8</dataTypeScale>
+<ownDataTypeParameters>,28,8</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MIN_NEG" id="E41257A2-20A4-147F-6455-F761838EBCD1">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>WS_COBERTURA_MASIVA_DB</sourceObjSchema>
+<sourceObjName>MIN_NEG</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>28</dataTypePrecision>
+<dataTypeScale>8</dataTypeScale>
+<ownDataTypeParameters>,28,8</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MAX_NEG" id="025575DC-2C30-E4A5-8FCE-D407FF5E7801">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>WS_COBERTURA_MASIVA_DB</sourceObjSchema>
+<sourceObjName>MAX_NEG</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>28</dataTypePrecision>
+<dataTypeScale>8</dataTypeScale>
+<ownDataTypeParameters>,28,8</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MINIMO_ABSOLUTO" id="DF03DE60-6309-8AC8-62F6-1474C7994FE6">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>WS_COBERTURA_MASIVA_DB</sourceObjSchema>
+<sourceObjName>MINIMO_ABSOLUTO</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>28</dataTypePrecision>
+<dataTypeScale>8</dataTypeScale>
+<ownDataTypeParameters>,28,8</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MAXIMO_ABSOLUTO" id="BD26EF31-2611-DE6D-5D41-A7D117926CA4">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>WS_COBERTURA_MASIVA_DB</sourceObjSchema>
+<sourceObjName>MAXIMO_ABSOLUTO</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>28</dataTypePrecision>
+<dataTypeScale>8</dataTypeScale>
+<ownDataTypeParameters>,28,8</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MINIMO_PORCENTUAL" id="246AE956-DDB3-3CA9-692F-5F30E799B36E">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>WS_COBERTURA_MASIVA_DB</sourceObjSchema>
+<sourceObjName>MINIMO_PORCENTUAL</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
+<ownDataTypeParameters>,10,4</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MAXIMO_PORCENTUAL" id="A6287B04-1049-9738-0B7E-DBFE0F0F55C0">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>WS_COBERTURA_MASIVA_DB</sourceObjSchema>
+<sourceObjName>MAXIMO_PORCENTUAL</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
+<ownDataTypeParameters>,10,4</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DIAS_CLEARING" id="8C2A0F5E-9330-3903-1410-5526C30A2F4E">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>WS_COBERTURA_MASIVA_DB</sourceObjSchema>
+<sourceObjName>DIAS_CLEARING</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,20,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PLAZO_ADICIONAL" id="8CA93B70-91E4-59BA-1727-AED09415AD21">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>WS_COBERTURA_MASIVA_DB</sourceObjSchema>
+<sourceObjName>PLAZO_ADICIONAL</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,20,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_AGENTE" id="8CC3C6D5-5A4D-C2AB-CB53-5BC57B934BE7">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>WS_COBERTURA_MASIVA_DB</sourceObjSchema>
+<sourceObjName>ID_AGENTE</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D5FECFCC-220C-36DD-4187-4632086EAA01" name="WS_MAS_PK_INT_1503">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RAPIPAGO</sourceObjSchema>
+<sourceObjName>WS_MAS_PK_INT_1503</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:22 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5018853E-637F-5920-C881-81081EA90B07"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8EB564AA-1FC1-FF18-7E13-4FA6E717B138" schemaObject="C0C160F1-50D4-D390-3DAB-5FE533DF40BB" name="IDX_WS_COBERTURA_MASIVA">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RAPIPAGO</sourceObjSchema>
+<sourceObjName>IDX_WS_COBERTURA_MASIVA</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:21 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="44A29C2B-61AE-76A2-3A4E-7E9A2AD1FC99"/>
+<colUsage columnID="04206B32-1D9C-4308-C271-65CFDCB41672"/>
+<colUsage columnID="209C723A-AE1C-3B9A-98CA-5C71F12EC479"/>
+<colUsage columnID="8864326C-6636-4F8E-EE90-3D926693EF22"/>
+<colUsage columnID="2174AE1F-1531-69CA-A02B-96F96A33EEEC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="854A0DA9-7FA1-5DC8-12A0-DF8A04116B75" schemaObject="C0C160F1-50D4-D390-3DAB-5FE533DF40BB" name="WS_COBERTURA_MASIVA_PK">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RAPIPAGO</sourceObjSchema>
+<sourceObjName>WS_COBERTURA_MASIVA_PK</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:21 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5018853E-637F-5920-C881-81081EA90B07"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,117 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="LOG_RP_AGENTE" directorySegmentName="seg_0" id="7255F80D-14CC-5DCD-128E-EF0210F504F8">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RAPIPAGO</sourceObjSchema>
+<sourceObjName>LOG_RP_AGENTE</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:23 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<actions>UPDATE, DELETE</actions>
+<body><![CDATA[DECLARE
+   ERROR_GRABA EXCEPTION;
+   ZOPERACION   CHAR (1);
+BEGIN
+   IF UPDATING
+   THEN
+      ZOPERACION := 'M';
+   ELSE
+      IF DELETING
+      THEN
+         ZOPERACION := 'B';
+      ELSE
+         ZOPERACION := '?';
+      END IF;
+   END IF;
+  INSERT INTO RAPIPAGO.RP_AGENTE_LOG (ID_AGENTE,
+                                       DESCRIPCION,
+                                       RAZON_SOCIAL,
+                                       CUIT,
+                                       NRO_FAX,
+                                       TIPO_AGENTE,
+                                       IS_DELETED,
+                                       ID_ENV,
+                                       AUD_DATE_INSERT,
+                                       AUD_USER_INSERT,
+                                       AUD_DATE_UPDATE,
+                                       AUD_USER_UPDATE,
+                                       COD_AGENTE,
+                                       ID_PROVINCIA,
+                                       ID_PROVINCIA_PARTIDO,
+                                       ID_PROV_PARTIDO_LOCALIDAD,
+                                       ID_PROV_PART_LOCALIDAD_BARRIO,
+                                       ID_CONDICION_IVA,
+                                       CODIGO_POSTAL,
+                                       CALLE,
+                                       NUMERO,
+                                       PISO,
+                                       DEPARTAMENTO,
+                                       TELEFONO,
+                                       HABILITA_WEB,
+                                       WF_STATUS,
+                                       SISTEMA_TIPO_AGENTE,
+                                       ID_RUBRO,
+                                       ID_SOPORTE_TECNICO,   
+                                       CP_PROVINCIA,
+                                       CP_CIUDAD,
+                                       CP_CMC,
+                                       OBSERVACIONES,
+                                       LATITUD,
+                                       LONGITUD,
+                                       AGENTE_DEUDOR,
+                                       PROVEEDOR_CONTABLE,
+                                       PEDIDO_COMPRA,
+                                       OPERACION,
+                                       MODIFICADO_POR,
+                                       FH_MODIFICACION)
+     VALUES   (:VIEJO.ID_AGENTE,
+               :VIEJO.DESCRIPCION,
+               :VIEJO.RAZON_SOCIAL,
+               :VIEJO.CUIT,
+               :VIEJO.NRO_FAX,
+               :VIEJO.TIPO_AGENTE,
+               :VIEJO.IS_DELETED,
+               :VIEJO.ID_ENV,
+               :VIEJO.AUD_DATE_INSERT,
+               :VIEJO.AUD_USER_INSERT,
+               :VIEJO.AUD_DATE_UPDATE,
+               :VIEJO.AUD_USER_UPDATE,
+               :VIEJO.COD_AGENTE,
+               :VIEJO.ID_PROVINCIA,
+               :VIEJO.ID_PROVINCIA_PARTIDO,
+               :VIEJO.ID_PROV_PARTIDO_LOCALIDAD,
+               :VIEJO.ID_PROV_PART_LOCALIDAD_BARRIO,
+               :VIEJO.ID_CONDICION_IVA,
+               :VIEJO.CODIGO_POSTAL,
+               :VIEJO.CALLE,
+               :VIEJO.NUMERO,
+               :VIEJO.PISO,
+               :VIEJO.DEPARTAMENTO,
+               :VIEJO.TELEFONO,
+               :VIEJO.HABILITA_WEB,
+               :VIEJO.WF_STATUS,
+               :VIEJO.SISTEMA_TIPO_AGENTE,
+               :VIEJO.ID_RUBRO,
+               :VIEJO.ID_SOPORTE_TECNICO,
+               :VIEJO.CP_PROVINCIA,
+               :VIEJO.CP_CIUDAD,
+               :VIEJO.CP_CMC,  
+               :VIEJO.OBSERVACIONES,
+               :VIEJO.LATITUD,
+               :VIEJO.LONGITUD,
+               :VIEJO.AGENTE_DEUDOR,
+               :VIEJO.PROVEEDOR_CONTABLE,
+               :VIEJO.PEDIDO_COMPRA,
+               ZOPERACION,
+               USUARIO_UPDATE (:NUEVO.AUD_USER_UPDATE),
+               TO_CHAR (SYSDATE, 'yyyy-mm-dd hh24:mi:ss'));
+EXCEPTION
+   WHEN OTHERS
+   THEN
+      RAISE ERROR_GRABA;
+END;]]></body>
+<triggerTime>BEFORE</triggerTime>
+<owner>C62C8F1E-2A53-0B75-10F9-F26CB65E46CC</owner>
+<ref_NEW_AS>NUEVO</ref_NEW_AS>
+<ref_OLD_AS>VIEJO</ref_OLD_AS>
+<table>94A215B2-8F9A-F955-42D6-D0C0A644CCE4</table>
+</TriggerOraclev10g>

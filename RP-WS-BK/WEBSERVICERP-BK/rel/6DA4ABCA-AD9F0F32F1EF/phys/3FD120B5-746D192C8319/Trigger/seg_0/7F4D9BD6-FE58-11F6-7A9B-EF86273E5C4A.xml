@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="T_RP3_AGENTE_SUCURSAL" directorySegmentName="seg_0" id="7F4D9BD6-FE58-11F6-7A9B-EF86273E5C4A">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RAPIPAGO</sourceObjSchema>
+<sourceObjName>T_RP3_AGENTE_SUCURSAL</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:24 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<actions>UPDATE</actions>
+<body><![CDATA[DECLARE
+    WID_SUCURSAL_AFIP VARCHAR2(20);
+    wCantidad        NUMBER;
+
+--------------------------------------------------------------------------------
+   PROCEDURE Envio_mail (wCantidad IN Number) IS
+    
+   Título_del_mail   VARCHAR2(100);
+   Body_del_mail     VARCHAR2(1000);
+   wInstancia        VARCHAR2(10);
+   Grupo_mail        VARCHAR2(100);
+
+   BEGIN
+
+        wInstancia := RP_FUNCIONES_VARIAS.Traer_Instancia;
+        if    wInstancia = 'TESTING' then      
+              Grupo_mail := 'SUC-AFIP';
+        elsif wInstancia = 'PRODUCCION' then
+              Grupo_mail := 'SUC-AFIP';       
+        end if;
+        
+        if wInstancia <> 'DESARROLLO' then      
+            Título_del_mail:= wInstancia || ' - AFIP - Cantidad de sucursales disponibles';
+
+            Body_del_mail :=  'ATENCION:' || chr(13) || chr(10) || 
+                               chr(13) || chr(10) ||
+                              'Quedan tan solo ' || to_char(wCantidad)||' codigos de sucursales AFIP disponibles.' || chr(13) || chr(10) ||
+                              'Solicitar a la entidad nuevo lote.' || chr(13) || chr(10) ||
+                               chr(13) || chr(10) ||
+                              'Saludos.' || chr(13) || chr(10) ||
+                               chr(13) || chr(10) ||
+                               'Gerencia de Sistemas';
+
+            RAPIPAGO.RP_FUNCIONES_UTILES.LOG_PROCESO_CENTRAL( 'T_RP3_AGENTE_SUCURSAL', Body_del_mail);
+            GIRE.PKG_CORREOS.CORREOGRUPOGIRE ( grupo_mail , Título_del_mail, Body_del_mail, 'RAPIPAGO');
+        end if;        
+   END;
+
+
+--------------------------------------------------------------------------------
+begin
+   if :OLd.COD_SUCURSAL is null and :new.COD_SUCURSAL is not null then
+       select MIN(ID_SUCURSAL_AFIP) INTO WID_SUCURSAL_AFIP 
+         from rapipago.rp_sucursal_afip
+        WHERE COD_SUCURSAL IS NULL;
+        
+        select count(1) into wCantidad
+          from rapipago.rp_sucursal_afip
+         where cod_sucursal is null;
+
+        if wCantidad <= 100 then
+            Envio_mail(wCantidad); 
+        end if;     
+        
+       UPDATE rapipago.rp_sucursal_afip
+          SET COD_SUCURSAL = :NEW.COD_SUCURSAL
+        WHERE ID_SUCURSAL_AFIP = WID_SUCURSAL_AFIP;
+        
+   end if;
+
+EXCEPTION
+     WHEN OTHERS THEN
+       -- 
+       RAISE ;
+END ;]]></body>
+<triggerTime>BEFORE</triggerTime>
+<columns>B7F3979F-7672-C188-3656-E0028DB17E10</columns>
+<owner>C62C8F1E-2A53-0B75-10F9-F26CB65E46CC</owner>
+<table>80B68678-7C49-E212-35AF-0A3E3BDDD305</table>
+</TriggerOraclev10g>

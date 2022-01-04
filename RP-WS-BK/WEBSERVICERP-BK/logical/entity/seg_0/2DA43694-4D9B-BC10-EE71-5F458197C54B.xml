@@ -1,0 +1,1463 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2DA43694-4D9B-BC10-EE71-5F458197C54B" name="RP AGENTE SUCURSAL">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>80B68678-7C49-E212-35AF-0A3E3BDDD305</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID AGENTE SUCURSAL" id="36AAC5F2-5733-89BA-F9BD-B68287DA436A">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>B8ACF858-9160-9664-EAC2-F639091072F6</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID AGENTE" id="BC9A3AF4-82C6-D5BC-473C-11B916D39DE4">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>B9644B4A-37F7-DB82-CBE1-99887C754A7B</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<referedAttribute>F1F3C2D4-39A0-6E48-DB22-61EB0120BF92</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="COD SUCURSAL" id="498F1DEF-B4BF-02D0-CC8F-325F39EC534E">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>B7F3979F-7672-C188-3656-E0028DB17E10</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,20,0</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NOMBRE" id="0E566F31-53E5-B0DE-3E94-DB9F0C2FA182">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>DC4121B1-A525-DFFA-C362-ED4865698169</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID PROVINCIA" id="EE8A8253-5591-ADCA-ECAE-837ED209E7D0">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>E2BFAA31-8011-B419-BDDA-87C72902FEF6</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID PROVINCIA PARTIDO" id="7DB93A06-D1AE-0F90-29DA-842ED49DB67A">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>61766FDC-B77A-B924-42A1-50BA34AAEDAD</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CODIGO POSTAL" id="70922EC1-196F-5510-DFD5-13F47E53A006">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>81B3132D-A614-CA08-A1F7-49EBCBB28053</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NRO FAX" id="6CA910C3-9EC8-1B1E-5347-CD9F485BB55B">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>D2FA3807-C60E-5CE5-DE17-A45FD1871202</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TRABAJA HABILES" id="E5E0ECA4-559C-2B88-9A0E-0174DEF56FCE">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>54160BA0-473C-5FDB-B705-6D1714BE1B28</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<constraintName>RP_YES_NO7</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<listOfValues>
+<valueDef value="&apos;N&apos;" description=""/>
+<valueDef value="&apos;Y&apos;" description=""/>
+</listOfValues>
+<defaultValue>&apos;N&apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TRABAJA SABADO" id="B273C65F-3676-F0F2-D91B-5871D5A8FCB5">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>0EB29CC6-CA99-BD7A-8F6E-41160CC62751</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<constraintName>RP_YES_NO8</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<listOfValues>
+<valueDef value="&apos;N&apos;" description=""/>
+<valueDef value="&apos;Y&apos;" description=""/>
+</listOfValues>
+<defaultValue>&apos;N&apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TRABAJA DOMINGO" id="F477B681-086E-A875-A547-2C7E51D8CEA6">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>2C6C6D7A-9095-31EE-A293-E4F824400EE4</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<constraintName>RP_YES_NO9</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<listOfValues>
+<valueDef value="&apos;N&apos;" description=""/>
+<valueDef value="&apos;Y&apos;" description=""/>
+</listOfValues>
+<defaultValue>&apos;N&apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TRABAJA FERIADO" id="4C81E4F3-C21B-53E8-9C32-F475BC2A619B">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>0BDADB73-8319-82C1-4D7F-09BEFDFC33D8</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<constraintName>RP_YES_NO10</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<listOfValues>
+<valueDef value="&apos;N&apos;" description=""/>
+<valueDef value="&apos;Y&apos;" description=""/>
+</listOfValues>
+<defaultValue>&apos;N&apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="HORARIO HABILES 1" id="2F12C35A-3D8B-A97E-04A3-743BFC5B44DE">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>6043CD54-E240-78DB-35BF-ECB51E075E2A</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 BYTE</dataTypeSize>
+<ownDataTypeParameters>15 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="HORARIO HABILES 2" id="B64189F4-52DB-6247-004A-29618B61ECD2">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>54D15E7F-E3F2-6E33-8A60-25CD2D2E236F</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 BYTE</dataTypeSize>
+<ownDataTypeParameters>15 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="HORARIO SABADOS 1" id="40BCB189-ED37-0351-403A-0A384C714E83">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>FEFFF515-D4DB-535B-BF53-36817E67F697</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 BYTE</dataTypeSize>
+<ownDataTypeParameters>15 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="HORARIO SABADOS 2" id="EB00DBB9-46A1-23B3-53F1-8C15333A5607">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>45CFD53E-1133-3953-3DF4-61E205BF65F3</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 BYTE</dataTypeSize>
+<ownDataTypeParameters>15 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="HORARIO DOMINGOS 1" id="D14DD29D-C89F-E070-B05C-E803BA91457E">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>DC07A8CD-44E2-6307-E46C-32CC531300B8</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 BYTE</dataTypeSize>
+<ownDataTypeParameters>15 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="HORARIO DOMINGOS 2" id="93B7E20D-291A-202A-1823-2212386998C6">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>A5288CC5-FC7B-71D9-5067-8FC659D8F171</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 BYTE</dataTypeSize>
+<ownDataTypeParameters>15 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="HORARIO FERIADOS 1" id="AD1E8E4B-4071-2F8E-AFCD-512662C3755D">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>B0AAC0BA-77B9-BC79-BC68-A9EF42910C65</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 BYTE</dataTypeSize>
+<ownDataTypeParameters>15 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="HORARIO FERIADOS 2" id="017429FF-2CB1-D275-2A4C-33873430E39F">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>5A592C63-1A7B-615C-1521-D645B12198AE</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 BYTE</dataTypeSize>
+<ownDataTypeParameters>15 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="IS DELETED" id="A211EF3C-7A85-A8F2-BA9F-D753BE2E1C75">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>E9B400A4-ECAA-7B5D-8E49-85F3E2448D8C</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<constraintName>RP_YES_NO12</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<listOfValues>
+<valueDef value="&apos;N&apos;" description=""/>
+<valueDef value="&apos;Y&apos;" description=""/>
+</listOfValues>
+<defaultValue>&apos;N&apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID ENV" id="25072498-093D-698B-FBFF-E237DFB0FCC2">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>E7D23663-7743-4858-7756-F1B73C7D788E</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5 BYTE</dataTypeSize>
+<defaultValue>&apos;RPPRI&apos;</defaultValue>
+<ownDataTypeParameters>5 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="AUD DATE INSERT" id="EF7A89B4-D2E9-14B5-EA27-26FDEBA394D9">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>7C9D3D5E-6BE6-5C78-24D3-6788CC778B42</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>19 BYTE</dataTypeSize>
+<ownDataTypeParameters>19 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="AUD USER INSERT" id="D1579DA3-9D2F-DDEA-1343-6A532782EF7E">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>102797EC-A874-7776-D29F-E06369B69B08</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="AUD DATE UPDATE" id="88669AB6-6F1E-F154-A994-3928CCD69DA0">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>4AE076E1-8A2E-C17E-DECB-B171471664FB</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>19 BYTE</dataTypeSize>
+<ownDataTypeParameters>19 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="AUD USER UPDATE" id="F0B28D86-82EF-F564-26BE-3E52E57C0D38">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>1AD60677-3F9A-5277-CE81-21B7EEE78B64</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID PROV PARTIDO LOCALIDAD" id="24B8085F-6D86-1EB4-1810-F5D4E5975A8C">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>7C8D87C6-FD82-A6C2-07CA-8500800AFDA5</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID PROV PART LOCALIDAD BARRIO" id="C6CB2D60-5342-DC73-C6AB-D48325FC84A9">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>E78BAFAF-A975-0FB7-60E3-272E31B2BA9F</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID SOPORTE TECNICO" id="66038BB0-2A7B-1A15-6357-4B643288FCA8">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>5F8790BE-DCA1-6D85-1586-A1CD7FCF8492</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CALLE" id="41C1E745-1EE2-C227-4220-C6276E623E45">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>378C71A3-1D6B-B711-7C43-D7E739875B8F</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NUMERO" id="2DB5ECD8-622B-610C-955F-5460CE2A3915">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>77BBC740-FFA3-2887-4553-34A313B47503</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,20,0</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PISO" id="F4CEB912-A6C5-060E-CD91-3259876E119C">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>4D1888E7-43EB-97E7-6010-58548A356BF6</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DEPARTAMENTO" id="8334A83D-8242-FA8D-A228-66FB9B3CAF95">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>04513393-A3CE-94F7-B2CE-FA04E4773356</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5 BYTE</dataTypeSize>
+<ownDataTypeParameters>5 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TELEFONO" id="DCD96CC4-CA8E-CCCE-2B17-880A3169C933">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>651D1CD3-8C0F-1F9F-0E23-983868B91341</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="WF STATUS" id="32179E67-5D08-DE07-7B68-082635BC76D6">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>2341501D-CD4B-0D72-B80E-A09C60D38474</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<defaultValue>&apos;CRE&apos;</defaultValue>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SISTEMA TIPO AGENTE" id="55F9BD82-C5D5-B5E6-2BC0-93F4E166F732">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>547917D2-6784-14F4-C01D-7FA9D3747941</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID RUBRO" id="082FBE5C-4B69-900B-26E8-8CD9C59B6FCB">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>5760A2BC-F2E6-BD7B-A57D-AB869A1DC12D</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FECHA HABILITACION" id="778825B0-8D11-90C5-CD5A-FE471C8E1EDE">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>A878D371-1B2E-4F1A-0431-F06238280E29</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>19 BYTE</dataTypeSize>
+<ownDataTypeParameters>19 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="LIMITE RETIRO 1" id="53D34C41-18D1-D48B-9245-6034F1B66051">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>C7030548-1060-158B-D4D3-7534E9E69662</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>28</dataTypePrecision>
+<dataTypeScale>8</dataTypeScale>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,28,8</ownDataTypeParameters>
+</Attribute>
+<Attribute name="LIMITE RETIRO 2" id="19093AFE-C890-B7DD-C818-25A51CAE569C">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>0AE29F20-B1FA-CBB9-67FC-435DDCFCB659</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>28</dataTypePrecision>
+<dataTypeScale>8</dataTypeScale>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,28,8</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MONTO TOPE RESUMEN OPER" id="5ADEF037-50ED-91B4-C976-D4A1B3001456">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>79C79AC3-AA05-0461-391C-5E7EF7FBBD6F</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>28</dataTypePrecision>
+<dataTypeScale>8</dataTypeScale>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,28,8</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DIRECCION IP DESDE" id="9E2882F6-85C9-E664-327E-A4092518DB91">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>1C9CFA6D-F418-5A1D-CD86-E55B54B67E10</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DIRECCION IP HASTA" id="2C2C9D7E-786E-4ACA-F5D2-D1016FA83FF6">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>AC0ED2D0-B0F1-A663-556C-0F2603A5C7CB</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NUMERO REFERENCIA" id="1E0A3207-4968-CA76-0653-24897CC2BDB0">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>6BE23A87-C59A-9F0B-7B08-BE232EFBBDA1</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID TIPO CONECTIVIDAD" id="3CFD463D-AD65-E600-2396-83C113FDEA37">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>70249632-A05C-11D5-721E-53617A6CFDB0</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="HORARIO HABILES 3" id="7305FA27-67B0-383F-323A-7A8DDA350CCC">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>EBBDCBA3-9C45-8396-E0E5-29EEC1191EDC</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 BYTE</dataTypeSize>
+<ownDataTypeParameters>15 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="HORARIO HABILES 4" id="91C4E49C-B91C-A715-7933-63BA1814D8A9">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>04924B23-0586-B3A8-2C6A-0B651301747E</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 BYTE</dataTypeSize>
+<ownDataTypeParameters>15 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="HORARIO SABADOS 3" id="2E71FC86-7CDD-A5C6-6481-BD6B7728D92E">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>7197C67A-6B69-49D3-19FB-86F9F833F5AC</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 BYTE</dataTypeSize>
+<ownDataTypeParameters>15 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="HORARIO SABADOS 4" id="8D85DD6B-D51E-0898-EE14-3811D4240332">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>6D9D0755-69C5-D408-52DA-35E6514FEE88</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 BYTE</dataTypeSize>
+<ownDataTypeParameters>15 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="HORARIO DOMINGOS 3" id="10405838-EBD9-7309-14E6-6695AA265FA4">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>CE27290F-7BC4-AA48-A034-9539CFC08D62</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 BYTE</dataTypeSize>
+<ownDataTypeParameters>15 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="HORARIO DOMINGOS 4" id="430D48EC-695D-1355-360D-D54E30D167CB">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>1E33779C-9838-0A0C-C568-EDBE31372E4C</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 BYTE</dataTypeSize>
+<ownDataTypeParameters>15 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="HORARIO FERIADOS 3" id="84299065-5B0E-E536-4CC4-94A1BB575926">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>B3BA92A6-3760-A6A2-645C-A7BC8B701942</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 BYTE</dataTypeSize>
+<ownDataTypeParameters>15 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="HORARIO FERIADOS 4" id="18BAE3D4-A28B-CE4C-B9F7-B562ACFE8A2B">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>3D5A1936-6841-0528-15CF-DA79D750A3F7</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 BYTE</dataTypeSize>
+<ownDataTypeParameters>15 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TIEMPO TOPE RESUMEN OPER" id="AD7ED30E-BFE1-5FDC-D52E-EC1B9B1B4AAA">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>6FC435D7-2936-606F-F209-565981DAC64F</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>28</dataTypePrecision>
+<dataTypeScale>8</dataTypeScale>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,28,8</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ANTIGUEDAD ULT RESUMEN OP" id="E1F1787C-B7D0-4446-1DCE-7DD7ADB9B9BA">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>BFAC3BE0-80B6-B601-9379-B231E90A3088</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,20,0</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID CATEGORIA" id="F7F4CAC0-85F4-AB21-285F-57E9A4A5E034">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>219B75E5-357C-34B5-A522-0DCF5DB5EC68</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID PRESTATARIA CONECTIVIDAD" id="3A843130-0B28-C786-FD7C-9AD3E7C3632C">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>0165A6A6-4C3F-1E83-25EA-726C4298EFFA</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID CATEGORIA SUBCATEGORIA" id="87A20533-B410-6A52-4389-A063AE6FF84F">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>C9E6CAAC-5FE0-70F0-96F0-403920FF5948</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="OBSERVACIONES" id="283D9241-44FC-AE6F-47FE-8323FAE58A75">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>5B730750-486A-6320-8B10-47DA857D50A1</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="LATITUD" id="935F258B-DE12-0650-E951-0619917846C7">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>2D7818EC-B094-8683-ACEA-984E64F50DBF</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>28</dataTypePrecision>
+<dataTypeScale>8</dataTypeScale>
+<ownDataTypeParameters>,28,8</ownDataTypeParameters>
+</Attribute>
+<Attribute name="LONGITUD" id="32FE70B6-D28A-60B5-ED94-B48658BAA8F3">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>8E2E97B8-99A3-D6BF-661F-5C794564F0A9</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>28</dataTypePrecision>
+<dataTypeScale>8</dataTypeScale>
+<ownDataTypeParameters>,28,8</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CP PROVINCIA" id="7790BFB6-74C9-CAEB-B063-6F04D4757724">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>27B98919-D264-D090-F92C-8C28211AD19F</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CP CIUDAD" id="416C3037-1B39-B15C-BD92-4005F052EE80">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>B2BE61D8-C2B4-7D16-1FA8-FF22B3240147</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4 BYTE</dataTypeSize>
+<ownDataTypeParameters>4 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CP CMC" id="0780F65F-0715-A4DE-467A-AF073146BCBC">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>337C74C2-372C-F41F-D273-E01BB72C3F3B</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3 BYTE</dataTypeSize>
+<ownDataTypeParameters>3 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FECHA PRIMERA ACTIVIDAD" id="4405C15A-D2D9-3CB8-FA12-27C4E161CBCA">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>9BBC3267-1D8C-7C5B-8CFF-A39739FF0D8F</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>19 BYTE</dataTypeSize>
+<ownDataTypeParameters>19 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FECHA INSTALACION" id="D379F35B-5DAA-FB86-58CC-14615FD7883B">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>61CEF750-57E8-F125-34D1-7788A505DE01</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>19 BYTE</dataTypeSize>
+<ownDataTypeParameters>19 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="LIMITE ACTIVIDAD DIARIA" id="20A5014F-B14C-6CEC-4368-12C525AB21C2">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>E64A25D1-3328-E820-B11E-C3FD2810318F</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 BYTE</dataTypeSize>
+<defaultValue>&apos;23:30&apos;</defaultValue>
+<ownDataTypeParameters>15 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DEPOSITANTE" id="9D2B68FF-98D8-3E4F-FE57-83EDD4D88D93">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>579A8920-8DF2-B2F9-F02D-AFA93E246FA6</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<constraintName>RP_YES_NO17</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<listOfValues>
+<valueDef value="&apos;N&apos;" description=""/>
+<valueDef value="&apos;Y&apos;" description=""/>
+</listOfValues>
+<defaultValue>&apos;N&apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ADMITE ATM" id="05373342-9376-E9A1-953F-9D565B1FBAC3">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>CD857A54-7010-9627-8139-4355C3FFAC8B</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<constraintName>RP_YES_NO121</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<listOfValues>
+<valueDef value="&apos;N&apos;" description=""/>
+<valueDef value="&apos;Y&apos;" description=""/>
+</listOfValues>
+<defaultValue>&apos;N&apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="RECAUDADORA" id="07F555ED-8E81-DC0A-3233-4BD7F99018A3">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>23C4483B-9D8E-4D9F-8A42-9039D31FE9D6</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<constraintName>RP_YES_NO15</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<listOfValues>
+<valueDef value="&apos;N&apos;" description=""/>
+<valueDef value="&apos;Y&apos;" description=""/>
+</listOfValues>
+<defaultValue>&apos;N&apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="GESTION ADM" id="D7534B0A-669B-A56D-4D87-F83E5B5C10CB">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>8EC414A4-047E-7AFA-3F42-35DF2A658A2D</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<constraintName>RP_YES_NO151</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<listOfValues>
+<valueDef value="&apos;N&apos;" description=""/>
+<valueDef value="&apos;Y&apos;" description=""/>
+</listOfValues>
+<defaultValue>&apos;N&apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="REMESA ATM" id="35A73D08-8B3E-A846-8689-CB38A39F7421">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>20AEDC72-1901-4527-3E22-EE2CF94BBE85</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos;N&apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PAGO CAJA RES" id="4792734A-059C-B00C-B1B5-0B4BBEF49C29">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>79057791-AD64-1834-94A9-FC47DB4145EC</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos;N&apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ADHERIDO RAPICLUB" id="BB256E8F-6436-5464-545B-2AC0EBCA54F5">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>7F0E89EA-BCB1-2D81-D429-49209C600D25</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos;N&apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID ZONA COMERCIAL" id="78F795B3-772C-95EA-D982-8611E8568E6D">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>2DAEA989-47D8-B960-E338-6D10D5230FA0</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID MODALIDAD RIESGO" id="6EE480C9-18A9-B8DE-D2D2-5853164203A6">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>C648D84C-B7EE-2802-2A53-0D4C59B2E074</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="RAPITRAMITE" id="8081AE52-4D66-4987-4CBB-E89B255004B7">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>403EFCE2-407B-6389-7C7E-CF5B5FB4BED2</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<constraintName>RP_YES_NO_RAPITRAMITE</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<listOfValues>
+<valueDef value="&apos;N&apos;" description=""/>
+<valueDef value="&apos;Y&apos;" description=""/>
+</listOfValues>
+<defaultValue>&apos;N&apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TIPO RECAUDACION" id="B5017C67-EB2A-2D92-C9C6-0A5893574BCE">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>6429BB21-4B31-4676-A7D7-A5ACDE11AC8B</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5 BYTE</dataTypeSize>
+<ownDataTypeParameters>5 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="OPCIONES DE ACCESO WEB" id="82A493DB-6A56-29A2-34F5-ADA6FEFF64BB">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>9C20DC36-3491-CF4D-DDBF-8F7C134D4E45</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3 BYTE</dataTypeSize>
+<ownDataTypeParameters>3 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DEVOLUCION QIWI" id="633DAF03-83CD-2FA4-9E7F-25CAD783F7F3">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>1736AC85-CEE3-9650-A5C0-59ABBF692FD2</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos;N&apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NOMBRE WEB" id="A47896A0-40DC-4F46-FA4F-2E46150C76FA">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>4DB95D99-D755-96DA-3964-59771E7074C8</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="HABILITA WEB" id="55DAC49B-B7F6-160D-750E-6C326D5401BD">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>5A30E6E4-B956-499A-FD4C-B7094BF00AFE</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos;S&apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ENTREGA ELEMENTOS" id="276A97E2-F921-7E4C-072D-DC003C52A72C">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>95A38ADC-AC8A-BDEB-2857-67FD05429AE8</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos;N&apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CARTELERIA DIGITAL" id="38A06C7A-AA37-4508-C0C0-CED1912CAE42">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>080E800A-C211-38F5-0F50-B000EED2C8C2</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos;N&apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="AGENTE ASOCIADO" id="B9CC8508-5E0A-5536-36E9-E0FA1B8B11AC">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>C57CBA9C-E369-5200-4BC0-B5F8EFA6151C</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SUCURSAL ASOCIADA" id="4A9CD3E6-DB6D-C797-48E4-93AB44EBF387">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>FF9077B7-E3BB-B68E-29C5-C09FF43FD0DA</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NO PRINT TICKET" id="4B5F820F-461A-2646-B0B8-56DD79A868CB">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>D0E235DE-5388-8154-EE83-82E4D0EDB3FA</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos;N&apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SOLO DEBITO" id="7E2538AD-12DE-87BA-B33C-30C0B22480AE">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>FAC3B08E-3D0D-7BA2-0D66-40403BD34EC7</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos;N&apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FECHA CLAUSURA DESDE" id="18D47A61-61F7-371F-B647-8868364B2358">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>C1FD6B6C-7B34-C689-C38E-3B043C5E90CC</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FECHA CLAUSURA HASTA" id="50B5430B-EBF5-07DA-60D9-6D94E123F12D">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>7399B254-CFEC-62CA-3654-5C48310C5C13</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TURNERO" id="F7EAFF77-CC6E-5FDD-D2E6-ECCAD9947949">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>03F3F022-56FF-1FA5-F7D2-7F16F714E334</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos;N&apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="20323A91-51BE-2F0F-D912-1D780E326315" name="PK RP AGENTE SUCURSAL">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>134839FF-F557-1518-0388-9CD88AEF3360</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>36AAC5F2-5733-89BA-F9BD-B68287DA436A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

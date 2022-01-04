@@ -1,0 +1,241 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="80AD02B1-345B-3D11-39C4-19CF28FC1E90" schemaObject="C0C160F1-50D4-D390-3DAB-5FE533DF40BB" name="WS_COBER_X_SUCU_FIX_LOG">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RAPIPAGO</sourceObjSchema>
+<sourceObjName>WS_COBER_X_SUCU_FIX_LOG</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:19 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_COBERTURA_X_SUCURSAL_FIX" id="507468F9-F3E6-2940-7328-F76194479688">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>WS_COBER_X_SUCU_FIX_LOG</sourceObjSchema>
+<sourceObjName>ID_COBERTURA_X_SUCURSAL_FIX</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:21 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_AGENTE_SUCURSAL" id="9F0B806B-0B55-EBBA-F9FA-45E5BA00446E">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>WS_COBER_X_SUCU_FIX_LOG</sourceObjSchema>
+<sourceObjName>ID_AGENTE_SUCURSAL</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:21 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_CODIGO_BARRA" id="CF62B10C-C764-8F67-108B-2E628B70B1BF">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>WS_COBER_X_SUCU_FIX_LOG</sourceObjSchema>
+<sourceObjName>ID_CODIGO_BARRA</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:21 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_EMPR_PUESTO_MODALIDAD" id="A20D4903-7AB1-837C-661D-C1529D99E837">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>WS_COBER_X_SUCU_FIX_LOG</sourceObjSchema>
+<sourceObjName>ID_EMPR_PUESTO_MODALIDAD</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:21 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_EMPRESA_PUESTO" id="95BBFBB7-56F4-C7A7-875F-CE6FE0593AE2">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>WS_COBER_X_SUCU_FIX_LOG</sourceObjSchema>
+<sourceObjName>ID_EMPRESA_PUESTO</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:21 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_EMPRESA_PUESTO_COBERTURA" id="1EF77175-4CDE-4B3E-F438-56371FA42340">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>WS_COBER_X_SUCU_FIX_LOG</sourceObjSchema>
+<sourceObjName>ID_EMPRESA_PUESTO_COBERTURA</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:21 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_TIPO_VALOR" id="667E0AD5-2CAB-BF9B-54D6-A64F01CF85D2">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>WS_COBER_X_SUCU_FIX_LOG</sourceObjSchema>
+<sourceObjName>ID_TIPO_VALOR</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:21 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IS_DELETED" id="CC1F2652-7DBB-6AE5-8360-0FE7FE6C40D2">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>WS_COBER_X_SUCU_FIX_LOG</sourceObjSchema>
+<sourceObjName>IS_DELETED</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:21 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos;N&apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AUD_USER_INSERT" id="4161C639-6DDD-4DBB-27A3-B5BCE12DF6FB">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>WS_COBER_X_SUCU_FIX_LOG</sourceObjSchema>
+<sourceObjName>AUD_USER_INSERT</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:21 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<defaultValue>NULL</defaultValue>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AUD_DATE_INSERT" id="30EE792A-BD9C-9097-5AEC-28614028EE65">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>WS_COBER_X_SUCU_FIX_LOG</sourceObjSchema>
+<sourceObjName>AUD_DATE_INSERT</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:21 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>19 BYTE</dataTypeSize>
+<ownDataTypeParameters>19 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AUD_USER_UPDATE" id="29B081CE-DB6A-433E-5DEF-59974E4B6294">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>WS_COBER_X_SUCU_FIX_LOG</sourceObjSchema>
+<sourceObjName>AUD_USER_UPDATE</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:21 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AUD_DATE_UPDATE" id="373A366D-7E45-906B-1E6D-323557E6DE69">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>WS_COBER_X_SUCU_FIX_LOG</sourceObjSchema>
+<sourceObjName>AUD_DATE_UPDATE</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:21 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>19 BYTE</dataTypeSize>
+<ownDataTypeParameters>19 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OPERACION" id="DD858614-BACE-970D-17C8-7A31F9C24202">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>WS_COBER_X_SUCU_FIX_LOG</sourceObjSchema>
+<sourceObjName>OPERACION</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:21 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MODIFICADO_POR" id="3C2092C0-A0FD-B917-AEB9-7B01970DAEF6">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>WS_COBER_X_SUCU_FIX_LOG</sourceObjSchema>
+<sourceObjName>MODIFICADO_POR</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:21 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FH_MODIFICACION" id="231BD978-8ACC-29EC-9523-D099569B6026">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>WS_COBER_X_SUCU_FIX_LOG</sourceObjSchema>
+<sourceObjName>FH_MODIFICACION</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:21 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+</Table>

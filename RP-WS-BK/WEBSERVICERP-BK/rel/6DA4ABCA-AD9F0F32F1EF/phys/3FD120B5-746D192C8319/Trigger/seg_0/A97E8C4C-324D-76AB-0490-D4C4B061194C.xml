@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="LOG_WS_COBERTURA_FIX_PARAM" directorySegmentName="seg_0" id="A97E8C4C-324D-76AB-0490-D4C4B061194C">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RAPIPAGO</sourceObjSchema>
+<sourceObjName>LOG_WS_COBERTURA_FIX_PARAM</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:25 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<actions>UPDATE, DELETE</actions>
+<body><![CDATA[DECLARE
+   ERROR_GRABA EXCEPTION;
+   ZOPERACION   CHAR (1);
+BEGIN
+   IF UPDATING
+   THEN
+      ZOPERACION := 'M';
+   ELSE
+      IF DELETING
+      THEN
+         ZOPERACION := 'B';
+      ELSE
+         ZOPERACION := '?';
+      END IF;
+   END IF;
+
+   INSERT INTO RAPIPAGO.WS_COBERTURA_FIX_PARAM_LOG (ID_COBERTURA_FIX_PARAM, 
+                                                    SCRIPT, 
+                                                    DESCRIPCION, 
+                                                    IS_DELETED, 
+                                                    ID_ENV, 
+                                                    AUD_DATE_INSERT, 
+                                                    AUD_USER_INSERT, 
+                                                    AUD_DATE_UPDATE, 
+                                                    AUD_USER_UPDATE, 
+                                                    OPERACION, 
+                                                    MODIFICADO_POR, 
+                                                    FH_MODIFICACION)
+     VALUES(:VIEJO.ID_COBERTURA_FIX_PARAM, 
+            :VIEJO.SCRIPT, 
+            :VIEJO.DESCRIPCION, 
+            :VIEJO.IS_DELETED, 
+            :VIEJO.ID_ENV, 
+            :VIEJO.AUD_DATE_INSERT, 
+            :VIEJO.AUD_USER_INSERT, 
+            :VIEJO.AUD_DATE_UPDATE, 
+            :VIEJO.AUD_USER_UPDATE,
+            ZOPERACION,
+            USUARIO_UPDATE (:NUEVO.AUD_USER_UPDATE),
+            TO_CHAR (SYSDATE, 'yyyy-mm-dd hh24:mi:ss')
+            );
+EXCEPTION
+   WHEN OTHERS
+   THEN
+      RAISE ERROR_GRABA;
+END;]]></body>
+<triggerTime>BEFORE</triggerTime>
+<owner>C62C8F1E-2A53-0B75-10F9-F26CB65E46CC</owner>
+<ref_NEW_AS>NUEVO</ref_NEW_AS>
+<ref_OLD_AS>VIEJO</ref_OLD_AS>
+<table>E24E24CE-767B-02E1-B8FB-E2DCDC07AFAD</table>
+</TriggerOraclev10g>

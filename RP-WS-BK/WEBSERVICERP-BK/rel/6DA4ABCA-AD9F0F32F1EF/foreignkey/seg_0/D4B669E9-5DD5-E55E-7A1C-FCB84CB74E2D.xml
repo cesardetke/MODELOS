@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D4B669E9-5DD5-E55E-7A1C-FCB84CB74E2D" containerWithKeyObject="56898E8A-66B0-E768-FAE4-1D106C43E0E0" localFKIndex="53A5C777-D8AB-94D4-FCB5-BDC6EF346D4F" name="FK_RP_EMPRESA_PUESTO_RP_GRUPO_">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RAPIPAGO</sourceObjSchema>
+<sourceObjName>FK_RP_EMPRESA_PUESTO_RP_GRUPO_</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:28 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<referredTableLongName>RAPIPAGO.RP_GRUPO_EMPRESARIO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<mandatory>false</mandatory>
+<refColNames>ID_GRUPO_EMPRESARIO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,24 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<RoleOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.RoleOraclev10g" name="HODA_ADMIN" directorySegmentName="seg_0" id="F57F5357-EE6B-2658-43C0-BE116045B9BD">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjName>HODA_ADMIN</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:30 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<permissions>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions15" id="E44DC130-58B1-B7A2-9CB8-8F80E6CD2DCD">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:30 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<privileges>SELECT</privileges>
+<table>94A215B2-8F9A-F955-42D6-D0C0A644CCE4</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions67" id="1A9E3109-F5C6-B2B7-BA84-AE9AF1E3C712">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:30 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<privileges>SELECT</privileges>
+<table>80B68678-7C49-E212-35AF-0A3E3BDDD305</table>
+</Permission>
+</permissions>
+</RoleOraclev10g>

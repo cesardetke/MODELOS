@@ -1,0 +1,38 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<RoleOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.RoleOraclev10g" name="HODA_USER" directorySegmentName="seg_0" id="06EC394B-ED13-4056-BCDB-31A30E6AF0AD">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjName>HODA_USER</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:30 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<permissions>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions158" id="610E9919-0E93-9657-06A7-CBB34C6E60CE">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:30 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<privileges>SELECT</privileges>
+<table>56898E8A-66B0-E768-FAE4-1D106C43E0E0</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions186" id="E79F6E7B-92D5-0388-D19F-F1E759B4A643">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:30 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<privileges>SELECT</privileges>
+<table>4992F1D8-0AAF-2718-6F21-85E45CC60D49</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions60" id="BB5D2D53-0288-172E-1BF4-F98C2A59D360">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:30 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<privileges>SELECT</privileges>
+<table>80B68678-7C49-E212-35AF-0A3E3BDDD305</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions9" id="B82F8FD2-2AC8-6A38-5CE9-4CA5CC50B648">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:30 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<privileges>SELECT</privileges>
+<table>94A215B2-8F9A-F955-42D6-D0C0A644CCE4</table>
+</Permission>
+</permissions>
+</RoleOraclev10g>

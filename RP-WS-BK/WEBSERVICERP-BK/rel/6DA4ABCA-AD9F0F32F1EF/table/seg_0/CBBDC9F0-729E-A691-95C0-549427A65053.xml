@@ -1,0 +1,524 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CBBDC9F0-729E-A691-95C0-549427A65053" schemaObject="C0C160F1-50D4-D390-3DAB-5FE533DF40BB" name="RP_CODIGO_BARRA">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RAPIPAGO</sourceObjSchema>
+<sourceObjName>RP_CODIGO_BARRA</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:19 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_CODIGO_BARRA" id="E8D2CC1B-DDE3-5191-47C5-CC836B5471B5">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RP_CODIGO_BARRA</sourceObjSchema>
+<sourceObjName>ID_CODIGO_BARRA</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LONGITUD" id="E5B2BCF3-F883-3170-5951-26B448B53ACF">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RP_CODIGO_BARRA</sourceObjSchema>
+<sourceObjName>LONGITUD</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,20,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HABILITADA_LECTURA_RAPIDA" id="CCD5BB90-B67E-E0E0-6B78-458CAD1BB157">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RP_CODIGO_BARRA</sourceObjSchema>
+<sourceObjName>HABILITADA_LECTURA_RAPIDA</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<constraintName>RP_YES_NO56</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<listOfValues>
+<valueDef value="&apos;N&apos;" description=""/>
+<valueDef value="&apos;Y&apos;" description=""/>
+</listOfValues>
+<defaultValue>&apos;N&apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIPO_CODIFICACION" id="D46AB3D6-C760-09C9-4A55-EBF2123712CB">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RP_CODIGO_BARRA</sourceObjSchema>
+<sourceObjName>TIPO_CODIFICACION</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IS_DELETED" id="6ECEDD87-B6EA-88BE-B9CE-2AA692258E80">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RP_CODIGO_BARRA</sourceObjSchema>
+<sourceObjName>IS_DELETED</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<constraintName>RP_YES_NO58</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<listOfValues>
+<valueDef value="&apos;N&apos;" description=""/>
+<valueDef value="&apos;Y&apos;" description=""/>
+</listOfValues>
+<defaultValue>&apos;N&apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_ENV" id="A4622611-0A87-6234-00ED-E8D9350D2E29">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RP_CODIGO_BARRA</sourceObjSchema>
+<sourceObjName>ID_ENV</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5 BYTE</dataTypeSize>
+<ownDataTypeParameters>5 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AUD_DATE_INSERT" id="4CE8D3D5-019F-B513-B48D-2F1604494A1E">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RP_CODIGO_BARRA</sourceObjSchema>
+<sourceObjName>AUD_DATE_INSERT</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>19 BYTE</dataTypeSize>
+<ownDataTypeParameters>19 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AUD_USER_INSERT" id="F8742B8B-843A-8FE8-2ACA-DC0E3CBC42D2">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RP_CODIGO_BARRA</sourceObjSchema>
+<sourceObjName>AUD_USER_INSERT</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AUD_DATE_UPDATE" id="E3855058-D9EB-91FE-B029-40DDFDC33674">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RP_CODIGO_BARRA</sourceObjSchema>
+<sourceObjName>AUD_DATE_UPDATE</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>19 BYTE</dataTypeSize>
+<ownDataTypeParameters>19 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AUD_USER_UPDATE" id="FFAFBA18-19C7-E2A3-8C54-A7AB8B12C06C">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RP_CODIGO_BARRA</sourceObjSchema>
+<sourceObjName>AUD_USER_UPDATE</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_EMPRESA_PUESTO" id="AC68FB06-34C1-D3C8-F504-FC3F445AD8F4">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RP_CODIGO_BARRA</sourceObjSchema>
+<sourceObjName>ID_EMPRESA_PUESTO</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIPO_BARRA" id="1625B9EE-F7CC-F6DD-8B05-1FACE8AFEE93">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RP_CODIGO_BARRA</sourceObjSchema>
+<sourceObjName>TIPO_BARRA</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3 BYTE</dataTypeSize>
+<ownDataTypeParameters>3 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPCION_BARRA" id="64E0ED8D-5AC7-E6A6-9C25-AB228BCD163C">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RP_CODIGO_BARRA</sourceObjSchema>
+<sourceObjName>DESCRIPCION_BARRA</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_MONEDA" id="4C6448C7-EE4B-953E-211A-764DB1AC2988">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RP_CODIGO_BARRA</sourceObjSchema>
+<sourceObjName>ID_MONEDA</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_EMPR_PUESTO_MODALIDAD" id="75DF7750-AA04-3089-25DC-DD0DD2EA834D">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RP_CODIGO_BARRA</sourceObjSchema>
+<sourceObjName>ID_EMPR_PUESTO_MODALIDAD</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="84378876-B787-F493-FDBE-409199241C79" referredColumn="178B9C33-7EF8-7B74-C662-B498DFEBF73D"/>
+</associations>
+</Column>
+<Column name="ID_EMPRESA_PUESTO_EMPRESA_CENT" id="820B5231-7A23-0E56-0905-D7829303A216">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RP_CODIGO_BARRA</sourceObjSchema>
+<sourceObjName>ID_EMPRESA_PUESTO_EMPRESA_CENT</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ESTADO" id="EDB0879F-D24A-4121-BAC2-26E79063D056">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RP_CODIGO_BARRA</sourceObjSchema>
+<sourceObjName>ESTADO</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos;I&apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IMPORTE_MINIMO" id="0B6928E9-8364-F60D-CC71-8FA652EB6B50">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RP_CODIGO_BARRA</sourceObjSchema>
+<sourceObjName>IMPORTE_MINIMO</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>28</dataTypePrecision>
+<dataTypeScale>8</dataTypeScale>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,28,8</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IMPORTE_MAXIMO" id="E13A49E8-6FBA-ACDA-A0BE-6F62A09E25A2">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RP_CODIGO_BARRA</sourceObjSchema>
+<sourceObjName>IMPORTE_MAXIMO</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>28</dataTypePrecision>
+<dataTypeScale>8</dataTypeScale>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,28,8</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_TIPO_VALOR" id="2D057394-CFB7-1684-3D49-A7ADBAA30D0E">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RP_CODIGO_BARRA</sourceObjSchema>
+<sourceObjName>ID_TIPO_VALOR</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CATEGORIA_DETER_IMPORTE" id="F2C6FB64-7B53-0CDA-0540-BD620853E45A">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RP_CODIGO_BARRA</sourceObjSchema>
+<sourceObjName>CATEGORIA_DETER_IMPORTE</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SIGNO" id="B4A5B197-991B-A9D3-56BE-92E401622046">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RP_CODIGO_BARRA</sourceObjSchema>
+<sourceObjName>SIGNO</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COMENTARIO" id="9E04CCFE-5F41-9661-79B2-9D68408370F2">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RP_CODIGO_BARRA</sourceObjSchema>
+<sourceObjName>COMENTARIO</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+<ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BARRA_COMPLETA" id="03F73C51-BDD8-C907-5DDA-CCBD648C594B">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RP_CODIGO_BARRA</sourceObjSchema>
+<sourceObjName>BARRA_COMPLETA</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<constraintName>RP_YES_NO1079</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<listOfValues>
+<valueDef value="&apos;N&apos;" description=""/>
+<valueDef value="&apos;Y&apos;" description=""/>
+</listOfValues>
+<defaultValue>&apos;N&apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BLOQUEO_INGRESO_MANUAL_BARRA" id="2E40FEB5-E072-1D5F-15D8-913BBD63F946">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RP_CODIGO_BARRA</sourceObjSchema>
+<sourceObjName>BLOQUEO_INGRESO_MANUAL_BARRA</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos;N&apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="576BB763-5E57-D19D-F7B0-18F8F8657DA7" name="PK_RP_CODIGO_BARRA">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RAPIPAGO</sourceObjSchema>
+<sourceObjName>PK_RP_CODIGO_BARRA</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:22 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E8D2CC1B-DDE3-5191-47C5-CC836B5471B5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5CF03070-F56C-3304-5D44-BC01E7611FE6" schemaObject="C0C160F1-50D4-D390-3DAB-5FE533DF40BB" name="DBA$_477DD000B">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RAPIPAGO</sourceObjSchema>
+<sourceObjName>DBA$_477DD000B</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:21 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6ECEDD87-B6EA-88BE-B9CE-2AA692258E80"/>
+<colUsage columnID="AC68FB06-34C1-D3C8-F504-FC3F445AD8F4"/>
+<colUsage columnID="EDB0879F-D24A-4121-BAC2-26E79063D056"/>
+<colUsage columnID="E8D2CC1B-DDE3-5191-47C5-CC836B5471B5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5E3D4021-CB8E-06B5-2A68-951054442F17" schemaObject="C0C160F1-50D4-D390-3DAB-5FE533DF40BB" name="IF2_RP_CODIGO_BARRA">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RAPIPAGO</sourceObjSchema>
+<sourceObjName>IF2_RP_CODIGO_BARRA</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:21 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2D057394-CFB7-1684-3D49-A7ADBAA30D0E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="12D5574A-D401-4039-6782-A60B8C232207" schemaObject="C0C160F1-50D4-D390-3DAB-5FE533DF40BB" name="IF3_RP_CODIGO_BARRA">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RAPIPAGO</sourceObjSchema>
+<sourceObjName>IF3_RP_CODIGO_BARRA</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:21 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AC68FB06-34C1-D3C8-F504-FC3F445AD8F4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CB8895D3-3835-E48C-2607-C8B9D0578FFF" schemaObject="C0C160F1-50D4-D390-3DAB-5FE533DF40BB" name="IF4_RP_CODIGO_BARRA">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RAPIPAGO</sourceObjSchema>
+<sourceObjName>IF4_RP_CODIGO_BARRA</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:21 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4C6448C7-EE4B-953E-211A-764DB1AC2988"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="58DA1F12-7EC1-4A35-6C82-B3606D8420F7" schemaObject="C0C160F1-50D4-D390-3DAB-5FE533DF40BB" name="IF5_RP_CODIGO_BARRA">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RAPIPAGO</sourceObjSchema>
+<sourceObjName>IF5_RP_CODIGO_BARRA</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:21 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="75DF7750-AA04-3089-25DC-DD0DD2EA834D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="18C97FAA-C47E-8064-B9EC-1F6F18BCFFA6" schemaObject="C0C160F1-50D4-D390-3DAB-5FE533DF40BB" name="IF7_RP_CODIGO_BARRA">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RAPIPAGO</sourceObjSchema>
+<sourceObjName>IF7_RP_CODIGO_BARRA</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:21 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="820B5231-7A23-0E56-0905-D7829303A216"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="72E75C28-B92F-7736-3A45-ADA2C44CC6F8" schemaObject="C0C160F1-50D4-D390-3DAB-5FE533DF40BB" name="PK_RP_CODIGO_BARRA">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RAPIPAGO</sourceObjSchema>
+<sourceObjName>PK_RP_CODIGO_BARRA</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:21 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E8D2CC1B-DDE3-5191-47C5-CC836B5471B5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9858FE73-CA8E-7B52-6AAF-B06BBAEF1845" name="FK_RP_CODIGO_BARRA_RP_EMPR_PUE">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:28 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="75DF7750-AA04-3089-25DC-DD0DD2EA834D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

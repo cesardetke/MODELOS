@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="T_RP2_AGENTE" directorySegmentName="seg_0" id="ECAB1979-C00D-7B59-C197-5BD01B636EF6">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RAPIPAGO</sourceObjSchema>
+<sourceObjName>T_RP2_AGENTE</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:23 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<actions>UPDATE</actions>
+<body><![CDATA[BEGIN
+   IF :NEW.COD_AGENTE IS NOT NULL AND :OLD.COD_AGENTE IS NULL THEN
+       /*
+       INSERT INTO RAPI2.AGENTES@LINK_OL
+                                       (
+                                        AGENTE                         ,
+                                        DESCRIPCION                    ,
+                                        FECHA_PRIMERA_ACTIVIDAD        ,
+                                        AGENTE_PARA_COMISIONES         ,
+                                        NRO_FAX                        ,
+                                        TELEFONOS                      ,
+                                        TIPO_AGENTE                    ,
+                                        HABILITA_WEB                   ,
+                                        RAZON_SOCIAL                   ,
+                                        CUIT                           ,
+                                        LOCAL_PROPIO                   ,
+                                        TIPO_ENVIO_RESUMENES           ,
+                                        IMPRIME_CARATULA               ,
+                                        TIPO_ENVIO_LISTADO_COMISIONES  ,
+                                        CALCULA_COMISION               ,  
+                                        RUBRO                          ,
+                                        TOPE                           ,   
+                                        PREPAGA                        ,
+                                        ENVIO                          ,
+                                        USUARIO                        ,
+                                          FH_ACTUALIZACION                                  
+                                       )
+                                VALUES (
+                                        :NEW.COD_AGENTE                       ,
+                                        SUBSTR(:NEW.DESCRIPCION,1,40)         ,
+                                         TO_DATE('31/12/2999','DD/MM/YYYY')   ,
+                                        :NEW.COD_AGENTE                       ,
+                                        :NEW.NRO_FAX                          ,
+                                        :NEW.TELEFONO                         ,
+                                        DECODE(:NEW.SISTEMA_TIPO_AGENTE, 'I', 'N', :NEW.SISTEMA_TIPO_AGENTE),
+                                        DECODE(:NEW.HABILITA_WEB,'Y','S','N') ,
+                                        SUBSTR(:NEW.RAZON_SOCIAL,1,40)        ,
+                                        :NEW.CUIT                             ,
+                                        'N'                                   ,
+                                        'N'                                   ,
+                                        'S'                                   ,
+                                        'M'                                   ,
+                                        'S'                                   , 
+                                        999                                   ,
+                                        0                                     , 
+                                        'N'                                   ,
+                                        'I'                                   ,
+                                        USER                                  ,
+                                          SYSDATE
+                                       );
+                                       */
+                                       null;
+   ELSE
+            IF :NEW.RAZON_SOCIAL <> :OLD.RAZON_SOCIAL
+                OR  
+                :NEW.DESCRIPCION <> :OLD.DESCRIPCION
+               OR  
+                :NEW.SISTEMA_TIPO_AGENTE <> :OLD.SISTEMA_TIPO_AGENTE THEN 
+                        UPDATE RAPI2.AGENTES@LINK_OL
+                              SET DESCRIPCION  = SUBSTR(:NEW.DESCRIPCION,1,40)  ,
+                                    TIPO_AGENTE  =  DECODE(:NEW.SISTEMA_TIPO_AGENTE, 'I', 'N', :NEW.SISTEMA_TIPO_AGENTE),
+                                    RAZON_SOCIAL = SUBSTR(:NEW.RAZON_SOCIAL,1,40)                 
+                         WHERE AGENTE = :NEW.COD_AGENTE;    
+            END IF;
+            
+            IF :NEW.WF_STATUS = 'ELI' AND :OLD.WF_STATUS <> 'ELI' THEN
+                
+                UPDATE RAPI2.AGENTES@LINK_OL SET
+                    FECHA_BAJA = TRUNC(SYSDATE)
+                WHERE   AGENTE = :NEW.COD_AGENTE
+                AND     FECHA_BAJA IS NULL;
+                
+            END IF;
+
+            IF :NEW.WF_STATUS <> 'ELI' AND :OLD.WF_STATUS = 'ELI' THEN
+                
+                UPDATE RAPI2.AGENTES@LINK_OL SET
+                    FECHA_BAJA = NULL
+                WHERE   AGENTE = :NEW.COD_AGENTE
+                AND     FECHA_BAJA IS NOT NULL;
+                
+            END IF;
+
+   END IF;
+EXCEPTION
+     WHEN OTHERS THEN
+       RAISE ;
+END ;]]></body>
+<triggerTime>BEFORE</triggerTime>
+<owner>C62C8F1E-2A53-0B75-10F9-F26CB65E46CC</owner>
+<table>94A215B2-8F9A-F955-42D6-D0C0A644CCE4</table>
+</TriggerOraclev10g>

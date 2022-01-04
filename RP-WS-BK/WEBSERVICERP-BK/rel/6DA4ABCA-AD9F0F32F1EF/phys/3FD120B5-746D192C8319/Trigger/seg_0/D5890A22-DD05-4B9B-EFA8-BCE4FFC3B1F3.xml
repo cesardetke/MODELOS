@@ -1,0 +1,39 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="TRG_COBERTURA_TMP" directorySegmentName="seg_0" id="D5890A22-DD05-4B9B-EFA8-BCE4FFC3B1F3">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RAPIPAGO</sourceObjSchema>
+<sourceObjName>TRG_COBERTURA_TMP</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:26 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<actions>INSERT, UPDATE</actions>
+<body><![CDATA[DECLARE
+v_VERSION VARCHAR2(6) := NULL;
+
+BEGIN
+  IF INSERTING then
+        BEGIN
+            SELECT VERSION_RAPIPAGO
+            INTO v_VERSION
+            FROM RAPIPAGO.RP_PUESTO P,
+                RAPIPAGO.RP_VARIABLES_COBERTURA V
+            WHERE P.ID_AGENTE_SUCURSAL = :new.ID_AGENTE_SUCURSAL
+            AND INSTR(V.VALOR, TRIM(P.VERSION_RAPIPAGO)) > 0 AND V.PALABRA_CLAVE = 'VERSION_RAPIPAGO'
+            AND P.IS_DELETED = 'N' AND P.WF_STATUS = 'HAB'
+            AND ROWNUM = 1
+            ORDER BY P.AUD_DATE_INSERT DESC;
+        EXCEPTION
+            WHEN NO_DATA_FOUND THEN
+                 v_VERSION := 'N/A';
+        END;
+  END IF ;
+  
+EXCEPTION
+     WHEN OTHERS THEN
+       -- 
+       RAISE ;
+END;]]></body>
+<triggerTime>BEFORE</triggerTime>
+<owner>C62C8F1E-2A53-0B75-10F9-F26CB65E46CC</owner>
+<table>7AA69338-109B-BE6A-67C5-BC98BDEDDD7A</table>
+</TriggerOraclev10g>

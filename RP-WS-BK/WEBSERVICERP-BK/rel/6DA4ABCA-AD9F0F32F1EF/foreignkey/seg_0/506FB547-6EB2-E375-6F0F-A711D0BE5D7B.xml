@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="506FB547-6EB2-E375-6F0F-A711D0BE5D7B" containerWithKeyObject="DE6E5B4B-FFB6-0F88-A422-E11F2BED41EB" localFKIndex="8028F003-E152-97FE-5EBA-B8A19B6CA87F" name="FK_RP_EMPRESA_PUESTO_COBERTUR1">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RAPIPAGO</sourceObjSchema>
+<sourceObjName>FK_RP_EMPRESA_PUESTO_COBERTUR1</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:28 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<referredTableLongName>RAPIPAGO.RP_AGENTE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>94A215B2-8F9A-F955-42D6-D0C0A644CCE4</referredTableID>
+<keyObject>7F8CD7A8-9350-C11F-83C5-58F4CEBDC409</keyObject>
+<referredKeyID>7F8CD7A8-9350-C11F-83C5-58F4CEBDC409</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>ID_AGENTE</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

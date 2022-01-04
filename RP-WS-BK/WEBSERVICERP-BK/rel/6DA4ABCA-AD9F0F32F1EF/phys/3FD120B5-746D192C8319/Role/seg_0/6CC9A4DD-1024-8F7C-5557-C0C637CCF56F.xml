@@ -1,0 +1,24 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<RoleOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.RoleOraclev10g" name="SI_ABM" directorySegmentName="seg_0" id="6CC9A4DD-1024-8F7C-5557-C0C637CCF56F">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjName>SI_ABM</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:30 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<permissions>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions33" id="15622A54-E8D8-6E5E-A136-3742D8E43DF5">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:30 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<privileges>SELECT</privileges>
+<table>94A215B2-8F9A-F955-42D6-D0C0A644CCE4</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions85" id="73F1BA01-119C-CBA8-E847-A2309339CFB4">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:30 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<privileges>SELECT</privileges>
+<table>80B68678-7C49-E212-35AF-0A3E3BDDD305</table>
+</Permission>
+</permissions>
+</RoleOraclev10g>

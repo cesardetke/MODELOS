@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_EMP-PUE-COB_WS-COB-SUC" directorySegmentName="seg_0" id="66080B73-62AA-C910-0668-890625559D38">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 19:59:09 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<sourcePk>C91021E0-C8DD-BD16-975E-58E63E14923A</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>1C5F9A12-D9DC-2920-D2C7-742E0E18CC37</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>FDA0A8AD-3506-D4CF-6486-B4A5D1C0A7CC</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,42 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="T_RP_AGENTE_SERVICE_CHARGE_RAI" directorySegmentName="seg_0" id="2B791E16-D72A-553D-D068-072FB96233BB">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RAPIPAGO</sourceObjSchema>
+<sourceObjName>T_RP_AGENTE_SERVICE_CHARGE_RAI</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:23 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<actions>INSERT</actions>
+<body><![CDATA[DECLARE
+lCantidad NUMBER;
+BEGIN
+      
+    IF INSERTING THEN
+
+        lCantidad := 0;
+                
+        SELECT NVL(COUNT(*), 0) AS CANTIDAD
+        INTO lCantidad
+        FROM (
+                SELECT  ID_AGENTE, COUNT(*)
+                FROM    RAPIPAGO.RP_AGENTE_SERVICE_CHARGE
+                WHERE   IS_DELETED = 'N'
+                GROUP BY ID_AGENTE
+                HAVING COUNT(*) > 1
+                );
+                       
+        IF lCantidad > 0 THEN
+            RAISE_APPLICATION_ERROR(-20835, 'Ya han sido ingresado valores para Service Charge', TRUE) ;
+        END IF;
+
+    END IF;
+
+EXCEPTION
+     WHEN OTHERS THEN
+       -- 
+       RAISE ;
+END ;]]></body>
+<triggerTime>BEFORE</triggerTime>
+<owner>C62C8F1E-2A53-0B75-10F9-F26CB65E46CC</owner>
+<table>94A215B2-8F9A-F955-42D6-D0C0A644CCE4</table>
+</TriggerOraclev10g>

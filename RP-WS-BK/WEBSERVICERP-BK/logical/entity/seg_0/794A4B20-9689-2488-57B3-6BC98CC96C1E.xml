@@ -1,0 +1,243 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="794A4B20-9689-2488-57B3-6BC98CC96C1E" name="WS COBERTURA NOVEDADES">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>DDF153D6-1645-A903-20B4-3C74B9DE12F1</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID NOVEDAD" id="226C1C0E-4FAE-F514-A234-F554C31B2F5A">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>D763F447-54EB-83C2-A7DB-AD5C6D1454EE</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID GRUPO" id="30CFBD37-C5BF-70C0-89C2-89F3941EE9C1">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>074122FF-1704-2221-58D4-13A03DAB6969</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TABLA" id="56395AE0-6E05-823B-61DB-B6B8D961D511">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>CC53ECBE-3198-915D-CA74-018C0FC63486</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID TABLA" id="CCD660DB-CC77-0080-47C2-96934BE1FBBC">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>1994127D-2DCC-3CD4-9DBD-BD7AC58B05AE</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ESTADO" id="10F8BEEA-3BB4-5520-2F9F-9B37132B97DB">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>45831096-9CE2-64D7-C570-8C2036AAD3B4</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ACCION" id="1C506223-CBE2-3295-9C46-2CC3CD73CABF">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>55D33B17-A46A-CA39-93E2-59FC1E8AB44D</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CAMPO" id="F9EDDD49-48B0-7235-4C99-A5FA94B7A81F">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>4E5D9841-C8E4-990A-8D09-4EA58A53CD19</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="VALOR ANT" id="6460A42C-66D8-D8CE-FCD6-569E289CA3FD">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>EDE0F33E-08F2-34B4-AE4E-1EC3DE34E2B6</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2000 BYTE</dataTypeSize>
+<ownDataTypeParameters>2000 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="VALOR NVO" id="B53ED302-604B-9D74-5BEE-3AABC4BED926">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>C3AADBCB-2D47-EFB3-BF51-1B99E3A06FEC</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2000 BYTE</dataTypeSize>
+<ownDataTypeParameters>2000 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="AUD DATE INSERT" id="81EFB53D-3F4D-3FD5-2B58-2844C9BA0861">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>ED733FB8-C118-B8B0-B622-137773730602</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>19 BYTE</dataTypeSize>
+<ownDataTypeParameters>19 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="AUD USER INSERT" id="98029D74-C4DE-37ED-2001-B6111CF43673">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>94CEC534-0FEF-467E-AD54-673559E7837E</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="AUD DATE UPDATE" id="340D8600-8A86-FF52-496A-517203457FE1">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>C5FFF842-37F9-7917-5EC8-E9446F74555B</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>19 BYTE</dataTypeSize>
+<ownDataTypeParameters>19 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="AUD USER UPDATE" id="AD6E1D0E-ADBF-D944-8B28-DC59FC044D70">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>2A5AB212-D8E9-2A4B-BC71-890E08AA737F</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="VERSION RP" id="4E733A9F-FB6F-B2CA-2300-07181311F649">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>F1303EC1-6CF8-20B7-E027-651800680283</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5 BYTE</dataTypeSize>
+<ownDataTypeParameters>5 BYTE,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="17EF113B-8817-4C92-5E41-AD286BB12972" name="WS COBERTURA NOVEDADES PK">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:32 UTC</createdTime>
+<generatorID>2D502978-07A6-BC56-F2EC-B45F87DB6F51</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>226C1C0E-4FAE-F514-A234-F554C31B2F5A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

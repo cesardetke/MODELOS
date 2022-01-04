@@ -1,0 +1,37 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="T_RP_AGENTE_SUCURSAL" directorySegmentName="seg_0" id="79E2A0C6-4CD0-3EA6-34D0-C6B9757A1843">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RAPIPAGO</sourceObjSchema>
+<sourceObjName>T_RP_AGENTE_SUCURSAL</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:24 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<actions>INSERT, UPDATE</actions>
+<body><![CDATA[BEGIN
+IF (UPDATING) THEN
+    :new.AUD_DATE_UPDATE := TO_CHAR(SYSDATE, 'YYYY-MM-DD HH24:MI:SS');
+    IF :new.AUD_USER_UPDATE IS NULL OR :new.AUD_USER_UPDATE = :old.AUD_USER_UPDATE THEN
+       :new.AUD_USER_UPDATE := SUBSTR (USER, 1, 15);
+    END IF;
+END IF;
+
+IF (INSERTING) then
+    :new.AUD_DATE_INSERT := TO_CHAR(SYSDATE, 'YYYY-MM-DD HH24:MI:SS');
+    IF :new.AUD_USER_INSERT IS NULL THEN
+       :new.AUD_USER_INSERT := SUBSTR (USER, 1, 15);
+    END IF;
+    IF :new.LIMITE_ACTIVIDAD_DIARIA IS NULL THEN
+        :new.LIMITE_ACTIVIDAD_DIARIA := '23:30';
+    END IF;
+END IF;
+
+
+EXCEPTION
+     WHEN OTHERS THEN
+       -- 
+       RAISE ;
+END ;]]></body>
+<triggerTime>BEFORE</triggerTime>
+<owner>C62C8F1E-2A53-0B75-10F9-F26CB65E46CC</owner>
+<table>80B68678-7C49-E212-35AF-0A3E3BDDD305</table>
+</TriggerOraclev10g>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<RoleOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.RoleOraclev10g" name="PROVEDOR_ADMIN" directorySegmentName="seg_0" id="749CBFA8-D375-2249-6540-537FF1A0C6A6">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjName>PROVEDOR_ADMIN</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:30 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<permissions>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions16" id="3642B4A3-567B-E001-C448-BE28418F9382">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:30 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<privileges>SELECT</privileges>
+<table>94A215B2-8F9A-F955-42D6-D0C0A644CCE4</table>
+</Permission>
+</permissions>
+</RoleOraclev10g>

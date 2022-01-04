@@ -1,0 +1,38 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="T_RP_AGENTE_SC" directorySegmentName="seg_0" id="47687374-B639-252E-B405-F644088B3D91">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RAPIPAGO</sourceObjSchema>
+<sourceObjName>T_RP_AGENTE_SC</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:23 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<actions>INSERT</actions>
+<body><![CDATA[BEGIN
+
+     INSERT INTO RAPIPAGO.RP_AGENTE_SERVICE_CHARGE (ID_AGENTE_SERVICE_CHARGE, 
+                                                    ID_AGENTE, 
+                                                    IMPORTE_TOPE, 
+                                                    CANTIDAD_MAXIMA, 
+                                                    IS_DELETED, 
+                                                    ID_ENV)
+                                                    SELECT
+                                                    (TO_CHAR(SYSDATE,'YYMMDDHH24MI')||dbms_random.string('A', 10)), 
+                                                    :NEW.ID_AGENTE, 
+                                                    600, 
+                                                    999999, 
+                                                    'N', 
+                                                    'RPPRI'
+                                                    FROM DUAL
+                                                    WHERE NOT EXISTS (SELECT ID_AGENTE 
+                                                                      FROM RAPIPAGO.RP_AGENTE_SERVICE_CHARGE 
+                                                                      WHERE ID_AGENTE = :NEW.ID_AGENTE);
+EXCEPTION
+     WHEN OTHERS THEN
+       -- 
+       RAPIPAGO.RP_FUNCIONES_UTILES.LOG_PROCESO_CENTRAL( $$PLSQL_UNIT, 'Error en ' || $$PLSQL_UNIT || ': ' || SQLERRM, 'S');
+       RAISE ;
+END;]]></body>
+<triggerTime>AFTER</triggerTime>
+<owner>C62C8F1E-2A53-0B75-10F9-F26CB65E46CC</owner>
+<table>94A215B2-8F9A-F955-42D6-D0C0A644CCE4</table>
+</TriggerOraclev10g>

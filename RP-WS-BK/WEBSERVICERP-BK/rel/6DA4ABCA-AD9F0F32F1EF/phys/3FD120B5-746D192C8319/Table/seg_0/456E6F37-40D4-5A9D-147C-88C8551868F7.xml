@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="WS_COBERTURA_X_SUCURSAL_FIX" directorySegmentName="seg_0" id="456E6F37-40D4-5A9D-147C-88C8551868F7">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:19 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<schemaObject>C0C160F1-50D4-D390-3DAB-5FE533DF40BB</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>7E45EA09-3D4D-611F-CFAD-0D1F505E2116</segment>
+<tableSpace>AC591104-54CA-0B47-7D6A-044352CD87AD</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="IS_DELETED" id="12943D0B-19E7-19D2-008D-BEF43D993AA5">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:21 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<defaultValue>&apos;N&apos;</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="AUD_DATE_INSERT" id="12BC2801-1315-866F-5C71-BDF76B3B2D1A">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:21 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="AUD_USER_UPDATE" id="3BFD021F-DBDF-6F61-2F34-BF57092F65E5">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:21 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_EMPRESA_PUESTO_COBERTURA" id="47AA40F1-C92B-4662-5511-6EB19DFD8039">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:21 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_COBERTURA_X_SUCURSAL_FIX" id="5DBC714B-2624-5AEA-1478-113C766A41A4">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:21 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_TIPO_VALOR" id="70D55E57-686B-D4D6-855E-4F53092B8A17">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:21 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_EMPR_PUESTO_MODALIDAD" id="7660CB07-31FC-C4DA-FCF9-2F42BC6E2267">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:21 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="AUD_USER_INSERT" id="8D039063-C21B-F549-E7AF-5C0AAB643568">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:21 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<defaultValue>NULL</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="ID_AGENTE_SUCURSAL" id="8F4967B0-6556-80BA-14F3-0F16C8C290BB">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:21 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_EMPRESA_PUESTO" id="A580D62D-98B9-9794-938D-D9D18C778318">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:21 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="AUD_DATE_UPDATE" id="C0F9D590-BB17-19BA-FBA6-9EF654F29719">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:21 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_CODIGO_BARRA" id="D5A188BD-48C4-1C68-417A-625B212D221F">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:21 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IDX_WS_COBERTURA_FIX" id="CE41AA4C-2A41-7EEA-442A-823899B4985C">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:21 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<schemaObject>C0C160F1-50D4-D390-3DAB-5FE533DF40BB</schemaObject>
+<logging>NO</logging>
+<segment>47101F4B-8958-3A7B-D3DE-9380EBB8BE6C</segment>
+<tableSpace>AC591104-54CA-0B47-7D6A-044352CD87AD</tableSpace>
+</IndexProxy>
+</indexProxies>
+</TableProxyOraclev12c>

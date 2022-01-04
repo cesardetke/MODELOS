@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="98F40D5D-9FFA-8AE3-D1D3-2A78C162A364" containerWithKeyObject="80B68678-7C49-E212-35AF-0A3E3BDDD305" localFKIndex="46A158D2-C2C9-3212-BAA9-BFF3FDCA0FC3" name="FK_RP_AGENTE_SUCURSAL4">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RAPIPAGO</sourceObjSchema>
+<sourceObjName>FK_RP_AGENTE_SUCURSAL4</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:28 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<referredTableLongName>RAPIPAGO.RP_CATEGORIA_SUBCATEGORIA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<mandatory>false</mandatory>
+<refColNames>ID_CATEGORIA_SUBCATEGORIA</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

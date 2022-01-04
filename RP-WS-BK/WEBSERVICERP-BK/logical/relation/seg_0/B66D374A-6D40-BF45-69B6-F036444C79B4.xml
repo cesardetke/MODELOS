@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_AGE_WS-COB-MAS-TMP" directorySegmentName="seg_0" id="B66D374A-6D40-BF45-69B6-F036444C79B4">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 20:47:08 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<sourcePk>009F22AB-3E87-FA86-AB29-6199526B9031</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>C107592C-0D6E-F689-AF2A-8826BECFB63E</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>3CD134B7-DE1F-9915-E451-5714A6CFB124</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

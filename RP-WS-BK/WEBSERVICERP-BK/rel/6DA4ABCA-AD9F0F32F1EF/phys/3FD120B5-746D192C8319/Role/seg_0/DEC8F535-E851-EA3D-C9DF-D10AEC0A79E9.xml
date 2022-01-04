@@ -1,0 +1,150 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<RoleOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.RoleOraclev10g" name="RAPIPAGO_USER_BK" directorySegmentName="seg_0" id="DEC8F535-E851-EA3D-C9DF-D10AEC0A79E9">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjName>RAPIPAGO_USER_BK</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:30 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<permissions>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions114" id="5FA5C8A7-AC8A-A4D3-8FD9-C937183B75F0">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:30 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<privileges>DELETE, INSERT, SELECT, UPDATE</privileges>
+<table>CBBDC9F0-729E-A691-95C0-549427A65053</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions130" id="12ABDCE2-6C23-44F0-AA8F-1A836D542E17">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:30 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<privileges>DELETE, INSERT, SELECT, UPDATE</privileges>
+<table>DE6E5B4B-FFB6-0F88-A422-E11F2BED41EB</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions144" id="EF3C7912-3C39-6603-506C-B4BC94459A3B">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:30 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<privileges>DELETE, INSERT, SELECT, UPDATE</privileges>
+<table>7E804EDF-C5FA-E6CD-7EC4-3C5AC9B03895</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions167" id="69E4D13D-4E5A-2787-006E-E5D0CA0D0575">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:30 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<privileges>DELETE, INSERT, SELECT, UPDATE</privileges>
+<table>56898E8A-66B0-E768-FAE4-1D106C43E0E0</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions192" id="EE5F3213-6873-91BF-9237-8A9F94EF9008">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:30 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<privileges>DELETE, INSERT, SELECT, UPDATE</privileges>
+<table>4992F1D8-0AAF-2718-6F21-85E45CC60D49</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions216" id="B17E14FF-630C-837F-5D96-AAAFB2F93DF5">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:30 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<privileges>DELETE, INSERT, SELECT, UPDATE</privileges>
+<table>E4C31F54-062E-AAA1-4F81-4EC8859AEF40</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions221" id="A7D82577-B4B6-04ED-980C-D4C51950C42E">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:30 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<privileges>DELETE, INSERT, SELECT, UPDATE</privileges>
+<table>8E5A840E-B123-B492-0D8C-CC338B779E8B</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions228" id="C5F1EDF2-D99E-FA69-7F1B-6EC3BA3CFB3D">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:30 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<privileges>DELETE, INSERT, SELECT, UPDATE</privileges>
+<table>5AAF8327-C498-28FB-B74C-E4097940B7CB</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions236" id="15B7B03E-7E7F-B8E8-DB32-A0C08F7F2A88">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:30 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<privileges>DELETE, INSERT, SELECT, UPDATE</privileges>
+<table>3875DD30-D079-4B01-C352-0EDB52CD2C74</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions24" id="DF3E9553-D9CE-FAF3-6991-8F0BCF8C3642">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:30 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<privileges>DELETE, INSERT, SELECT, UPDATE</privileges>
+<table>94A215B2-8F9A-F955-42D6-D0C0A644CCE4</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions244" id="782D0AAB-8F73-6801-5DBB-4C838247CA3B">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:30 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<privileges>DELETE, INSERT, SELECT, UPDATE</privileges>
+<table>F78172F5-805B-F07C-BEBE-E067D49FBF8C</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions252" id="7D670564-C1A1-A4F6-EB0A-76C9F9497FFE">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:30 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<privileges>DELETE, INSERT, SELECT, UPDATE</privileges>
+<table>DCCCD8F0-90FD-397A-2D95-A2036BC1BE7A</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions259" id="1CF368F0-66D9-4262-36C8-56561BDC728F">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:30 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<privileges>DELETE, INSERT, SELECT, UPDATE</privileges>
+<table>456E6F37-40D4-5A9D-147C-88C8551868F7</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions265" id="BB3E90F8-E2F4-36CB-F774-8257A56B05B0">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:30 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<privileges>DELETE, INSERT, SELECT, UPDATE</privileges>
+<table>835B7923-F7F6-A346-22AC-F7AB77825F76</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions275" id="5C719D89-8053-5151-77A3-90D7E5AD3CE3">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:30 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<privileges>DELETE, INSERT, SELECT, UPDATE</privileges>
+<table>0ACF7812-A767-D811-0893-4E5F2A156B65</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions283" id="84CBC00E-749D-939F-5A9B-BF78BC75D664">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:30 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<privileges>DELETE, INSERT, SELECT, UPDATE</privileges>
+<table>D6A5F4B2-5A83-9154-58EF-A94BDEC00B13</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions291" id="75699FFE-53BB-303D-782D-6FBCA49A6047">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:30 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<privileges>DELETE, INSERT, SELECT, UPDATE</privileges>
+<table>0F8CAF7F-0E65-5C5E-2BFB-1DF9E275A309</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions299" id="86EE43E0-119B-9AA6-785F-AE4673F4D74B">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:30 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<privileges>DELETE, INSERT, SELECT, UPDATE</privileges>
+<table>7AA69338-109B-BE6A-67C5-BC98BDEDDD7A</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions307" id="DED31559-1078-C6EE-5D7F-746E44390C94">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:30 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<privileges>DELETE, INSERT, SELECT, UPDATE</privileges>
+<table>BC29E7B4-F899-76B1-6AAA-40CB0723CAB6</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions75" id="B83EB213-903D-6CB8-13E2-256CF11C31E2">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:30 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<privileges>DELETE, INSERT, SELECT, UPDATE</privileges>
+<table>80B68678-7C49-E212-35AF-0A3E3BDDD305</table>
+</Permission>
+</permissions>
+</RoleOraclev10g>

@@ -1,0 +1,24 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<RoleOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.RoleOraclev10g" name="ROLE_LINK_RPGOWINCOCHEQ" directorySegmentName="seg_0" id="F94FD3A2-A40B-867C-96EF-5CCF02156CDB">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjName>ROLE_LINK_RPGOWINCOCHEQ</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:30 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<permissions>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions146" id="FE65F616-98CB-8178-2611-9ACE7ED7E492">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:30 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<privileges>SELECT</privileges>
+<table>7E804EDF-C5FA-E6CD-7EC4-3C5AC9B03895</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions169" id="EC435CE6-9209-539C-300A-DCC26984E682">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:30 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<privileges>SELECT</privileges>
+<table>56898E8A-66B0-E768-FAE4-1D106C43E0E0</table>
+</Permission>
+</permissions>
+</RoleOraclev10g>

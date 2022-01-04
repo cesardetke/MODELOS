@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<RoleOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.RoleOraclev10g" name="OP_LINK_BK" directorySegmentName="seg_0" id="C610617F-BE77-2919-3D02-47FD94A0837F">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjName>OP_LINK_BK</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:30 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<permissions>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions185" id="1EBC0D78-EDA2-BB6E-17B4-8D3D8D9B501E">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:30 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<privileges>DELETE, INSERT, SELECT, UPDATE</privileges>
+<table>4992F1D8-0AAF-2718-6F21-85E45CC60D49</table>
+</Permission>
+</permissions>
+</RoleOraclev10g>

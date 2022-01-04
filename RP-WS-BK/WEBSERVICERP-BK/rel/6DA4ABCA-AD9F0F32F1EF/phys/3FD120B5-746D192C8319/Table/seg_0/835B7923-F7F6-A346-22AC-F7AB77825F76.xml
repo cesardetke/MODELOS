@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="WS_PUESTO_PROPERTIES" directorySegmentName="seg_0" id="835B7923-F7F6-A346-22AC-F7AB77825F76">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:19 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<schemaObject>C0C160F1-50D4-D390-3DAB-5FE533DF40BB</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>222BC5B4-54D8-FB89-CB02-3567718FC24A</segment>
+<tableSpace>94B3D4AC-F611-55A3-22C3-38EA44A2820E</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="AUD_USER_INSERT" id="06D04132-A83A-D09B-0C6C-82B9BC7C0F3B">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:21 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<defaultValue>NULL</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="PUESTO_PROPERTY_VALUE" id="2A54B8B5-1DF6-341E-43B1-B404691FD38B">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:21 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_PUESTO_PROPERTY" id="72067A6D-1CC3-FF19-CCE4-113261D258D7">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:21 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="IS_DELETED" id="7AFBE23C-B601-B975-872F-E642C15CF219">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:21 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<defaultValue>&apos;N&apos;</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="AUD_USER_UPDATE" id="8DF59E79-8AC7-ADCC-942A-DE32366D50F1">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:21 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="AUD_DATE_UPDATE" id="96B3A9E4-1932-090E-F250-5812413BA99B">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:21 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PUESTO_PROPERTY" id="9AAE24E6-29B5-6EF9-508F-0B31FCB52989">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:21 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="AUD_DATE_INSERT" id="A32A7336-4A76-0017-10BA-BFB582EA6EC7">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:21 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+</TableProxyOraclev12c>

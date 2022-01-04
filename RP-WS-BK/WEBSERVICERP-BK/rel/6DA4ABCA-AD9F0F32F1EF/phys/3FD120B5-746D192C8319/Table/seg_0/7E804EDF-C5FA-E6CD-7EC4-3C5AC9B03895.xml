@@ -1,0 +1,161 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="RP_TIPO_VALOR" directorySegmentName="seg_0" id="7E804EDF-C5FA-E6CD-7EC4-3C5AC9B03895">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:19 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<schemaObject>C0C160F1-50D4-D390-3DAB-5FE533DF40BB</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>AB308911-8843-8F3C-05FA-1B6BB9DA7490</segment>
+<tableSpace>1551F9B1-8A20-BD69-6CD3-628AF7E9874E</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ID_MONEDA" id="10BA5F0E-9CAE-C08C-7C65-477CBF29019F">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_TIPO_VALOR" id="3841C7D6-D61A-25D2-5E74-9608EB2563C3">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="AUD_DATE_INSERT" id="46F70C7B-52CD-60A2-749C-435FE31ED3C1">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_TARJETA" id="4D378E86-4A4D-53F4-A3FA-C3E8198B032F">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MONTO_MINIMO" id="57FECD13-898D-9121-3A74-6390C2507842">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COD_MONEDA_WINCO" id="70CF2803-1223-03F8-EC64-0B8F623CC0B2">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DESCRIPCION" id="74011DBE-FF65-D143-505C-78A7EB705456">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="IS_DELETED" id="779E702B-3EF3-3035-A259-DC28543CE58F">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<defaultValue>&apos;N&apos;</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="AUD_USER_UPDATE" id="7ACE64DF-FF76-CB47-E03F-A0A5F9F0BF75">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TIPO_VALOR_DEFAULT" id="8AE2ACD7-1F7B-E21F-CCFF-F6D39173EE57">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<defaultValue>&apos;N&apos;</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="ES_MONEDA_WINCO" id="9CC2B295-F820-176C-C57A-5C79F153A873">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<defaultValue>&apos;N&apos;</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="COD_TIPO_VALOR" id="A19FC18C-F633-4F98-8ACF-E1E6E00FCDD7">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="AUD_DATE_UPDATE" id="CCFF02CD-0482-E684-8F17-464ACB83AFC1">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PORCENTAJE_TOPE" id="D03D705E-B8CF-A8F4-BD06-FC89FE88444E">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<defaultValue>100</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="PORCENTAJE_TOPE_SOLODEBITO" id="E3F7BC88-5CC3-8C17-97D4-2943AFAD7097">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<defaultValue>0</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="AUD_USER_INSERT" id="EE64BF02-9FDD-D4A7-960A-87B60F33F221">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_ENV" id="F4954440-24DA-FB51-C2CB-0734543C37DC">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CLASE_VALOR" id="FF8C68F6-FF01-59DD-EA42-F45FB5093B4D">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IF4_RP_TIPO_VALOR" id="5F90ACEC-B40E-4A35-5D4D-02791D0CD68F">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:21 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<schemaObject>C0C160F1-50D4-D390-3DAB-5FE533DF40BB</schemaObject>
+<logging>NO</logging>
+<segment>973DFAF1-6F5A-C29D-E3CD-AF9CA10E0591</segment>
+<tableSpace>C525D7C2-39B1-9A50-B032-4497EDF3753E</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PK_RP_TIPO_VALOR" id="8C65C24B-FD88-ABF3-38CD-C6CC6272923F">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:21 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<schemaObject>C0C160F1-50D4-D390-3DAB-5FE533DF40BB</schemaObject>
+<logging>NO</logging>
+<segment>575E0888-DDC4-A2E7-6590-5025D6F0CBCA</segment>
+<tableSpace>C525D7C2-39B1-9A50-B032-4497EDF3753E</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IF3_RP_TIPO_VALOR" id="DA78A239-FC84-4D81-AD68-9699EA92BD46">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:21 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<schemaObject>C0C160F1-50D4-D390-3DAB-5FE533DF40BB</schemaObject>
+<logging>NO</logging>
+<segment>973DFAF1-6F5A-C29D-E3CD-AF9CA10E0591</segment>
+<tableSpace>C525D7C2-39B1-9A50-B032-4497EDF3753E</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_RP_TIPO_VALOR_RP_TARJETA" id="00793C91-78C7-2476-BAC9-2BBC7C36521C">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:28 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_RP_TIPO_VALOR" id="3BAB4FF1-3213-18B0-2A3B-F0B49B26D7EC">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:22 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<logging>NO</logging>
+<segment>575E0888-DDC4-A2E7-6590-5025D6F0CBCA</segment>
+<tableSpace>C525D7C2-39B1-9A50-B032-4497EDF3753E</tableSpace>
+<existingIndex>8C65C24B-FD88-ABF3-38CD-C6CC6272923F</existingIndex>
+<indexSegment>575E0888-DDC4-A2E7-6590-5025D6F0CBCA</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

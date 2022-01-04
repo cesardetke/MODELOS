@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<RoleOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.RoleOraclev10g" name="PORTAL_AGENTES" directorySegmentName="seg_0" id="CA9EE162-B927-FDAA-9C64-9A1698D9BD46">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjName>PORTAL_AGENTES</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:30 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<permissions>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions43" id="C8C9885C-8B5E-3BC4-D7BB-F94441E1EA60">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:30 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<privilegesWithGrantOption>SELECT</privilegesWithGrantOption>
+<table>94A215B2-8F9A-F955-42D6-D0C0A644CCE4</table>
+</Permission>
+</permissions>
+</RoleOraclev10g>

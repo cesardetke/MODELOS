@@ -1,0 +1,353 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7AA69338-109B-BE6A-67C5-BC98BDEDDD7A" schemaObject="C0C160F1-50D4-D390-3DAB-5FE533DF40BB" name="WS_COBERTURA_X_SUCURSAL_TMP">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RAPIPAGO</sourceObjSchema>
+<sourceObjName>WS_COBERTURA_X_SUCURSAL_TMP</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:19 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CLAVE" id="108B8EAC-6199-AD87-BAD0-3152392A9235">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>WS_COBERTURA_X_SUCURSAL_TMP</sourceObjSchema>
+<sourceObjName>CLAVE</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:21 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_EMPRESA_PUESTO_COBERTURA" id="B7B49575-0B6B-65AF-A1D5-A25A5927D891">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>WS_COBERTURA_X_SUCURSAL_TMP</sourceObjSchema>
+<sourceObjName>ID_EMPRESA_PUESTO_COBERTURA</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:21 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_EMPRESA_PUESTO" id="0F0CDBED-C972-C438-DDB4-7855814447E0">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>WS_COBERTURA_X_SUCURSAL_TMP</sourceObjSchema>
+<sourceObjName>ID_EMPRESA_PUESTO</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:21 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_AGENTE" id="BB60A3EB-3A82-2E29-9F29-B6A36D4466BC">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>WS_COBERTURA_X_SUCURSAL_TMP</sourceObjSchema>
+<sourceObjName>ID_AGENTE</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:21 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_AGENTE_SUCURSAL" id="43A87905-8564-7C4A-823F-1A85888CA3C0">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>WS_COBERTURA_X_SUCURSAL_TMP</sourceObjSchema>
+<sourceObjName>ID_AGENTE_SUCURSAL</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:21 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_EMPR_PUESTO_MODALIDAD" id="41FD9327-1A59-4B7B-0EFE-338FAE11D794">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>WS_COBERTURA_X_SUCURSAL_TMP</sourceObjSchema>
+<sourceObjName>ID_EMPR_PUESTO_MODALIDAD</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:21 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_TIPO_VALOR" id="8F5174AB-43F6-9859-F81F-6D2CD8600FEC">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>WS_COBERTURA_X_SUCURSAL_TMP</sourceObjSchema>
+<sourceObjName>ID_TIPO_VALOR</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:21 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_CODIGO_BARRA" id="28C39C05-3F72-8D53-D31F-92E51A91DC7E">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>WS_COBERTURA_X_SUCURSAL_TMP</sourceObjSchema>
+<sourceObjName>ID_CODIGO_BARRA</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:21 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MIN_POS" id="AA8B6022-1FF9-D8F5-0353-8870890BF0E1">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>WS_COBERTURA_X_SUCURSAL_TMP</sourceObjSchema>
+<sourceObjName>MIN_POS</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:21 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>28</dataTypePrecision>
+<dataTypeScale>8</dataTypeScale>
+<ownDataTypeParameters>,28,8</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MAX_POS" id="25F29004-096F-6B0E-0289-2473A2966B98">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>WS_COBERTURA_X_SUCURSAL_TMP</sourceObjSchema>
+<sourceObjName>MAX_POS</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:21 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>28</dataTypePrecision>
+<dataTypeScale>8</dataTypeScale>
+<ownDataTypeParameters>,28,8</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MIN_NEG" id="4CBCC1C7-B3F8-F40F-AE32-054492A1D0FC">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>WS_COBERTURA_X_SUCURSAL_TMP</sourceObjSchema>
+<sourceObjName>MIN_NEG</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:21 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>28</dataTypePrecision>
+<dataTypeScale>8</dataTypeScale>
+<ownDataTypeParameters>,28,8</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MAX_NEG" id="49A3C82C-9124-A8DA-1ED8-A94D20DB8CDD">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>WS_COBERTURA_X_SUCURSAL_TMP</sourceObjSchema>
+<sourceObjName>MAX_NEG</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:21 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>28</dataTypePrecision>
+<dataTypeScale>8</dataTypeScale>
+<ownDataTypeParameters>,28,8</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MINIMO_ABSOLUTO" id="AE235CC7-713F-B49C-C695-0690A385131E">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>WS_COBERTURA_X_SUCURSAL_TMP</sourceObjSchema>
+<sourceObjName>MINIMO_ABSOLUTO</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:21 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>28</dataTypePrecision>
+<dataTypeScale>8</dataTypeScale>
+<ownDataTypeParameters>,28,8</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MAXIMO_ABSOLUTO" id="C5A7D62A-AD5A-E223-BC27-7EE2E0050A75">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>WS_COBERTURA_X_SUCURSAL_TMP</sourceObjSchema>
+<sourceObjName>MAXIMO_ABSOLUTO</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:21 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>28</dataTypePrecision>
+<dataTypeScale>8</dataTypeScale>
+<ownDataTypeParameters>,28,8</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MINIMO_PORCENTUAL" id="A56F98B2-7570-2D3F-1597-40E0F6844270">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>WS_COBERTURA_X_SUCURSAL_TMP</sourceObjSchema>
+<sourceObjName>MINIMO_PORCENTUAL</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:21 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
+<ownDataTypeParameters>,10,4</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MAXIMO_PORCENTUAL" id="6A23700E-2198-0F6B-0022-49A612F1037F">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>WS_COBERTURA_X_SUCURSAL_TMP</sourceObjSchema>
+<sourceObjName>MAXIMO_PORCENTUAL</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:21 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
+<ownDataTypeParameters>,10,4</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DIAS_CLEARING" id="56795AEC-8296-167F-D518-92464B25F41C">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>WS_COBERTURA_X_SUCURSAL_TMP</sourceObjSchema>
+<sourceObjName>DIAS_CLEARING</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:21 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,20,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PLAZO_ADICIONAL" id="99C061A3-5361-29CD-62EB-6654944CA35C">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>WS_COBERTURA_X_SUCURSAL_TMP</sourceObjSchema>
+<sourceObjName>PLAZO_ADICIONAL</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:21 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,20,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VERSION_RP" id="942534F4-A13D-A7E7-78C5-56FA2FA29564">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>WS_COBERTURA_X_SUCURSAL_TMP</sourceObjSchema>
+<sourceObjName>VERSION_RP</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:21 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6 BYTE</dataTypeSize>
+<ownDataTypeParameters>6 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C097654C-9236-A949-6CAC-ED8E0F0C71F9" name="WS_COBERTURA_X_SUCURSAL_PK_TMP">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RAPIPAGO</sourceObjSchema>
+<sourceObjName>WS_COBERTURA_X_SUCURSAL_PK_TMP</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:22 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="108B8EAC-6199-AD87-BAD0-3152392A9235"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B87F32FA-DDEB-ADC1-D82B-FEA930AF3322" schemaObject="C0C160F1-50D4-D390-3DAB-5FE533DF40BB" name="IDX_WS_COBERTURA_TMP">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RAPIPAGO</sourceObjSchema>
+<sourceObjName>IDX_WS_COBERTURA_TMP</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:21 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="43A87905-8564-7C4A-823F-1A85888CA3C0"/>
+<colUsage columnID="28C39C05-3F72-8D53-D31F-92E51A91DC7E"/>
+<colUsage columnID="0F0CDBED-C972-C438-DDB4-7855814447E0"/>
+<colUsage columnID="41FD9327-1A59-4B7B-0EFE-338FAE11D794"/>
+<colUsage columnID="8F5174AB-43F6-9859-F81F-6D2CD8600FEC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E1EC8B91-C428-2293-F22F-1F022AE70D7C" schemaObject="C0C160F1-50D4-D390-3DAB-5FE533DF40BB" name="WS_COBERTURA_X_SUCURSAL_TMP_PK">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RAPIPAGO</sourceObjSchema>
+<sourceObjName>WS_COBERTURA_X_SUCURSAL_TMP_PK</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:21 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="108B8EAC-6199-AD87-BAD0-3152392A9235"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

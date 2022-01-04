@@ -1,0 +1,24 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<RoleOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.RoleOraclev10g" name="RP35_ACTUALIZACION_USER" directorySegmentName="seg_0" id="368F7C3C-3AB4-201C-ACB8-C2360CCC66B8">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjName>RP35_ACTUALIZACION_USER</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:30 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<permissions>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions261" id="79B9F70C-8C7A-F7B8-C470-CD1047625EEF">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:30 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<privileges>DELETE, INSERT, SELECT, UPDATE</privileges>
+<table>456E6F37-40D4-5A9D-147C-88C8551868F7</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions267" id="CDF0244E-E634-1874-BF25-B8C8B68CD10B">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:30 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<privileges>DELETE, INSERT, SELECT, UPDATE</privileges>
+<table>835B7923-F7F6-A346-22AC-F7AB77825F76</table>
+</Permission>
+</permissions>
+</RoleOraclev10g>

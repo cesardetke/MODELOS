@@ -1,0 +1,344 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="RP_AGENTE" directorySegmentName="seg_0" id="94A215B2-8F9A-F955-42D6-D0C0A644CCE4">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:19 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<schemaObject>C0C160F1-50D4-D390-3DAB-5FE533DF40BB</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>B5BF3A9E-9D06-E47F-500E-434A78D4E965</segment>
+<tableSpace>1551F9B1-8A20-BD69-6CD3-628AF7E9874E</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="LATITUD" id="06CA710A-9A8E-3CE5-E2AF-29FA8FBBFC0B">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SISTEMA_TIPO_AGENTE" id="0B6C0DC2-F968-C83C-33EF-49B2EFED5993">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<defaultValue>NULL</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="ID_RUBRO" id="0E2C22B1-81FF-349C-2947-0CCECB758D95">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TIPO_AGENTE" id="10090FD7-2890-8F6B-6277-1DC791B921F5">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<defaultValue>&apos;E&apos;</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="ID_PROV_PART_LOCALIDAD_BARRIO" id="15E04D38-F2F8-362B-3F00-1A3517D42A7A">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="HABILITA_WEB" id="2DC9F877-6CBF-986A-1CD7-28154BA0C252">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<defaultValue>&apos;S&apos;</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="AUD_USER_UPDATE" id="33B0D74E-A9FA-CB0E-CC21-9B3F9E5B01B6">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TELEFONO" id="52B951DF-0EDF-656F-6830-E31B91340615">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_AGENTE" id="52DB8017-250E-D59D-9AEE-678A8544D8C0">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DEPARTAMENTO" id="5326DCDC-84FF-5AD7-268B-3658C3C54747">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_TIPO_VALOR_DEFAULT" id="59B40E84-FCB9-AE1D-D26C-F86E627EAD9A">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FECHA_CARTA_PROPUESTA" id="5A7222A2-62E7-F2B4-9454-310B79F13C52">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ORGANIZACION" id="60CB8EC8-BB49-8779-55EE-8CA0090F2A14">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PEDIDO_COMPRA" id="6912A266-E41B-EE9B-1F6F-288EB006C8F6">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CUIT" id="6AD67EF0-C81D-5323-93B3-10DB1B5D9461">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_SOPORTE_TECNICO" id="6D79A12F-0C20-8C02-DEC6-4434E2140B87">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_SCHEDULE" id="7ADD2638-036B-B8CF-9E2D-4425D631D357">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="WF_STATUS" id="7BEF513F-CD96-BCD6-9F6B-516A16402F1B">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<defaultValue>&apos;CRE&apos;</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="NUMERO" id="84E822E5-E784-B812-B65A-6380DAF25191">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FECHA_CLAUSURA_HASTA" id="877BE2A8-F3E3-2CDF-5521-1F7C81A59515">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CP_PROVINCIA" id="8B5EB444-F6A2-A23E-2681-6BF1C05C9FD3">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="AUD_USER_INSERT" id="92B7A429-37E6-58E0-ABF4-5349452B8AB4">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PISO" id="9871153C-8703-1B31-3542-7F1B0B6E3D7C">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_ENV" id="9B5301EB-C748-E1B6-DFB7-77839C8A78E4">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<defaultValue>&apos;RPPRI&apos;</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="AUD_DATE_UPDATE" id="9CCA3915-F162-1821-8AE6-D29B4ACB868B">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DESCRIPCION" id="AC7A219F-926F-7710-03BB-672B91154257">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CODIGO_POSTAL" id="AF065ACC-7F10-775D-B88F-6C8D25A71B55">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="AUD_DATE_INSERT" id="BE2AE58E-E7EC-E195-3D67-05C278A83BD2">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CALLE" id="C10759DE-E77A-4BE7-42E3-4C2925187F20">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CP_CMC" id="C3B7B695-A292-9575-6955-369A1663DD0B">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_PROVINCIA" id="C73B4C21-5808-91F8-4017-4E8DBD9B6266">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LONGITUD" id="CC1B131A-2D15-3C5B-B41D-C3498086E578">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NRO_FAX" id="D277D1BE-A2F0-0D3A-9B0E-2240F23795A0">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_PROVINCIA_PARTIDO" id="D410B40A-DC8B-DD5D-694C-E2949824EE73">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_CONDICION_IVA" id="D4AFA1F6-5D1D-7E53-FDC7-5D63FA1BB82B">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_AGENTE_REFERENTE" id="D5002D58-61AA-27A8-E018-915E95726C31">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COD_AGENTE" id="DA278005-3F99-6F42-B493-3F07853011C9">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FECHA_CLAUSURA_DESDE" id="DCC4F053-847F-9EBB-7B70-8DA1F8CC9B81">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PROVEEDOR_CONTABLE" id="DE1CDEE3-7FB1-5597-B294-90DCAC2656AD">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="IS_DELETED" id="DFE3BBC4-78FC-E891-1F3A-70573D9BEEF6">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<defaultValue>&apos;N&apos;</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="RAZON_SOCIAL" id="E1328D1F-293E-D6A9-C1BB-D7E80AE26B6B">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_PROV_PARTIDO_LOCALIDAD" id="E9319303-EDAB-3DD4-D6BC-CC9C83F50C89">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="AGENTE_DEUDOR" id="EE8E12DA-7FF4-A3A5-D18D-B473CFC5E088">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="OBSERVACIONES" id="F90B3665-CC03-B05D-46A5-EFE21F883AAF">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CP_CIUDAD" id="FF54E898-547E-11BF-EDBF-C413C64C2502">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IF7_RP_AGENTE" id="12F30DBE-B2AD-46AF-6C04-93A9E916E474">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:21 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<schemaObject>C0C160F1-50D4-D390-3DAB-5FE533DF40BB</schemaObject>
+<logging>NO</logging>
+<segment>BCE96C34-DFA4-18C7-98B0-CD5FB49851C5</segment>
+<tableSpace>C525D7C2-39B1-9A50-B032-4497EDF3753E</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IX1_RP_AGENTE" id="1E0BA75F-7C8C-C1F2-A310-186A395B7921">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:21 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<schemaObject>C0C160F1-50D4-D390-3DAB-5FE533DF40BB</schemaObject>
+<logging>NO</logging>
+<segment>BCE96C34-DFA4-18C7-98B0-CD5FB49851C5</segment>
+<tableSpace>C525D7C2-39B1-9A50-B032-4497EDF3753E</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IF9_RP_AGENTE" id="3B5FE8F5-3345-49C8-79A9-265A81A73849">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:21 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<schemaObject>C0C160F1-50D4-D390-3DAB-5FE533DF40BB</schemaObject>
+<logging>NO</logging>
+<segment>575E0888-DDC4-A2E7-6590-5025D6F0CBCA</segment>
+<tableSpace>C525D7C2-39B1-9A50-B032-4497EDF3753E</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PK_RP_AGENTE" id="56ED8726-A81C-18E9-5B16-6F96EAC16B10">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:21 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<schemaObject>C0C160F1-50D4-D390-3DAB-5FE533DF40BB</schemaObject>
+<logging>NO</logging>
+<segment>BCE96C34-DFA4-18C7-98B0-CD5FB49851C5</segment>
+<tableSpace>C525D7C2-39B1-9A50-B032-4497EDF3753E</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IF5_RP_AGENTE" id="9CCC554E-19EE-2384-29C3-E6DABA032616">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:21 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<schemaObject>C0C160F1-50D4-D390-3DAB-5FE533DF40BB</schemaObject>
+<logging>NO</logging>
+<segment>BCE96C34-DFA4-18C7-98B0-CD5FB49851C5</segment>
+<tableSpace>C525D7C2-39B1-9A50-B032-4497EDF3753E</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IF1_RP_AGENTE" id="A0DC7BD7-BE93-AF8B-A47D-397474874347">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:21 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<schemaObject>C0C160F1-50D4-D390-3DAB-5FE533DF40BB</schemaObject>
+<logging>NO</logging>
+<segment>973DFAF1-6F5A-C29D-E3CD-AF9CA10E0591</segment>
+<tableSpace>C525D7C2-39B1-9A50-B032-4497EDF3753E</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IF6_RP_AGENTE" id="A98D4981-DDA4-8DE5-300B-8351C17C20E0">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:21 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<schemaObject>C0C160F1-50D4-D390-3DAB-5FE533DF40BB</schemaObject>
+<logging>NO</logging>
+<segment>D5C9823C-C9F3-3E8A-CB81-2F4ECACBA73B</segment>
+<tableSpace>C525D7C2-39B1-9A50-B032-4497EDF3753E</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IF2_RP_AGENTE" id="BB1B843B-03F8-29EA-0AD3-48849E5839E5">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:21 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<schemaObject>C0C160F1-50D4-D390-3DAB-5FE533DF40BB</schemaObject>
+<logging>NO</logging>
+<segment>5A477FB0-8F65-C8A0-9F33-2B789D35ABC7</segment>
+<tableSpace>C525D7C2-39B1-9A50-B032-4497EDF3753E</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IF3_RP_AGENTE" id="BFE170F3-44FB-E63F-1B8D-931073C55BF4">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:21 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<schemaObject>C0C160F1-50D4-D390-3DAB-5FE533DF40BB</schemaObject>
+<logging>NO</logging>
+<segment>2DAE044F-93E5-1A2C-CAFC-19639AC96A41</segment>
+<tableSpace>C525D7C2-39B1-9A50-B032-4497EDF3753E</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_RP_AGENTE" id="7F8CD7A8-9350-C11F-83C5-58F4CEBDC409">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:22 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<logging>NO</logging>
+<segment>BCE96C34-DFA4-18C7-98B0-CD5FB49851C5</segment>
+<tableSpace>C525D7C2-39B1-9A50-B032-4497EDF3753E</tableSpace>
+<existingIndex>56ED8726-A81C-18E9-5B16-6F96EAC16B10</existingIndex>
+<indexSegment>BCE96C34-DFA4-18C7-98B0-CD5FB49851C5</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

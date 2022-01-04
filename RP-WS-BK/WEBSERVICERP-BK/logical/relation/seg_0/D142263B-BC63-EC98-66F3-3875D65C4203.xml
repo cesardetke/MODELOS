@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_RP_CODIGO_BARRA_RP_EMPR_PUE" directorySegmentName="seg_0" id="D142263B-BC63-EC98-66F3-3875D65C4203">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:33 UTC</createdTime>
+<generatorID>84378876-B787-F493-FDBE-409199241C79</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<sourcePk>FCF21EB2-5B9E-B8AD-643A-0E8661BB6BCE</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>08C48F29-153B-C981-F2AD-7ABD17D37E91</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>C45841ED-DE76-5E54-67ED-9571A17B2836</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

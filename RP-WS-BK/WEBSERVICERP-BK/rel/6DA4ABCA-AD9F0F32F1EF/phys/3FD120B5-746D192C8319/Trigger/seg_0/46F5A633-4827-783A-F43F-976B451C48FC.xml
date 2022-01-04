@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="TRG_COBERTURA_ELI" directorySegmentName="seg_0" id="46F5A633-4827-783A-F43F-976B451C48FC">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RAPIPAGO</sourceObjSchema>
+<sourceObjName>TRG_COBERTURA_ELI</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:26 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<actions>INSERT</actions>
+<body><![CDATA[DECLARE
+BEGIN
+       :new.AUD_DATE_DELETE  := SYSDATE ; 
+       :new.AUD_USER_DELETE  := UPPER(substr(user, 1, 30)) ;
+EXCEPTION
+     WHEN OTHERS THEN
+       -- 
+       RAISE ;
+END;]]></body>
+<triggerTime>BEFORE</triggerTime>
+<owner>C62C8F1E-2A53-0B75-10F9-F26CB65E46CC</owner>
+<table>3844CA4C-C4B8-5AA0-682C-B1E5D3240006</table>
+</TriggerOraclev10g>

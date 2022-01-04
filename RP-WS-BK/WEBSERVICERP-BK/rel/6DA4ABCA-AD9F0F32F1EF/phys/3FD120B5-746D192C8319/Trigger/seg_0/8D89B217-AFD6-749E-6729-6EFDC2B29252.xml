@@ -1,0 +1,27 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="T_RP_AGENTE_SUCURSAL2" directorySegmentName="seg_0" id="8D89B217-AFD6-749E-6729-6EFDC2B29252">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RAPIPAGO</sourceObjSchema>
+<sourceObjName>T_RP_AGENTE_SUCURSAL2</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:24 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<actions>INSERT, UPDATE</actions>
+<body><![CDATA[begin
+   if :new.ID_PRESTATARIA_CONECTIVIDAD is not null then 
+      if inserting or (updating and nvl(:OLd.ID_PRESTATARIA_CONECTIVIDAD, 'nulo') <> :new.ID_PRESTATARIA_CONECTIVIDAD) then        
+         select id_tipo_conectividad into :new.id_tipo_conectividad  
+           from RAPIPAGO.RP_PRESTATARIA_CONECTIVIDAD
+          where id_prestataria_conectividad = :NEW.id_prestataria_conectividad;
+      end if;
+   end if;
+EXCEPTION
+     WHEN OTHERS THEN
+       -- 
+       RAISE ;
+END ;]]></body>
+<triggerTime>BEFORE</triggerTime>
+<columns>0165A6A6-4C3F-1E83-25EA-726C4298EFFA</columns>
+<owner>C62C8F1E-2A53-0B75-10F9-F26CB65E46CC</owner>
+<table>80B68678-7C49-E212-35AF-0A3E3BDDD305</table>
+</TriggerOraclev10g>

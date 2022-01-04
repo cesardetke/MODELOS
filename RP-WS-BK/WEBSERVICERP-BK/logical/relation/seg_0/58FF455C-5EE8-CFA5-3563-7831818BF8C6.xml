@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_COD-BARRA_WS-COB-SEC-BK" directorySegmentName="seg_0" id="58FF455C-5EE8-CFA5-3563-7831818BF8C6">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 20:11:52 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<sourcePk>F33467D8-4CDF-C5E5-57B6-DC36823B2343</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>C45841ED-DE76-5E54-67ED-9571A17B2836</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>77158C0D-126D-1C8B-898F-522103AA5B45</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

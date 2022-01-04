@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<RoleOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.RoleOraclev10g" name="TABLEAU_PINPAD" directorySegmentName="seg_0" id="7570623C-F5FF-D5EA-2EA2-67CA40641EF2">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjName>TABLEAU_PINPAD</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:30 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<permissions>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions268" id="CD82B947-E659-806B-47D5-BC4416A8ECA9">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:30 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<privileges>SELECT</privileges>
+<table>835B7923-F7F6-A346-22AC-F7AB77825F76</table>
+</Permission>
+</permissions>
+</RoleOraclev10g>

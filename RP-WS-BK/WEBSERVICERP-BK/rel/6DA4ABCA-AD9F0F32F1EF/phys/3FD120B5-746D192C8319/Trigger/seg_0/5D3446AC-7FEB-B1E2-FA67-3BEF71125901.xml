@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="T_RP_AGENTE_SUCURSAL_ENCUESTA" directorySegmentName="seg_0" id="5D3446AC-7FEB-B1E2-FA67-3BEF71125901">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RAPIPAGO</sourceObjSchema>
+<sourceObjName>T_RP_AGENTE_SUCURSAL_ENCUESTA</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:24 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<actions>UPDATE</actions>
+<body><![CDATA[declare
+   wCuit         VARCHAR2(13);
+   wlinea        NUMBER;
+     
+BEGIN
+
+   IF (nvl(:old.FECHA_PRIMERA_ACTIVIDAD, 'nulo') = 'nulo') and (nvl(:new.FECHA_PRIMERA_ACTIVIDAD, 'nulo') <> 'nulo')  then
+            --Cambio:Se agrega en el filtro en la variable WCuit el correspondiente a SEAC que debe ser descartado de las altas de encuestas al dar de alta sucursales
+            --Realizado: Marzo 2021
+            --Pedido: Dfazzino
+
+           SELECT CUIT
+            INTO WCuit
+            FROM RAPIPAGO.RP_AGENTE
+            WHERE ID_AGENTE = :new.ID_AGENTE;
+              
+    IF WCuit NOT IN ( '30-61864070-8', '30-71060373-8', '30-71662753-1', '30-71604360-2', '33-71550424-9', '30-71239031-6', '30-71089829-0', '20-08000621-8',
+			'30-64399063-2', '30-71642747-8', '30-71584617-5', '30-67542808-1', '30-71105773-7', '30-71233461-0', '30-70740846-0', '30-71685591-7',
+'33-71061568-9', '30-70308853-4', '30-71545571-0', '30-71610872-0', '30-71608877-0', '30-71547949-0', '30-71522115-9', '30-71267850-6',
+'30-71545320-3', '30-71572268-9', '33-71540881-9', '30-70800804-0', '30-71676460-1', '30-99900087-4', '30-71625945-1', '30-71687133-5',
+'30-71638233-4', '30-71671897-9', '30-50005130-9', '30-99926438-3', '30-71625945-1', '30-63925166-3', '30-71603062-4', '30-70923796-5',
+'30-71641634-4', '30-71128610-8', '30-71638233-4', '30-71662753-1', '33-50000517-9', '30-61864070-8', '30-71538413-9', '30-71060373-8') then 
+            insert into PORTAL_AGENTES.ENCUESTA
+            (
+                CUIT_RED,
+                ID_ENCUESTA,
+                ID_CUESTIONARIO,
+                COD_SUCURSAL,
+                FECHA_ALTA
+            )
+            values 
+            ( 
+               WCuit                                                     ,                 
+               PORTAL_AGENTES.ENCUESTA_SEQ.NEXTVAL  ,  -- ID_ENCUESTA,
+               1                                                           ,  -- ID_CUESTIONARIO                 
+               :new.COD_SUCURSAL,
+               sysdate            
+            );
+        end if;
+           end if;
+ 
+EXCEPTION
+     WHEN OTHERS THEN
+         RAPIPAGO.RP_FUNCIONES_UTILES.LOG_PROCESO_CENTRAL( $$PLSQL_UNIT, 'Error: '   || SQLERRM, 'S');
+      RAISE ;
+END ;]]></body>
+<triggerTime>BEFORE</triggerTime>
+<owner>C264E65A-E9B4-0F1F-B456-C0C94B7A66A5</owner>
+<table>80B68678-7C49-E212-35AF-0A3E3BDDD305</table>
+</TriggerOraclev10g>

@@ -1,0 +1,204 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="T_RP_AGENTE_SUCURSAL_ERP" directorySegmentName="seg_0" id="D48798C4-1DA7-8268-0E9C-E1488FAA52EB">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RAPIPAGO</sourceObjSchema>
+<sourceObjName>T_RP_AGENTE_SUCURSAL_ERP</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:24 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<actions>INSERT, UPDATE</actions>
+<body><![CDATA[declare
+   wtipo_agente         ERP.ERP_DIMENSION.TIPO_AGENTE%TYPE;
+   wPROVINCIa           ERP.ERP_DIMENSION.PROVINCIA%TYPE;
+   wCODIGO_PROVEEDOR    ERP.ERP_DIMENSION.CODIGO_PROVEEDOR%TYPE;
+   wCOMUNIDAD_AUTONOMA  ERP.ERP_DIMENSION.COMUNIDAD_AUTONOMA%TYPE;
+   wCIUDAD              ERP.ERP_DIMENSION.CIUDAD%TYPE;
+   wFORMATO_SUCURSAL    ERP.ERP_DIMENSION.FORMATO_SUCURSAL%TYPE;
+   wZONA_ESTADISTICA    ERP.ERP_DIMENSION.ZONA_ESTADISTICA%TYPE;                            
+   wMAIL                ERP.ERP_DIMENSION.Mail_Rapipago%TYPE;
+   wDESCRIPCION         ERP.ERP_DIMENSION.DESCRIPCION%TYPE;
+   wVALOR               ERP.ERP_DIMENSION.valor%type;
+   wNOMBRE              ERP.ERP_DIMENSION.NOMBRE%type;
+   wCALLE               ERP.ERP_DIMENSION.CALLE%TYPE;
+   wCOD_SOPORTE_TECNICO ERP.ERP_DIMENSION.CODIGO_SOPORTE_TECNICO%type;
+   wCOD_PARTIDO         ERP.ERP_DIMENSION.COD_PARTIDO%type;                                                 
+   wPARTIDO             ERP.ERP_DIMENSION.PARTIDO%type;
+   wENTIDAD_WINCO       ERP.ERP_DIMENSION.ENTIDAD_CONDOR%type;
+   wLinea               varchar2(10);
+   wError               varchar2(4000);
+   wcodAgente           varchar2(5);
+   wSuc                 varchar2(500);
+   
+BEGIN
+
+  wError := ''; 
+
+  IF INSERTING or (UPDATING and (    nvl(:old.CALLE, 'nulo')                      <> nvl(:new.CALLE, 'nulo') 
+                         or nvl(:old.COD_SUCURSAL, 0)                    <> nvl(:new.COD_SUCURSAL, 0)       
+                         or nvl(:old.NUMERO, 0)                          <> nvl(:new.NUMERO, 0)       
+                         or nvl(:old.ID_PROV_PARTIDO_LOCALIDAD, 'nulo')  <> nvl(:new.ID_PROV_PARTIDO_LOCALIDAD, 'nulo') 
+                         or nvl(:old.ID_PROVINCIA, 'nulo')               <> nvl(:new.ID_PROVINCIA, 'nulo') 
+                         or nvl(:old.ID_PROVINCIA_PARTIDO, 'nulo')       <> nvl(:new.ID_PROVINCIA_PARTIDO, 'nulo')
+                         or nvl(:old.ID_SOPORTE_TECNICO, 'nulo')         <> nvl(:new.ID_SOPORTE_TECNICO, 'nulo')
+                         or nvl(:old.NOMBRE, 'nulo')                     <> nvl(:new.NOMBRE, 'nulo')
+                         or nvl(:old.ID_CATEGORIA_SUBCATEGORIA, 'nulo')  <> nvl(:new.ID_CATEGORIA_SUBCATEGORIA, 'nulo')
+                       )) then
+
+      begin
+      
+         BEGIN
+               SELECT lpad(trim(ENTIDAD_WINCO), 8, '0')
+                 INTO WENTIDAD_WINCO
+                 FROM RAPIPAGO.RP_AGENTE_TIPO_VALOR
+                WHERE ID_AGENTE_TIPO_VALOR IN (   SELECT ID_AGENTE_TIPO_VALOR
+                                                    FROM RAPIPAGO.RP_AGENTE_TIPO_VALOR_SUCURSAL
+                                                   WHERE ID_AGENTE_SUCURSAL = :NEW.ID_AGENTE_SUCURSAL);
+         EXCEPTION
+            WHEN OTHERS THEN
+               WENTIDAD_WINCO := ' ';
+         END;
+      
+         SELECT LPAD(CODIGO_SOPORTE_TECNICO, 2, '0') INTO wCOD_SOPORTE_TECNICO 
+           FROM RAPIPAGO.RP_SOPORTE_TECNICO
+          WHERE ID_SOPORTE_TECNICO =  :new.ID_SOPORTE_TECNICO;
+
+         wDESCRIPCION := :new.NOMBRE;
+         SELECT 
+               CASE                                                                            
+                   WHEN AGE.tipo_agente = 'P' THEN 'PROPIO'                                                   
+                   WHEN AGE.tipo_agente = 'T' THEN 'TERCERIZADO'                                              
+                   ELSE 'EXTERNO'
+               END wtipo_agente,
+               LPAD(TO_NUMBER(AGE.PROVEEDOR_CONTABLE), 6, '0') wCODIGO_PROVEEDOR,
+               LPAD(AGE.COD_AGENTE, 5, '0') wCodAgente
+               into wtipo_agente, wCODIGO_PROVEEDOR,wCodAgente 
+           FROM RAPIPAGO.RP_AGENTE AGE 
+          INNER JOIN RAPIPAGO.RP_PROVINCIA prov ON (AGE.ID_PROVINCIA = PROV.ID_PROVINCIA)
+          where id_agente = :new.id_agente and age.is_deleted = 'N';
+      exception
+         WHEN others THEN
+         wLinea := $$PLSQL_line;
+         RAPIPAGO.RP_FUNCIONES_UTILES.LOG_PROCESO_CENTRAL( $$PLSQL_UNIT, '001-Error:   ' || $$PLSQL_UNIT || ', Linea=' || wLinea || SQLERRM, 'S');
+      end;
+
+      begin        
+         SELECT 
+               CASE                                                                            
+                  WHEN PROV.DESCRIPCION = 'BUENOS AIRES'        THEN  'BS AS'
+                  WHEN PROV.DESCRIPCION = 'CAPITAL FEDERAL'     THEN  'CABA'
+                  WHEN PROV.DESCRIPCION = 'SANTIAGO DEL ESTERO' THEN  'S. ESTERO'
+                  WHEN PROV.DESCRIPCION = 'TIERRA DEL FUEGO'    THEN  'T. FUEGO'
+                  ELSE TRIM(PROV.DESCRIPCION)
+               END wPROVINCIa,
+               COD_REGION  wCOMUNIDAD_AUTONOMA 
+               into wPROVINCIa, wCOMUNIDAD_AUTONOMA 
+           FROM RAPIPAGO.RP_PROVINCIA prov 
+          where prov.ID_PROVINCIA = :new.ID_PROVINCIA;
+      exception
+         WHEN others THEN
+         wLinea := $$PLSQL_line;
+         RAPIPAGO.RP_FUNCIONES_UTILES.LOG_PROCESO_CENTRAL( $$PLSQL_UNIT, '002-Error:   ' || $$PLSQL_UNIT || ', Linea=' || wLinea || SQLERRM, 'S');
+      end;
+
+      begin        
+         Select z.descripcion wZONA_ESTADISTICA, ppl.descripcion wCIUDAD , pp.cod_partido, pp.partido
+           into wZONA_ESTADISTICA, wCIUDAD, wCod_Partido, wPartido   
+           from RAPIPAGO.RP_PROV_PARTIDO_LOCALIDAD ppl
+          inner join RAPIPAGO.RP_PROVINCIA_PARTIDO pp on pp.id_provincia_partido = ppl.id_provincia_partido
+          inner join RAPIPAGO.RP_ZONA z on ( z.ID_ZONA = ppl.ID_ZONA_ESTADISTICA and TIPO_ZONA = 'E')    
+          where ppl.ID_PROV_PARTIDO_LOCALIDAD = :new.ID_PROV_PARTIDO_LOCALIDAD;
+      exception
+         WHEN others THEN
+         wLinea := $$PLSQL_line;
+         RAPIPAGO.RP_FUNCIONES_UTILES.LOG_PROCESO_CENTRAL( $$PLSQL_UNIT, '003-Error:   ' || $$PLSQL_UNIT || ', Linea=' || wLinea || SQLERRM, 'S');
+      end;
+          
+      begin        
+         select c.descripcion into wFORMATO_SUCURSAL                          
+            from RAPIPAGO.RP_CATEGORIA_SUBCATEGORIA cs
+            inner join RAPIPAGO.RP_CATEGORIA c on (c.ID_CATEGORIA = cs.ID_CATEGORIA)    
+            where cs.ID_CATEGORIA = :new.ID_CATEGORIA
+               AND cs.ID_CATEGORIA_SUBCATEGORIA = :NEW.ID_CATEGORIA_SUBCATEGORIA;
+      exception
+         when no_data_found then
+            wFORMATO_SUCURSAL := 'STANDARDS';
+      end;
+            
+      begin
+         select MAX(substr(nvl(mail, 'nulo'), 1, 60)) into wMail           
+           from rapipago.RP_AGENTE_CONTACTO           
+          where id_agente = :new.id_agente and is_deleted = 'N'
+            and ENVIO_RESUMEN_MAIL = 'Y'
+            and (mail like '%Red_%' or mail like '%red_%') ; 
+      exception
+            when no_data_found then
+               wMail          := 'red_09999@reddeagentes.com.ar';          
+      end;   
+
+      begin        
+         wVALOR         := 'SU' || LPAD(:new.COD_SUCURSAL,6,'0');
+         wNOMBRE        := 'Sucursal Nro. ' || LPAD(:new.COD_SUCURSAL,6,'0');
+         wCALLE         := TRIM(:new.CALLE) || ' ' || to_char(:new.NUMERO);
+         wMail          := 'red_'||wCodAgente||'@reddeagentes.com.ar'; 
+         
+         insert into ERP.ERP_DIMENSION  
+               (DIMENSION, VALOR, DESCRIPCION, SUSPENDIDO, ALMACEN,                    
+               PASILLO, ACTUALIZACION_MANUAL, UBICACION, TIPO_UBICACION,   
+               UBICACION_DESTINO, CODIGO_PROVEEDOR, NOMBRE, PROPOSITO,
+               PAIS, CALLE, CIUDAD, COMUNIDAD_AUTONOMA, PROVINCIA,
+               TIPO_AGENTE, FORMATO_SUCURSAL, ZONA_ESTADISTICA, ENTIDAD_CONDOR, Mail_Rapipago, CODIGO_SOPORTE_TECNICO, Cod_Partido, Partido               
+               )
+               values ( 
+               'SUCURSAL'                                                  ,  -- DIMENSION,  -- VARCHAR2(20 CHAR),                 
+               wVALOR                                                      ,  -- VALOR,      -- VARCHAR2(8 BYTE),
+               wDESCRIPCION                                                ,  -- DESCRIPCION,-- VARCHAR2(100 BYTE),                 
+               'NO'                                                        ,  -- SUSPENDIDO, -- VARCHAR2(2 CHAR)
+               '04'                                                        ,  -- ALMACEN,    -- VARCHAR2(10 BYTE)                  
+               '1'                                                         ,  -- PASILLO,    -- VARCHAR2(10 BYTE)                     
+               'YES'                                                       ,  -- ACTUALIZACION_MANUAL, -- VARCHAR2(3 CHAR)                       
+               wVALOR                                                      ,  -- UBICACION,  -- VARCHAR2(10 BYTE)                
+               '0'                                                         ,  -- TIPO_UBICACION,   -- NUMBER                
+               wVALOR                                                      ,  -- UBICACION_DESTINO, -- VARCHAR2(10 BYTE)                   
+               wCODIGO_PROVEEDOR                                           ,  -- CODIGO_PROVEEDOR, -- VARCHAR2(20 BYTE),
+               wNOMBRE                                                     ,  -- NOMBRE,        -- VARCHAR2(60 BYTE),                    
+               '2'                                                         ,  -- PROPOSITO,     -- NUMBER                 
+               'ARG'                                                       ,  -- PAIS,          -- VARCHAR2(10 BYTE)
+               wCALLE                                                      ,  -- CALLE,         -- VARCHAR2(250 BYTE),                       
+               wCiudad                                                     ,  -- CIUDAD,        -- VARCHAR2(100 BYTE),
+               wCOMUNIDAD_AUTONOMA                                         ,  -- COMUNIDAD_AUTONOMA, -- NUMBER(3)                            
+               wPROVINCIa                                                  ,  -- PROVINCIA,        -- VARCHAR2(50 BYTE)                     
+               wtipo_agente                                                ,  -- TIPO_AGENTE,      -- VARCHAR2(20 CHAR)                                          
+               wFORMATO_SUCURSAL                                           ,  -- FORMATO_SUCURSAL, -- VARCHAR2(40 CHAR)
+               wZONA_ESTADISTICA                                           ,  -- ZONA_ESTADISTICA, -- VARCHAR2(20 BYTE)
+               wENTIDAD_WINCO                                              ,  -- ENTIDAD_CONDOR, -- VARCHAR2(8 BYTE),
+               wMail                                                       ,  -- Mail_Rapipago   -- VARCHAR2(60 BYTE)
+               wCOD_SOPORTE_TECNICO                                        ,       
+               LPAD(wCOMUNIDAD_AUTONOMA, 3, '0') || LPAD(wCOD_PARTIDO, 3, '0') , 
+               wPARTIDO       
+               ); 
+      exception
+         WHEN others THEN
+         wLinea := $$PLSQL_line;
+         RAPIPAGO.RP_FUNCIONES_UTILES.LOG_PROCESO_CENTRAL( $$PLSQL_UNIT, 'Error:   ' || $$PLSQL_UNIT || ', Linea=' || wLinea || SQLERRM, 'S');
+      end;
+                     
+  end if;
+ 
+EXCEPTION
+     WHEN OTHERS THEN
+         RAPIPAGO.RP_FUNCIONES_UTILES.LOG_PROCESO_CENTRAL( $$PLSQL_UNIT, 'Error: '   || SQLERRM, 'S');
+         RAPIPAGO.RP_FUNCIONES_UTILES.LOG_PROCESO_CENTRAL( $$PLSQL_UNIT, 'Error en ' || $$PLSQL_UNIT || ', Linea=' || wLinea || ', :new.ID_AGENTE_SUCURSAL        =' || :new.ID_AGENTE_SUCURSAL                      , 'S'); 
+         RAPIPAGO.RP_FUNCIONES_UTILES.LOG_PROCESO_CENTRAL( $$PLSQL_UNIT, 'Error en ' || $$PLSQL_UNIT || ', Linea=' || wLinea || ', :new.id_agente                 =' || :new.id_agente                               , 'S'); 
+         RAPIPAGO.RP_FUNCIONES_UTILES.LOG_PROCESO_CENTRAL( $$PLSQL_UNIT, 'Error en ' || $$PLSQL_UNIT || ', Linea=' || wLinea || ', :new.calle                     =' || nvl(:new.CALLE, 'nulo')                      , 'S');       
+         RAPIPAGO.RP_FUNCIONES_UTILES.LOG_PROCESO_CENTRAL( $$PLSQL_UNIT, 'Error en ' || $$PLSQL_UNIT || ', Linea=' || wLinea || ', :new.NUMERO                    =' || nvl(:new.NUMERO, 0)                          , 'S');
+         RAPIPAGO.RP_FUNCIONES_UTILES.LOG_PROCESO_CENTRAL( $$PLSQL_UNIT, 'Error en ' || $$PLSQL_UNIT || ', Linea=' || wLinea || ', :new.ID_PROV_PARTIDO_LOCALIDAD =' || nvl(:new.ID_PROV_PARTIDO_LOCALIDAD, 'nulo')  , 'S');
+         RAPIPAGO.RP_FUNCIONES_UTILES.LOG_PROCESO_CENTRAL( $$PLSQL_UNIT, 'Error en ' || $$PLSQL_UNIT || ', Linea=' || wLinea || ', :new.ID_PROVINCIA              =' || nvl(:new.ID_PROVINCIA, 'nulo')               , 'S');
+         RAPIPAGO.RP_FUNCIONES_UTILES.LOG_PROCESO_CENTRAL( $$PLSQL_UNIT, 'Error en ' || $$PLSQL_UNIT || ', Linea=' || wLinea || ', :new.ID_PROVINCIA_PARTIDO      =' || nvl(:new.ID_PROVINCIA_PARTIDO, 'nulo')       , 'S');
+         RAPIPAGO.RP_FUNCIONES_UTILES.LOG_PROCESO_CENTRAL( $$PLSQL_UNIT, 'Error en ' || $$PLSQL_UNIT || ', Linea=' || wLinea || ', :new.NOMBRE                    =' || nvl(:new.NOMBRE, 'nulo')                     , 'S');
+         RAPIPAGO.RP_FUNCIONES_UTILES.LOG_PROCESO_CENTRAL( $$PLSQL_UNIT, 'Error en ' || $$PLSQL_UNIT || ', Linea=' || wLinea || ', :new.ID_CATEGORIA_SUBCATEGORIA =' || nvl(:new.ID_CATEGORIA_SUBCATEGORIA, 'nulo')  , 'S');
+     RAISE ;
+END ;]]></body>
+<triggerTime>BEFORE</triggerTime>
+<owner>C62C8F1E-2A53-0B75-10F9-F26CB65E46CC</owner>
+<table>80B68678-7C49-E212-35AF-0A3E3BDDD305</table>
+</TriggerOraclev10g>

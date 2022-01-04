@@ -1,0 +1,185 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="T_RP_AGENTE_SUCURSAL_QR" directorySegmentName="seg_0" id="B54836DB-6884-33F2-FB45-8E95AA7B92A8">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RAPIPAGO</sourceObjSchema>
+<sourceObjName>T_RP_AGENTE_SUCURSAL_QR</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:24 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<actions>INSERT, UPDATE</actions>
+<body><![CDATA[DECLARE 
+        esQR NUMBER;
+        existeEnrolamiento NUMBER;
+        existeSucursalMP NUMBER;
+        AccionActualDel NUMBER;
+        CasoLog VARCHAR2(10);
+        SucursalActiva VARCHAR(1);
+        HabilitadoDEL  NUMBER(2);
+BEGIN
+              
+      CasoLog := NULL;
+      SELECT  COUNT(*) INTO existeEnrolamiento FROM RAPIPAGO.RP_ENROLAMIENTO_MP_QR A WHERE A.ID_AGENTE_SUCURSAL = :NEW.ID_AGENTE_SUCURSAL AND A.IS_DELETED ='N';
+      SELECT  COUNT(*) INTO ExisteSucursalMP FROM RAPIPAGO.RP_ENROLAMIENTO_MP_QR A WHERE A.ID_AGENTE_SUCURSAL = :NEW.ID_AGENTE_SUCURSAL AND A.ID_SUCURSAL_MP IS NOT NULL AND  A.IS_DELETED ='N'; 
+      SELECT  COUNT(*) INTO AccionActualDel FROM RAPIPAGO.RP_ENROLAMIENTO_MP_QR A WHERE A.ID_AGENTE_SUCURSAL = :NEW.ID_AGENTE_SUCURSAL AND A.ID_SUCURSAL_MP IS NOT NULL AND  A.IS_DELETED ='N' AND A.ACCION='DEL'; 
+      SELECT RAPIPAGO.ES_SUCURSAL_MP_QR(:OLD.ID_AGENTE_SUCURSAL) INTO esQR FROM DUAL;  
+
+   
+   
+      IF (INSERTING) THEN    
+           IF (existeEnrolamiento = 0 AND esQR != 0 AND :NEW.WF_STATUS !='ELI' AND :NEW.IS_DELETED ='N') THEN    
+              CasoLog := '_C6_3';
+              INSERT INTO RAPIPAGO.RP_ENROLAMIENTO_MP_QR 
+                     (ID_ENROLAMIENTO_MP_QR, ID_PUESTO,  ID_AGENTE_SUCURSAL, 
+                      ACCION, 
+                      AUD_USER_INSERT) 
+                     SELECT RAPIPAGO.NEWID, P.ID_PUESTO, :NEW.ID_AGENTE_SUCURSAL,  
+                            'ADD',
+                            USER
+                            FROM RAPIPAGO.RP_PUESTO P 
+                            INNER JOIN RAPIPAGO.RP_PARAM_MP_QR  PAR ON  P.VERSION_RAPIPAGO  = PAR.PARAM_VALOR AND PARAM_KEY ='VERSION_RAPIPAGO' --  VersionRapipagoOK             
+                            WHERE P.WF_STATUS != 'ELI' AND P.IS_DELETED ='N' AND PAR.IS_DELETED = 'N' AND P.ID_AGENTE_SUCURSAL  = :NEW.ID_AGENTE_SUCURSAL;   -- _C6_3
+              RP_FUNCIONES_UTILES.LOG_PROCESO_CENTRAL($$PLSQL_UNIT, ' QR Sucursal caso: ' || CasoLog || ' linea: ' || $$PLSQL_line ||' id Suc: ' || :NEW.ID_AGENTE_SUCURSAL||  ' Registros:#' ||TO_CHAR(SQL%ROWCOUNT));
+          END IF;
+      
+      ELSE  -- ES UPDATE
+      
+            -- Si NO esta enrolada o NO existe la sucursal_activa= N   -->  Y  
+            SELECT CASE WHEN (NOT EXISTS (SELECT * FROM RAPIPAGO.RP_ENROLAMIENTO_MP_QR WHERE ID_AGENTE_SUCURSAL = :NEW.ID_AGENTE_SUCURSAL) 
+                         OR  NOT EXISTS (SELECT * FROM RAPIPAGO.RP_ENROLAMIENTO_MP_QR  WHERE ID_AGENTE_SUCURSAL =:NEW.ID_AGENTE_SUCURSAL AND SUCURSAL_ACTIVA_MP='N')) THEN  'Y' 
+                                                                                                                                              ELSE 'N' 
+                                                                                                                                              END  INTO SucursalActiva
+                         FROM DUAL;
+             
+            IF (SucursalActiva = 'Y') THEN    
+                   IF (existeEnrolamiento != 0) THEN  -- Esta enrolada
+                     -- esta Disable 
+                     IF (esQR = 0 OR :NEW.WF_STATUS ='ELI' OR :NEW.IS_DELETED ='Y') THEN    
+                            IF (existeSucursalMP != 0) THEN -- Si MP ESTA notificado
+                            
+                                 SELECT COUNT(*) INTO HabilitadoDEL FROM RAPIPAGO.RP_PARAM_MP_QR PAR WHERE PARAM_KEY='HABILITADO_DEL_SUC_PUESTO' AND PARAM_VALOR ='Y' AND IS_DELETED='N';
+                                 IF (HabilitadoDEL != 0 ) THEN -- Esta habiliada la funcionalidad de Borrado Suc/Puesto (del)
+                                       -- DELETE todos los puestos con esta sucursal  --> La vista abre en del puesto y del de la suc 
+                                    CasoLog := '_C9_';
+                                    UPDATE RAPIPAGO.RP_ENROLAMIENTO_MP_QR 
+                                           SET ACCION =   'DEL',
+                                               UPDATE_SUC ='Y' -- Para indicar que hay borrar puesto y sucursal  
+                                           WHERE ID_AGENTE_SUCURSAL = :NEW.ID_AGENTE_SUCURSAL AND IS_DELETED ='N'  ;-- _C9_
+                                 ELSE 
+                                    CasoLog :='_C19_';
+                                 END IF;
+                            ELSE
+                              -- Aun la Sucursal no esta en MP , deleted =y suc y puestos (los puestos aun no estan informados)
+                              CasoLog := '_C10_';
+                              UPDATE RAPIPAGO.RP_ENROLAMIENTO_MP_QR 
+                                     SET ACCION =   'COMPLETED',
+                                         IS_DELETED = 'Y'
+                                     WHERE ID_AGENTE_SUCURSAL = :NEW.ID_AGENTE_SUCURSAL AND IS_DELETED ='N';  -- _C10_
+                            END IF;
+                     ELSE
+                           --dbms_output.put_line ('1.2 SUCURSAL QR. Sucursal enrolada y enable');  
+                           -- 3 esta registrada y es valida
+                            IF (   UPDATING('CALLE') OR UPDATING('NUMERO') OR UPDATING('PISO')  OR UPDATING('DEPARTAMENTO')   OR UPDATING('LATITUD') OR UPDATING('LONGITUD')
+                                 OR UPDATING('TRABAJA_HABILES') OR UPDATING('TRABAJA_SABADO') OR UPDATING('TRABAJA_DOMINGO')
+                                 OR UPDATING('ID_PROVINCIA')   OR UPDATING('ID_PROV_PARTIDO_LOCALIDAD') OR UPDATING('ID_PROV_PART_LOCALIDAD_BARRIO')
+                                 OR UPDATING('HORARIO_HABILES_1') OR UPDATING('HORARIO_HABILES_2') OR UPDATING('HORARIO_HABILES_3') OR UPDATING('HORARIO_HABILES_4')
+                                 OR UPDATING('HORARIO_SABADOS_1') OR UPDATING('HORARIO_SABADOS_2') OR UPDATING('HORARIO_SABADOS_3') OR UPDATING('HORARIO_SABADOS_4')
+                                 OR UPDATING('HORARIO_DOMINGOS_1') OR UPDATING('HORARIO_DOMINGOS_2') OR UPDATING('HORARIO_DOMINGOS_3') OR UPDATING('HORARIO_DOMINGOS_4') ) THEN  -- cambio algun campo?
+            
+                           
+                                 IF (existeSucursalMP != 0) THEN -- Si MP ESTA notificado
+                                     CasoLog := '_C7_ _C8_';
+                                      UPDATE  RAPIPAGO.RP_ENROLAMIENTO_MP_QR 
+                                             SET ACCION =   CASE WHEN ACCION  IN ('COMPLETED',  'DEL') THEN 'UPD' ELSE ACCION END,     -- _C7_  -- _C8_
+                                                 UPDATE_SUC ='Y' 
+                                             -- Busco un id de enrolamiento que tenga esta sucursal para marcar como upd
+                                             WHERE ID_ENROLAMIENTO_MP_QR = (SELECT ID_ENROLAMIENTO_MP_QR FROM RAPIPAGO.RP_ENROLAMIENTO_MP_QR E  
+                                                                                                WHERE ID_AGENTE_SUCURSAL=:OLD.ID_AGENTE_SUCURSAL AND E.IS_DELETED ='N'
+                                                                                                       AND ID_SUCURSAL_MP IS NOT NULL   -- ya esta enrolada
+                                                                                                    AND ROWNUM=1)
+                                                   AND IS_DELETED ='N';
+                                    ELSE -- MP no esta notificado   . Puede ser que haya terminado con error y esta completed
+                                          -- deberia cambiar los regitros que tienen esta suc, dado que ninguno esta en MP. ponerlos como ADD
+                                          CasoLog := '_C12_';
+                                          UPDATE  RAPIPAGO.RP_ENROLAMIENTO_MP_QR 
+                                                 SET ACCION =   CASE WHEN ACCION  IN ('COMPLETED') THEN 'ADD' ELSE ACCION END     -- _C12_
+                                                 -- Busco un id de enrolamiento que tenga esta sucursal  
+                                                 WHERE ID_AGENTE_SUCURSAL = :OLD.ID_AGENTE_SUCURSAL 
+                                                       AND IS_DELETED ='N' AND ID_SUCURSAL_MP IS  NULL  AND ID_PUESTO_MP IS NULL;                             
+                                    END IF;
+            
+                                ELSE -- No hubo cambio de un campo que interese
+                                   IF (AccionActualDel != 0) THEN -- SI ESTA EN DEL -> ADD o UPD (si esta completo x si cambio algo) 
+                                      CasoLog := '_C11_';
+                                       UPDATE  RAPIPAGO.RP_ENROLAMIENTO_MP_QR 
+                                              SET ACCION = CASE WHEN ID_PUESTO_MP IS NULL THEN 'ADD' ELSE 'COMPLETED' END,     -- _C11_ 
+                                                  UPDATE_SUC ='N'
+                                              WHERE ID_AGENTE_SUCURSAL=:OLD.ID_AGENTE_SUCURSAL
+                                                    AND ID_SUCURSAL_MP IS NOT NULL
+                                                    AND IS_DELETED ='N';
+                                                 
+                                       UPDATE  RAPIPAGO.RP_ENROLAMIENTO_MP_QR 
+                                              SET ACCION = 'UPD' ,                             -- _C11_ 
+                                                  UPDATE_SUC ='Y' 
+                                              -- Busco un id de enrolamiento que tenga esta sucursal para marcar como upd
+                                              WHERE ID_ENROLAMIENTO_MP_QR = (SELECT ID_ENROLAMIENTO_MP_QR FROM RAPIPAGO.RP_ENROLAMIENTO_MP_QR E  
+                                                                                                 WHERE ID_AGENTE_SUCURSAL=:OLD.ID_AGENTE_SUCURSAL AND E.IS_DELETED ='N'
+                                                                                                        AND ID_SUCURSAL_MP IS NOT NULL   -- ya esta enrolada
+                                                                                                         AND ROWNUM=1)
+                                                    AND ID_SUCURSAL_MP IS NOT NULL
+                                                    AND IS_DELETED ='N';     
+                                                           
+                                                 
+                                    END IF;
+            
+                                END IF;
+                       IF (CasoLog IS NOT NULL) THEN
+                            IF (CasoLog ='_C19_') THEN
+                               RP_FUNCIONES_UTILES.LOG_PROCESO_CENTRAL($$PLSQL_UNIT, ' QR Sucursal caso: ' || CasoLog || ' linea: ' || $$PLSQL_line || ' id Suc: ' || :NEW.ID_AGENTE_SUCURSAL ||  ' Registros:#' ||TO_CHAR(SQL%ROWCOUNT) || ' Funciones de borrado Deshabilitadas'); 
+                            ELSE
+                               RP_FUNCIONES_UTILES.LOG_PROCESO_CENTRAL($$PLSQL_UNIT, ' QR Sucursal caso: ' || CasoLog || ' linea: ' || $$PLSQL_line || ' id Suc: ' || :NEW.ID_AGENTE_SUCURSAL ||  ' Registros:#' ||TO_CHAR(SQL%ROWCOUNT)); 
+                            END IF;
+                     END IF;
+                     
+                     END IF;
+                    ELSE  -- NO esta enrolada  IF existeEnrolamiento != 0c1
+                    -- el caso esta en sucursal_tipo_valor _C6_ 
+                    -- pero puede ser que se haya habilitado la suc  _C6_2_
+                    -- o sea no estaba enrolada pero cumple las condiciones, hay que sumar los puestos.
+            
+                          IF (esQR != 0 AND :NEW.WF_STATUS !='ELI' AND :NEW.IS_DELETED ='N') THEN    
+                             CasoLog := '_C6_2';
+                             INSERT INTO RAPIPAGO.RP_ENROLAMIENTO_MP_QR 
+                                    (ID_ENROLAMIENTO_MP_QR, ID_PUESTO,  ID_AGENTE_SUCURSAL, 
+                                     ACCION, 
+                                     AUD_USER_INSERT) 
+                                    SELECT RAPIPAGO.NEWID, P.ID_PUESTO, :NEW.ID_AGENTE_SUCURSAL,  
+                                           'ADD',
+                                           USER
+                                           FROM RAPIPAGO.RP_PUESTO P 
+                                           INNER JOIN RAPIPAGO.RP_PARAM_MP_QR  PAR ON  P.VERSION_RAPIPAGO  = PAR.PARAM_VALOR AND PARAM_KEY ='VERSION_RAPIPAGO' --  VersionRapipagoOK             
+                                           WHERE P.WF_STATUS != 'ELI' AND P.IS_DELETED ='N' AND PAR.IS_DELETED = 'N' AND P.ID_AGENTE_SUCURSAL  = :NEW.ID_AGENTE_SUCURSAL;   -- _C6_2
+                            IF (SQL%ROWCOUNT != 0 ) THEN              
+                                 RP_FUNCIONES_UTILES.LOG_PROCESO_CENTRAL($$PLSQL_UNIT, ' QR Sucursal caso: ' || CasoLog || ' linea: ' || $$PLSQL_line ||' id Suc: ' || :NEW.ID_AGENTE_SUCURSAL ||  ' Registros:#' ||TO_CHAR(SQL%ROWCOUNT));
+                             END IF;
+
+                            END IF;
+             
+                   END IF; -- existe enrolamiento
+            ELSE
+                   CasoLog := '_C16_'; -- sucursal NO activa 
+                   -- RP_FUNCIONES_UTILES.LOG_PROCESO_CENTRAL($$PLSQL_UNIT, ' QR Sucursal caso: ' || CasoLog || ' linea: ' || $$PLSQL_line ||' id Suc: ' || :NEW.ID_AGENTE_SUCURSAL ||  ' Registros:#' ||TO_CHAR(SQL%ROWCOUNT));                   
+            END IF; -- si esta activa
+            
+      END IF;
+   
+      -- dbms_output.put_line($$PLSQL_UNIT || ' Caso ' || CasoLog ||  '. Registros:#' ||TO_CHAR(SQL%ROWCOUNT));
+   
+   EXCEPTION
+        WHEN others THEN
+                RAPIPAGO.RP_FUNCIONES_UTILES.LOG_PROCESO_CENTRAL(  $$PLSQL_UNIT,' ERROR TRIGGER PARA SUCURSALES QR (ID:'  ||  :NEW.ID_AGENTE_SUCURSAL || ')' ||  SQLERRM || ' caso ' || CasoLog);
+        
+END ;]]></body>
+<triggerTime>AFTER</triggerTime>
+<owner>C62C8F1E-2A53-0B75-10F9-F26CB65E46CC</owner>
+<table>80B68678-7C49-E212-35AF-0A3E3BDDD305</table>
+</TriggerOraclev10g>

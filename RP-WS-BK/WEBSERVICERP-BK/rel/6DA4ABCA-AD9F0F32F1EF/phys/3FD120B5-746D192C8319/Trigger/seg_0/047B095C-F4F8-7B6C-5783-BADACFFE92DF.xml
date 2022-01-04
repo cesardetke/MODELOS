@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="LOG_RP_TIPO_VALOR" directorySegmentName="seg_0" id="047B095C-F4F8-7B6C-5783-BADACFFE92DF">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RAPIPAGO</sourceObjSchema>
+<sourceObjName>LOG_RP_TIPO_VALOR</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:25 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<actions>UPDATE, DELETE</actions>
+<body><![CDATA[DECLARE
+   ERROR_GRABA EXCEPTION;
+   ZOPERACION   CHAR (1);
+BEGIN
+   IF UPDATING
+   THEN
+      ZOPERACION := 'M';
+   ELSE
+      IF DELETING
+      THEN
+         ZOPERACION := 'B';
+      ELSE
+         ZOPERACION := '?';
+      END IF;
+   END IF;
+
+   INSERT INTO RAPIPAGO.RP_TIPO_VALOR_LOG (ID_TIPO_VALOR,
+                                           DESCRIPCION,
+                                           CLASE_VALOR,
+                                           ID_MONEDA,
+                                           IS_DELETED,
+                                           ID_ENV,
+                                           AUD_DATE_INSERT,
+                                           AUD_USER_INSERT,
+                                           AUD_DATE_UPDATE,
+                                           AUD_USER_UPDATE,
+                                           COD_TIPO_VALOR,
+                                           COD_MONEDA_WINCO,
+                                           ES_MONEDA_WINCO,
+                                           MONTO_MINIMO,
+                                           ID_TARJETA,
+                                           TIPO_VALOR_DEFAULT,
+                                           OPERACION,
+                                           MODIFICADO_POR,
+                                           FH_MODIFICACION)
+     VALUES   (:VIEJO.ID_TIPO_VALOR,
+               :VIEJO.DESCRIPCION,
+               :VIEJO.CLASE_VALOR,
+               :VIEJO.ID_MONEDA,
+               :VIEJO.IS_DELETED,
+               :VIEJO.ID_ENV,
+               :VIEJO.AUD_DATE_INSERT,
+               :VIEJO.AUD_USER_INSERT,
+               :VIEJO.AUD_DATE_UPDATE,
+               :VIEJO.AUD_USER_UPDATE,
+               :VIEJO.COD_TIPO_VALOR,
+               :VIEJO.COD_MONEDA_WINCO,
+               :VIEJO.ES_MONEDA_WINCO,
+               :VIEJO.MONTO_MINIMO,
+               :VIEJO.ID_TARJETA,
+               :VIEJO.TIPO_VALOR_DEFAULT,
+               ZOPERACION,
+               Usuario_Update (:NUEVO.AUD_USER_UPDATE),
+               TO_CHAR (SYSDATE, 'yyyy-mm-dd hh24:mi:ss'));
+EXCEPTION
+   WHEN OTHERS
+   THEN
+      RAISE ERROR_GRABA;
+END; 
+]]></body>
+<triggerTime>BEFORE</triggerTime>
+<owner>C62C8F1E-2A53-0B75-10F9-F26CB65E46CC</owner>
+<ref_NEW_AS>NUEVO</ref_NEW_AS>
+<ref_OLD_AS>VIEJO</ref_OLD_AS>
+<table>7E804EDF-C5FA-E6CD-7EC4-3C5AC9B03895</table>
+</TriggerOraclev10g>

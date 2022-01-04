@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_RP_EMPR_PUESTO_MODALIDAD_R1" directorySegmentName="seg_0" id="378F9468-C304-C3F6-6008-357295B9F7F3">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:28:33 UTC</createdTime>
+<generatorID>007095E3-59C5-528D-1A2D-40A35C5D1FC0</generatorID>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<engineerTo>
+<item key="6DA4ABCA-6571-B854-41F7-AD9F0F32F1EF" value="true"/>
+</engineerTo>
+<sourcePk>5433220E-64D2-DB1F-6557-1DB33FE6EE57</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>1E59CDB7-E876-3595-E79B-41784E6C1F78</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>08C48F29-153B-C981-F2AD-7ABD17D37E91</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

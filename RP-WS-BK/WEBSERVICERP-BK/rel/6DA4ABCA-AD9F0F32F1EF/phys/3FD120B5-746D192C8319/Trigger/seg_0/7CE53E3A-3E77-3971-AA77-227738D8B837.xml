@@ -1,0 +1,27 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="T_WS_AFIP_FORM_HABILITADOS" directorySegmentName="seg_0" id="7CE53E3A-3E77-3971-AA77-227738D8B837">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RAPIPAGO</sourceObjSchema>
+<sourceObjName>T_WS_AFIP_FORM_HABILITADOS</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:26 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<actions>INSERT, UPDATE</actions>
+<body><![CDATA[BEGIN
+  IF (UPDATING) THEN
+        :new.AUD_DATE_UPDATE := TO_CHAR(SYSDATE, 'YYYY-MM-DD HH24:MI:SS') ;
+  END IF ;
+  
+  if INSERTING then
+       -- :new.ID_ENV        := 'RPPRI' ;
+       :new.AUD_DATE_INSERT  := TO_CHAR(SYSDATE, 'YYYY-MM-DD HH24:MI:SS') ; 
+  END IF ;
+EXCEPTION
+     WHEN OTHERS THEN
+       -- 
+       RAISE ;
+END ;]]></body>
+<triggerTime>BEFORE</triggerTime>
+<owner>C62C8F1E-2A53-0B75-10F9-F26CB65E46CC</owner>
+<table>8E5A840E-B123-B492-0D8C-CC338B779E8B</table>
+</TriggerOraclev10g>

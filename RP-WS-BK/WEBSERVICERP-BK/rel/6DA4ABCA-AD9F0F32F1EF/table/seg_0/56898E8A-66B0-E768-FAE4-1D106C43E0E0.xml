@@ -1,0 +1,403 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="56898E8A-66B0-E768-FAE4-1D106C43E0E0" schemaObject="C0C160F1-50D4-D390-3DAB-5FE533DF40BB" name="RP_EMPRESA_PUESTO">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RAPIPAGO</sourceObjSchema>
+<sourceObjName>RP_EMPRESA_PUESTO</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:19 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_EMPRESA_PUESTO" id="EB9C4F57-8941-879C-12F5-4F046E6972DF">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RP_EMPRESA_PUESTO</sourceObjSchema>
+<sourceObjName>ID_EMPRESA_PUESTO</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPCION" id="D619BAA7-69F0-0683-360A-E6449ECA2EAE">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RP_EMPRESA_PUESTO</sourceObjSchema>
+<sourceObjName>DESCRIPCION</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_EMPRESA_PUESTO" id="6578B691-742A-0893-CF9F-B38CD82A838E">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RP_EMPRESA_PUESTO</sourceObjSchema>
+<sourceObjName>COD_EMPRESA_PUESTO</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,20,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IS_DELETED" id="03FEF6E6-8C26-DE16-AD4F-98343B3D2039">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RP_EMPRESA_PUESTO</sourceObjSchema>
+<sourceObjName>IS_DELETED</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<constraintName>RP_YES_NO250</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<listOfValues>
+<valueDef value="&apos;N&apos;" description=""/>
+<valueDef value="&apos;Y&apos;" description=""/>
+</listOfValues>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_ENV" id="C95BD97E-98DB-F140-491A-C75025D7D47D">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RP_EMPRESA_PUESTO</sourceObjSchema>
+<sourceObjName>ID_ENV</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5 BYTE</dataTypeSize>
+<ownDataTypeParameters>5 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AUD_DATE_INSERT" id="4DFC5378-4AAF-6771-CDC6-AAF0BE25A522">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RP_EMPRESA_PUESTO</sourceObjSchema>
+<sourceObjName>AUD_DATE_INSERT</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>19 BYTE</dataTypeSize>
+<ownDataTypeParameters>19 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AUD_USER_INSERT" id="7A3D788B-658A-109E-1613-41A654D1C1A0">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RP_EMPRESA_PUESTO</sourceObjSchema>
+<sourceObjName>AUD_USER_INSERT</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AUD_DATE_UPDATE" id="3F9ADB6D-542E-9CF5-AABB-CE1B4F80A4CC">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RP_EMPRESA_PUESTO</sourceObjSchema>
+<sourceObjName>AUD_DATE_UPDATE</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>19 BYTE</dataTypeSize>
+<ownDataTypeParameters>19 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AUD_USER_UPDATE" id="8E786AA9-C182-453A-52DE-8CFA162548C4">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RP_EMPRESA_PUESTO</sourceObjSchema>
+<sourceObjName>AUD_USER_UPDATE</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_GRUPO_EMPRESARIO" id="71DED355-B140-D5CB-F696-34800A465183">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RP_EMPRESA_PUESTO</sourceObjSchema>
+<sourceObjName>ID_GRUPO_EMPRESARIO</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="WF_STATUS" id="A212F4FD-F7A5-315A-F838-1A537FFBD9C2">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RP_EMPRESA_PUESTO</sourceObjSchema>
+<sourceObjName>WF_STATUS</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="WF_STATUS_PUESTO" id="D619ED65-10E3-2242-1BE0-B0F0F87499B4">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RP_EMPRESA_PUESTO</sourceObjSchema>
+<sourceObjName>WF_STATUS_PUESTO</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NUMERO_ACTUALIZACION" id="4CC45C59-9896-6CB9-50A4-514A5A88DB7F">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RP_EMPRESA_PUESTO</sourceObjSchema>
+<sourceObjName>NUMERO_ACTUALIZACION</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,20,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TOPE_COBRO_MAXIMO" id="F204A9B6-0C0B-F0C0-1699-3EB9814D1832">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RP_EMPRESA_PUESTO</sourceObjSchema>
+<sourceObjName>TOPE_COBRO_MAXIMO</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>28</dataTypePrecision>
+<dataTypeScale>8</dataTypeScale>
+<ownDataTypeParameters>,28,8</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TOPE_COBRO_MINIMO" id="E6CDA5CE-18E8-9210-67B8-57FA2361661D">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RP_EMPRESA_PUESTO</sourceObjSchema>
+<sourceObjName>TOPE_COBRO_MINIMO</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>28</dataTypePrecision>
+<dataTypeScale>8</dataTypeScale>
+<ownDataTypeParameters>,28,8</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PERMITE_COBRANZAS_NULAS" id="DAA7BB64-2278-1E59-F9ED-0083E56F1148">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RP_EMPRESA_PUESTO</sourceObjSchema>
+<sourceObjName>PERMITE_COBRANZAS_NULAS</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<constraintName>RP_YES_NO78</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<listOfValues>
+<valueDef value="&apos;N&apos;" description=""/>
+<valueDef value="&apos;Y&apos;" description=""/>
+</listOfValues>
+<defaultValue>&apos;N&apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COBRANZAS_ONLINE" id="4EA754A0-255F-5DE7-6974-0A457A5D40C6">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RP_EMPRESA_PUESTO</sourceObjSchema>
+<sourceObjName>COBRANZAS_ONLINE</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<constraintName>RP_YES_NO801</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<listOfValues>
+<valueDef value="&apos;N&apos;" description=""/>
+<valueDef value="&apos;Y&apos;" description=""/>
+</listOfValues>
+<defaultValue>&apos;N&apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TOPE_MIN_NEG" id="CE1917E9-599B-00C3-9A97-F9436FD13AFD">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RP_EMPRESA_PUESTO</sourceObjSchema>
+<sourceObjName>TOPE_MIN_NEG</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>28</dataTypePrecision>
+<dataTypeScale>8</dataTypeScale>
+<ownDataTypeParameters>,28,8</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TOPE_MAX_NEG" id="B88FD3E4-E1D1-2DBC-BCCB-244993ACABC5">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RP_EMPRESA_PUESTO</sourceObjSchema>
+<sourceObjName>TOPE_MAX_NEG</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>28</dataTypePrecision>
+<dataTypeScale>8</dataTypeScale>
+<ownDataTypeParameters>,28,8</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_BANCO" id="B8F71F4D-2FD1-FA10-5A26-B4BAE125C5DD">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RP_EMPRESA_PUESTO</sourceObjSchema>
+<sourceObjName>COD_BANCO</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:20 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>9 BYTE</dataTypeSize>
+<ownDataTypeParameters>9 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="769BB1A5-5203-21A8-7687-10AF436F7BC8" name="PK_RP_EMPRESA_PUESTO">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RAPIPAGO</sourceObjSchema>
+<sourceObjName>PK_RP_EMPRESA_PUESTO</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:22 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EB9C4F57-8941-879C-12F5-4F046E6972DF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6D3FE6FA-219E-2DC0-8FB4-A3BEB367459E" schemaObject="C0C160F1-50D4-D390-3DAB-5FE533DF40BB" name="IE1_RP_EMPRESA_PUESTO">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RAPIPAGO</sourceObjSchema>
+<sourceObjName>IE1_RP_EMPRESA_PUESTO</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:21 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6578B691-742A-0893-CF9F-B38CD82A838E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="67284DC5-D9AB-C873-948A-C49DB03AF800" schemaObject="C0C160F1-50D4-D390-3DAB-5FE533DF40BB" name="IF1_RP_EMPRESA_PUESTO">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RAPIPAGO</sourceObjSchema>
+<sourceObjName>IF1_RP_EMPRESA_PUESTO</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:21 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="71DED355-B140-D5CB-F696-34800A465183"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F4747EFE-E34E-7FC1-D8A6-9253D4800C1F" schemaObject="C0C160F1-50D4-D390-3DAB-5FE533DF40BB" name="INU_WS_DESCRIPCION">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RAPIPAGO</sourceObjSchema>
+<sourceObjName>INU_WS_DESCRIPCION</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:21 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<indexExpression>UPPER(&quot;DESCRIPCION&quot;)</indexExpression>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+<ind_PK_UK id="6B3D2926-C5B1-19FB-F560-362CDCD2664F" schemaObject="C0C160F1-50D4-D390-3DAB-5FE533DF40BB" name="PK_RP_EMPRESA_PUESTO">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RAPIPAGO</sourceObjSchema>
+<sourceObjName>PK_RP_EMPRESA_PUESTO</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:21 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EB9C4F57-8941-879C-12F5-4F046E6972DF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="53A5C777-D8AB-94D4-FCB5-BDC6EF346D4F" name="FK_RP_EMPRESA_PUESTO_RP_GRUPO_">
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:28 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="71DED355-B140-D5CB-F696-34800A465183"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

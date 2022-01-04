@@ -1,0 +1,30 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="T_RP_EMPRESA_PUESTO_COBERTURA" directorySegmentName="seg_0" id="877F883B-D926-DFF9-03BA-8CF7D9EC62A9">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RAPIPAGO</sourceObjSchema>
+<sourceObjName>T_RP_EMPRESA_PUESTO_COBERTURA</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:25 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<actions>INSERT, UPDATE</actions>
+<body><![CDATA[BEGIN
+  IF (UPDATING) THEN
+        :new.AUD_DATE_UPDATE := TO_CHAR(SYSDATE, 'YYYY-MM-DD HH24:MI:SS') ;
+        -----:new.AUD_USER_UPDATE := UPPER(substr(user, 1, 30)) ;
+  END IF ;
+  
+  if INSERTING then
+       -- :new.ID_ENV        := 'RPPRI' ;
+       :new.AUD_DATE_INSERT  := TO_CHAR(SYSDATE, 'YYYY-MM-DD HH24:MI:SS') ; 
+       -----:new.AUD_USER_INSERT  := UPPER(substr(user, 1, 30)) ;
+  END IF ;
+EXCEPTION
+     WHEN OTHERS THEN
+       -- 
+       RAISE ;
+END ; 
+]]></body>
+<triggerTime>BEFORE</triggerTime>
+<owner>C62C8F1E-2A53-0B75-10F9-F26CB65E46CC</owner>
+<table>DE6E5B4B-FFB6-0F88-A422-E11F2BED41EB</table>
+</TriggerOraclev10g>

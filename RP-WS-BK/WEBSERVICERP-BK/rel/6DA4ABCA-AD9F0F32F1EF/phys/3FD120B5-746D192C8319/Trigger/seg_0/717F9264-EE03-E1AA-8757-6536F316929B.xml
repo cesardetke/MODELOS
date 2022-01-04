@@ -1,0 +1,55 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="T_RP_AGENTE3" directorySegmentName="seg_0" id="717F9264-EE03-E1AA-8757-6536F316929B">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RAPIPAGO</sourceObjSchema>
+<sourceObjName>T_RP_AGENTE3</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:23 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<actions>INSERT, UPDATE</actions>
+<body><![CDATA[declare 
+    new_AGENTE_DEUDOR                 RAPIPAGO.RP_AGENTE.AGENTE_DEUDOR%TYPE;
+    new_PROVEEDOR_CONTABLE         RAPIPAGO.RP_AGENTE.PROVEEDOR_CONTABLE       %TYPE;
+    new_PEDIDO_COMPRA                  RAPIPAGO.RP_AGENTE.PEDIDO_COMPRA%TYPE;
+    nCantidad NUMBER;
+BEGIN
+
+ IF INSERTING OR UPDATING THEN
+   
+       BEGIN
+       
+          SELECT COUNT(1) INTO nCantidad 
+             FROM ERP.V_PROVEEDOR_CONTABLE
+                WHERE CUIT = :NEW.CUIT;
+
+           IF  nCantidad = 1 then
+                          
+                   SELECT AGENTE_DEUDOR, PROVEEDOR, ORDEN_COMPRA into new_AGENTE_DEUDOR,  new_PROVEEDOR_CONTABLE, new_PEDIDO_COMPRA 
+                     FROM ERP.V_PROVEEDOR_CONTABLE
+                    WHERE CUIT = :NEW.CUIT;
+                                                              
+                    :NEW.AGENTE_DEUDOR            := new_AGENTE_DEUDOR;
+                
+                    :NEW.PROVEEDOR_CONTABLE   := new_PROVEEDOR_CONTABLE;
+              
+                   :NEW.PEDIDO_COMPRA            := new_PEDIDO_COMPRA;
+            
+           END IF;
+                  
+       EXCEPTION
+              WHEN OTHERS THEN
+              RAPIPAGO.RP_FUNCIONES_UTILES.LOG_PROCESO_CENTRAL( 'RP_AGENTE', 'Error al incorporar el Proveedor Contable - ' || SQLERRM, 'S');
+              RAISE; -- 'Error al insertar en la tabla RP_AGENTE - ' || SQLERRM;.
+              RAISE_APPLICATION_ERROR(-20800, 'Error al incorporar el Proveedor Contable - ' || SQLCODE||' - '||SQLERRM, True) ;
+       END;
+
+ END IF;
+    
+EXCEPTION
+     WHEN OTHERS THEN
+       RAISE ;
+END ;]]></body>
+<triggerTime>BEFORE</triggerTime>
+<owner>C62C8F1E-2A53-0B75-10F9-F26CB65E46CC</owner>
+<table>94A215B2-8F9A-F955-42D6-D0C0A644CCE4</table>
+</TriggerOraclev10g>

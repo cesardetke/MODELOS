@@ -1,0 +1,50 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="T_RP3_AGENTE_USUARIO" directorySegmentName="seg_0" id="97B71EA7-DB28-AF1D-0936-FA14298E9610">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RAPIPAGO</sourceObjSchema>
+<sourceObjName>T_RP3_AGENTE_USUARIO</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:23 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<actions>UPDATE</actions>
+<body><![CDATA[DECLARE
+    wCantidad        NUMBER;
+begin
+
+   if  :OLD.COD_AGENTE IS NULL AND :NEW.COD_AGENTE IS NOT NULL AND :NEW.TIPO_AGENTE != 'P' THEN
+       
+        Insert into RAPIPAGO.RP_USUARIO_PUESTO
+           (ID_USUARIO_PUESTO, NOMBRE_USUARIO, CLAVE, ES_CAJERO, ES_SUPERVISOR, 
+            ES_PROPIO, ES_SOPORTE, ESTADO, IS_DELETED, ID_ENV, 
+            AUD_DATE_INSERT, AUD_USER_INSERT, FIRST_PASS, CODIGO_EMPLEADO, TODA_SUCURSAL, 
+            ID_AGENTE, FIRST_LOGIN, MARGEN_ERROR, MONTO_INCENTIVO, HORAS_HABILITADAS)
+         Values
+           (RAPIPAGO.RP_FUNCIONES_UTILES.NEWID , :NEW.COD_AGENTE||'-1', 'AF9ZRxNlZ', 'Y', 'Y', 
+            'N', 'N', 'ACT', 'N', 'RPPRI', 
+            TO_CHAR(SYSDATE,'YYYY-MM-DD HH24:MI:SS'), :NEW.AUD_USER_UPDATE, 'Y', 0, 'Y', 
+            :NEW.ID_AGENTE, 'N', 0, 0, 0);
+
+        Insert into RAPIPAGO.RP_USUARIO_PUESTO
+           (ID_USUARIO_PUESTO, NOMBRE_USUARIO, CLAVE, ES_CAJERO, ES_SUPERVISOR, 
+            ES_PROPIO, ES_SOPORTE, ESTADO, IS_DELETED, ID_ENV, 
+            AUD_DATE_INSERT, AUD_USER_INSERT, FIRST_PASS, CODIGO_EMPLEADO, TODA_SUCURSAL, 
+            ID_AGENTE, FIRST_LOGIN, MARGEN_ERROR, MONTO_INCENTIVO, HORAS_HABILITADAS)
+         Values
+           (RAPIPAGO.RP_FUNCIONES_UTILES.NEWID , :NEW.COD_AGENTE||'-2', 'AF9ZRxNlZ', 'Y', 'Y', 
+            'N', 'N', 'ACT', 'N', 'RPPRI', 
+            TO_CHAR(SYSDATE,'YYYY-MM-DD HH24:MI:SS'), :NEW.AUD_USER_UPDATE, 'Y', 0, 'Y', 
+            :NEW.ID_AGENTE, 'N', 0, 0, 0);
+    
+   
+   end if;
+
+EXCEPTION
+     WHEN OTHERS THEN
+       -- 
+       RAISE ;
+END ;]]></body>
+<triggerTime>BEFORE</triggerTime>
+<columns>DA278005-3F99-6F42-B493-3F07853011C9</columns>
+<owner>C62C8F1E-2A53-0B75-10F9-F26CB65E46CC</owner>
+<table>94A215B2-8F9A-F955-42D6-D0C0A644CCE4</table>
+</TriggerOraclev10g>

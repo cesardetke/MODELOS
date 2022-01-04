@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<UserOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UserOraclev10g" name="PORTAL_AGENTES" directorySegmentName="seg_0" id="C264E65A-E9B4-0F1F-B456-C0C94B7A66A5">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjName>PORTAL_AGENTES</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:24 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+</UserOraclev10g>

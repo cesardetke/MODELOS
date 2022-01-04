@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="T_RP_CREAR_PUESTO_RDL" directorySegmentName="seg_0" id="8782B1D0-5A89-5A07-88C6-DC99307DD0D2">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RAPIPAGO</sourceObjSchema>
+<sourceObjName>T_RP_CREAR_PUESTO_RDL</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:24 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<actions>UPDATE</actions>
+<body><![CDATA[DECLARE
+CUANTOS_HAY NUMBER;
+ULTIMO_PUESTO NUMBER;
+ACT_NUMERADOR NUMBER;
+ACT_PUESTO NUMBER;
+EXISTE_RDL NUMBER;
+BEGIN
+   IF :NEW.ENTREGA_ELEMENTOS = 'Y' then        
+        EXISTE_RDL := 0;
+        
+        --BUSCAMOS SI EXISTE UN PUESTO RDL YA PARA ESTA SUCURSAL        
+        SELECT NVL(COUNT(1),0)
+        INTO EXISTE_RDL
+        FROM RAPIPAGO.RP_PUESTO P
+        WHERE ID_AGENTE_SUCURSAL=:NEW.ID_AGENTE_SUCURSAL
+        AND P.VERSION_RAPIPAGO='RDL';
+        
+        IF EXISTE_RDL=0 THEN 
+            ACT_NUMERADOR:= 0;
+            ACT_PUESTO := 0;
+            --BUSCAMOS EL ULTIMO PUESTO ASIGNADO:
+            SELECT ULTIMO_NUMERO
+            INTO ULTIMO_PUESTO
+            FROM RAPIPAGO.RP_NUMERADORES
+            WHERE TIPO_NUMERADOR = 'COD_PUESTO';
+
+            CUANTOS_HAY := -1;
+            
+            WHILE CUANTOS_HAY <> 0
+            LOOP
+                --BUSCAMOS EL PROXIMO LIBRE:
+                ULTIMO_PUESTO := ULTIMO_PUESTO + 1;
+
+                SELECT  NVL(COUNT(1),0)
+                INTO    CUANTOS_HAY
+                FROM    RAPIPAGO.RP_NUMERADORES
+                WHERE   TIPO_NUMERADOR = 'COD_PUESTO'
+                AND     ULTIMO_NUMERO = ULTIMO_PUESTO;
+            
+                IF CUANTOS_HAY = 0 THEN
+                    SELECT  NVL(COUNT(1),0)
+                    INTO    CUANTOS_HAY
+                    FROM    RAPIPAGO.RP_PUESTO
+                    WHERE   PUESTO = ULTIMO_PUESTO;
+                END IF;
+            
+            END LOOP;
+
+            IF CUANTOS_HAY = 0 THEN
+                
+                --HACEMOS UPDATE EN RP_NUMERADORES:
+                UPDATE RAPIPAGO.RP_NUMERADORES SET
+                    ULTIMO_NUMERO = ULTIMO_PUESTO
+                WHERE   TIPO_NUMERADOR = 'COD_PUESTO';
+                ACT_NUMERADOR:= ACT_NUMERADOR+SQL%ROWCOUNT;
+            
+                --HACEMOS INSERT EN RP_PUESTO:            
+                INSERT INTO RAPIPAGO.RP_PUESTO (
+                    ID_PUESTO, PUESTO, ID_AGENTE_SUCURSAL, IS_DELETED, ID_ENV, 
+                    AUD_DATE_INSERT, AUD_USER_INSERT, AUD_DATE_UPDATE, AUD_USER_UPDATE, SISTEMA_TIPO_AGENTE, 
+                    WF_STATUS, VERSION_RAPIPAGO, FECHA_PRIMERA_ACTIVIDAD, ES_PUESTO_HOMOLOGACION, ESTADO_FISICO, 
+                    FECHA_HABILITACION, ES_PUESTO_REGULARIZACION
+                )
+                SELECT  TO_CHAR(SYSDATE,'YYMMDDHH24MI')||dbms_random.string('A', 10) AS ID_PUESTO,
+                        ULTIMO_PUESTO                                                   AS PUESTO,
+                        :NEW.ID_AGENTE_SUCURSAL                                         AS ID_AGENTE_SUCURSAL,
+                        'N' AS IS_DELETED, 'RPPRI'                                      AS ID_ENV,
+                        TO_CHAR(SYSDATE, 'YYYY-MM-DD HH24:MI:SS')                       AS AUD_DATE_INSERT, 
+                        'T_RP_CREAR_PUESTO_RDL'                                         AS AUD_USER_INSERT,
+                        NULL                                                            AS AUD_DATE_UPDATE, 
+                        NULL                                                            AS AUD_USER_UPDATE,
+                        'S'                                                             AS SISTEMA_TIPO_AGENTE,
+                        'HAB'                                                           AS WF_STATUS, 
+                        'RDL'                                                           AS VERSION_RAPIPAGO, 
+                        NULL                                                            AS FECHA_PRIMERA_ACTIVIDAD,
+                        'N'                                                             AS ES_PUESTO_HOMOLOGACION, 
+                        'ACR'                                                           AS ESTADO_FISICO,
+                        TO_CHAR(SYSDATE, 'YYYY-MM-DD')                                  AS FECHA_HABILITACION, 
+                        'N' AS ES_PUESTO_REGULARIZACION
+                FROM    DUAL;
+                ACT_PUESTO:= ACT_PUESTO+SQL%ROWCOUNT;                
+            END IF;
+        END IF;
+--        GIRE.PKG_CORREOS.CORREOGRUPOGIRE('SOPORTE_RAPIPAGO', 'Trigger: RAPIPAGO.T_RP_CREAR_PUESTO_RDL', 'EXISTE RDL: '||EXISTE_RDL||' - PUESTO: '||ULTIMO_PUESTO||' - CANT. UPDATE: '||ACT_NUMERADOR||' - CANT. INSERT: '||ACT_PUESTO, 'TRIGGER');
+   END IF;
+EXCEPTION
+     WHEN OTHERS THEN
+       GIRE.PKG_CORREOS.CORREOGRUPOGIRE('SOPORTE_RAPIPAGO', 'ERROR - Trigger: RAPIPAGO.T_RP_CREAR_PUESTO_RDL', SQLERRM, 'TRIGGER');
+END ;]]></body>
+<triggerTime>BEFORE</triggerTime>
+<columns>95A38ADC-AC8A-BDEB-2857-67FD05429AE8</columns>
+<owner>C62C8F1E-2A53-0B75-10F9-F26CB65E46CC</owner>
+<table>80B68678-7C49-E212-35AF-0A3E3BDDD305</table>
+</TriggerOraclev10g>

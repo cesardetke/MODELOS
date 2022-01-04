@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="472F2EBB-3BBD-F8F1-8E4E-2642354E3E3E" containerWithKeyObject="4992F1D8-0AAF-2718-6F21-85E45CC60D49" localFKIndex="F9F1A8AA-1055-AC6D-F24D-EE7E20FEC2CE" name="FK_RP_EMPR_PUESTO_MODALIDAD_R7">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RAPIPAGO</sourceObjSchema>
+<sourceObjName>FK_RP_EMPR_PUESTO_MODALIDAD_R7</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:28 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<referredTableLongName>RAPIPAGO.RP_EMPR_PUESTO_FORMULARIO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<mandatory>false</mandatory>
+<refColNames>ID_EMPR_PUESTO_FORMULARIO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

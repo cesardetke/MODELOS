@@ -1,0 +1,134 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="LOG_RP_EMPR_PUESTO_MODALIDAD" directorySegmentName="seg_0" id="922CBFF4-B937-23B0-6BCD-D1E449870D0E">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RAPIPAGO</sourceObjSchema>
+<sourceObjName>LOG_RP_EMPR_PUESTO_MODALIDAD</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:25 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<actions>UPDATE, DELETE</actions>
+<body><![CDATA[DECLARE
+   ERROR_GRABA EXCEPTION;
+   ZOPERACION   CHAR (1);
+BEGIN
+   IF UPDATING
+   THEN
+      ZOPERACION := 'M';
+   ELSE
+      IF DELETING
+      THEN
+         ZOPERACION := 'B';
+      ELSE
+         ZOPERACION := '?';
+      END IF;
+   END IF;
+
+   INSERT INTO RAPIPAGO.RP_EMPR_PUESTO_MODALIDAD_LOG (
+                                                         ID_EMPR_PUESTO_MODALIDAD,
+                                                         DESCRIPCION,
+                                                         IS_DELETED,
+                                                         ID_ENV,
+                                                         AUD_DATE_INSERT,
+                                                         AUD_USER_INSERT,
+                                                         AUD_DATE_UPDATE,
+                                                         AUD_USER_UPDATE,
+                                                         ID_EMPRESA_PUESTO,
+                                                         ID_MONEDA,
+                                                         ID_FORMATO_TICKET,
+                                                         HABILITA_ANULACION,
+                                                         COBRO_ONLINE,
+                                                         ACEPTA_DUPLICADO,
+                                                         TIPO_COBRANZA,
+                                                         ID_EMPR_PUESTO_FORMULARIO,
+                                                         CANTIDAD_TICKETS,
+                                                         ID_EMPRESA_PUESTO_EMPRESA_CENT,
+                                                         NOMBRE_EMPRESA_TICKET,
+                                                         MENSAJE_A_MOSTRAR,
+                                                         RECARGA_MINIMA,
+                                                         RECARGA_MAXIMA,
+                                                         COD_OPERATORIA,
+                                                         ID_EMPRESA_PUESTO_GRILLA,
+                                                         REQUIERE_FORMULARIO,
+                                                         SIGNO,
+                                                         CANTIDAD_MAX_FACTURAS,
+                                                         TIPO_IMPUTACION,
+                                                         VISIBLE,
+                                                         CANTIDAD_DIAS_AVISO,
+                                                         ES_RECARGA_CELULAR,
+                                                         FORMATEADOR_DATO_ADICIONAL,
+                                                         ESTADO,
+                                                         FECHA_CAMBIO_ESTADO,
+                                                         AGRUPA_MENSAJE,
+                                                         CANT_MAX_FACTURAS,
+                                                         CANT_MAX_INST_PAGO,
+                                                         TIPO_CTROL_DUPLICADO,        
+                                                         CANT_TRANS_DUPLICADO,        
+                                                         COD_OPERATORIA_TRX_PENDIENTE,
+                                                         GENERA_TRX_PENDIENTE,        
+                                                         ENVIA_TICKET,                
+                                                         ES_PAGO,                     
+                                                         ACREDITACION_BILLETERA,  
+                                                         CONSULTA_ONLINE,    
+                                                         OPERACION,
+                                                         MODIFICADO_POR,
+                                                         FH_MODIFICACION
+              )
+     VALUES   (:VIEJO.ID_EMPR_PUESTO_MODALIDAD,
+               :VIEJO.DESCRIPCION,
+               :VIEJO.IS_DELETED,
+               :VIEJO.ID_ENV,
+               :VIEJO.AUD_DATE_INSERT,
+               :VIEJO.AUD_USER_INSERT,
+               :VIEJO.AUD_DATE_UPDATE,
+               :VIEJO.AUD_USER_UPDATE,
+               :VIEJO.ID_EMPRESA_PUESTO,
+               :VIEJO.ID_MONEDA,
+               :VIEJO.ID_FORMATO_TICKET,
+               :VIEJO.HABILITA_ANULACION,
+               :VIEJO.COBRO_ONLINE,
+               :VIEJO.ACEPTA_DUPLICADO,
+               :VIEJO.TIPO_COBRANZA,
+               :VIEJO.ID_EMPR_PUESTO_FORMULARIO,
+               :VIEJO.CANTIDAD_TICKETS,
+               :VIEJO.ID_EMPRESA_PUESTO_EMPRESA_CENT,
+               :VIEJO.NOMBRE_EMPRESA_TICKET,
+               :VIEJO.MENSAJE_A_MOSTRAR,
+               :VIEJO.RECARGA_MINIMA,
+               :VIEJO.RECARGA_MAXIMA,
+               :VIEJO.COD_OPERATORIA,
+               :VIEJO.ID_EMPRESA_PUESTO_GRILLA,
+               :VIEJO.REQUIERE_FORMULARIO,
+               :VIEJO.SIGNO,
+               :VIEJO.CANTIDAD_MAX_FACTURAS,
+               :VIEJO.TIPO_IMPUTACION,
+               :VIEJO.VISIBLE,
+               :VIEJO.CANTIDAD_DIAS_AVISO,
+               :VIEJO.ES_RECARGA_CELULAR,
+               :VIEJO.FORMATEADOR_DATO_ADICIONAL,
+               :VIEJO.ESTADO,
+               :VIEJO.FECHA_CAMBIO_ESTADO,                                         
+               :VIEJO.AGRUPA_MENSAJE,                                         
+               :VIEJO.CANT_MAX_FACTURAS,                                         
+               :VIEJO.CANT_MAX_INST_PAGO,
+               :VIEJO.TIPO_CTROL_DUPLICADO,        
+               :VIEJO.CANT_TRANS_DUPLICADO,
+               :VIEJO.COD_OPERATORIA_TRX_PENDIENTE,
+               :VIEJO.GENERA_TRX_PENDIENTE,        
+               :VIEJO.ENVIA_TICKET,                
+               :VIEJO.ES_PAGO,                     
+               :VIEJO.ACREDITACION_BILLETERA,
+               :VIEJO.CONSULTA_ONLINE,                                         
+               ZOPERACION,
+               Usuario_Update (:NUEVO.AUD_USER_UPDATE),
+               TO_CHAR (SYSDATE, 'yyyy-mm-dd hh24:mi:ss'));
+EXCEPTION
+   WHEN OTHERS
+   THEN
+      RAISE ERROR_GRABA;
+END;]]></body>
+<triggerTime>BEFORE</triggerTime>
+<owner>C62C8F1E-2A53-0B75-10F9-F26CB65E46CC</owner>
+<ref_NEW_AS>NUEVO</ref_NEW_AS>
+<ref_OLD_AS>VIEJO</ref_OLD_AS>
+<table>4992F1D8-0AAF-2718-6F21-85E45CC60D49</table>
+</TriggerOraclev10g>

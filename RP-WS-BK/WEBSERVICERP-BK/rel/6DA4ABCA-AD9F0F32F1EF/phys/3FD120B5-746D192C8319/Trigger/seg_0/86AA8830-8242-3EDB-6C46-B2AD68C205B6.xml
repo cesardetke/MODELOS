@@ -1,0 +1,23 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="T_RP_BAJA_NOVEDAD_5" directorySegmentName="seg_0" id="86AA8830-8242-3EDB-6C46-B2AD68C205B6">
+<sourceConnName>PROD</sourceConnName>
+<sourceObjSchema>RAPIPAGO</sourceObjSchema>
+<sourceObjName>T_RP_BAJA_NOVEDAD_5</sourceObjName>
+<createdBy>CDETKE</createdBy>
+<createdTime>2022-01-04 18:03:25 UTC</createdTime>
+<ownerDesignName>WEBSERVICERP-BK</ownerDesignName>
+<actions>DELETE</actions>
+<body><![CDATA[DECLARE
+   wNumerador  NUMBER;
+BEGIN
+    SELECT RAPIPAGO.RP_SQ_NOVEDAD_COBERTURA.NEXTVAL into wNUMERADOR FROM DUAL;
+    
+    INSERT INTO RAPIPAGO.WS_COBERTURA_NOVEDADES
+          (ID_NOVEDAD, ID_GRUPO, TABLA, ID_TABLA, ESTADO, ACCION)
+    VALUES(wNumerador, 'EMPRESA', 'RP_EMPR_PUESTO_MODALIDAD', :OLD.ID_EMPR_PUESTO_MODALIDAD,'P','B');
+
+END;]]></body>
+<triggerTime>AFTER</triggerTime>
+<owner>C62C8F1E-2A53-0B75-10F9-F26CB65E46CC</owner>
+<table>4992F1D8-0AAF-2718-6F21-85E45CC60D49</table>
+</TriggerOraclev10g>
