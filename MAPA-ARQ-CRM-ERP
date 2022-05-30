@@ -1,10 +1,10 @@
-<mxfile host="app.diagrams.net" modified="2022-05-30T18:34:58.997Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36" etag="N8TkTc2euAIdHheyyU0Z" version="18.0.3" type="github">
+<mxfile host="app.diagrams.net" modified="2022-05-30T19:03:06.596Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36" etag="XNnRz5RSKz-ehbc8UMh3" version="18.0.3" type="github">
   <diagram id="-yTASM7wlE7EB9uLyVTQ" name="Page-1">
     <mxGraphModel dx="1761" dy="450" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="2GweMm-97WBy52uL0C_2-1" value="Sales Force" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+        <mxCell id="2GweMm-97WBy52uL0C_2-1" value="SalesForce" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
           <mxGeometry x="60" y="280" width="120" height="120" as="geometry" />
         </mxCell>
         <mxCell id="2GweMm-97WBy52uL0C_2-2" value="BD&lt;br&gt;Salesforce" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
@@ -100,7 +100,10 @@
           <mxGeometry x="790" y="427.5" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="2GweMm-97WBy52uL0C_2-17" value="CRM (Dynamics)" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="110" y="560" width="80" height="80" as="geometry" />
+          <mxGeometry x="110" y="670" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="2GweMm-97WBy52uL0C_2-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;fontColor=#000000;startArrow=none;startFill=0;strokeColor=#000000;" edge="1" parent="1" source="2GweMm-97WBy52uL0C_2-18" target="2GweMm-97WBy52uL0C_2-44">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="2GweMm-97WBy52uL0C_2-18" value="ERP (AX - Dynamics)" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
           <mxGeometry x="360" y="585" width="80" height="80" as="geometry" />
@@ -131,6 +134,14 @@
         <mxCell id="2GweMm-97WBy52uL0C_2-37" value="Alta Agente / Sucursal - No Standard" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;startArrow=none;startFill=0;strokeColor=#B85450;dashed=1;fillColor=#f8cecc;" edge="1" parent="1" source="2GweMm-97WBy52uL0C_2-34" target="2GweMm-97WBy52uL0C_2-12">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="2GweMm-97WBy52uL0C_2-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;startArrow=none;startFill=0;strokeColor=#B85450;dashed=1;fillColor=#f8cecc;" edge="1" parent="1" source="2GweMm-97WBy52uL0C_2-34" target="2GweMm-97WBy52uL0C_2-38">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="980" y="120" />
+              <mxPoint x="980" y="578" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
         <mxCell id="2GweMm-97WBy52uL0C_2-34" value="HDR" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
           <mxGeometry x="785" y="80" width="80" height="80" as="geometry" />
         </mxCell>
@@ -148,6 +159,12 @@
         </mxCell>
         <mxCell id="2GweMm-97WBy52uL0C_2-42" value="CONDOR" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
           <mxGeometry x="840" y="705" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="2GweMm-97WBy52uL0C_2-44" value="Inventario de Sucursales" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="365" y="720" width="70" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="2GweMm-97WBy52uL0C_2-47" value="API Connect" style="shape=trapezoid;perimeter=trapezoidPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="300" width="70" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
