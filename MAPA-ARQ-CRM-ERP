@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-06-08T19:19:33.791Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36" etag="h_ET9bFxcSzpj3Hs6Xfx" version="19.0.2" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-06-08T21:48:36.283Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36" etag="ktWD19-dbTQG_19xZT0C" version="19.0.2" type="github" pages="2">
   <diagram id="-yTASM7wlE7EB9uLyVTQ" name="Interconexión - Sistemas (AS-IS))">
     <mxGraphModel dx="2275" dy="1919" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -312,7 +312,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="cbP9f4uM4HIjnrCk8jKD-4" value="API CALL" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="-85" y="530" width="90" height="50" as="geometry" />
+          <mxGeometry x="-85" y="530" width="125" height="50" as="geometry" />
         </mxCell>
         <mxCell id="cbP9f4uM4HIjnrCk8jKD-7" value="??????Obtiene Info de Direcciones" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=1;entryDx=0;entryDy=0;fontColor=#000000;strokeColor=#000000;" edge="1" parent="1" source="cbP9f4uM4HIjnrCk8jKD-6" target="cbP9f4uM4HIjnrCk8jKD-4">
           <mxGeometry relative="1" as="geometry" />
@@ -383,6 +383,26 @@
         </mxCell>
         <mxCell id="cbP9f4uM4HIjnrCk8jKD-42" value="RAPIPOS (Producto Discontinuado):&lt;br&gt;Existe una integración con Umbral para la Generación de Entrega del Equipo al agente.&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
           <mxGeometry x="-500" y="962.5" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="cbP9f4uM4HIjnrCk8jKD-43" value="" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="430" y="610" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cbP9f4uM4HIjnrCk8jKD-44" value="" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="430" y="610" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cbP9f4uM4HIjnrCk8jKD-45" value="" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="430" y="610" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cbP9f4uM4HIjnrCk8jKD-47" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontColor=#000000;strokeColor=#000000;" edge="1" parent="1" source="cbP9f4uM4HIjnrCk8jKD-46" target="cbP9f4uM4HIjnrCk8jKD-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cbP9f4uM4HIjnrCk8jKD-48" value="Consume Info de Insumos" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;" vertex="1" connectable="0" parent="cbP9f4uM4HIjnrCk8jKD-47">
+          <mxGeometry x="-0.2133" relative="1" as="geometry">
+            <mxPoint y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cbP9f4uM4HIjnrCk8jKD-46" value="Grupo Hasard" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="-85" y="730" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
