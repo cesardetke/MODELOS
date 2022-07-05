@@ -1,16 +1,16 @@
-<mxfile host="app.diagrams.net" modified="2022-07-04T15:03:07.822Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="U-299h14kQwI2Ofzimgi" version="20.0.3" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-07-05T18:40:52.688Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="IFz_NfiCE2e7uUyeN-dv" version="20.0.3" type="github" pages="2">
   <diagram id="-yTASM7wlE7EB9uLyVTQ" name="Interconexión - Sistemas (AS-IS))">
-    <mxGraphModel dx="2249" dy="1931" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1741" dy="1643" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="EfeCHg-GIbusq7-zvb2v-20" value="Consume info de Prospectos e Individuos" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="2GweMm-97WBy52uL0C_2-1" target="2GweMm-97WBy52uL0C_2-28" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="cbP9f4uM4HIjnrCk8jKD-29" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;fontColor=#000000;strokeColor=#FF0000;dashed=1;exitX=1;exitY=0;exitDx=0;exitDy=0;" parent="1" source="2GweMm-97WBy52uL0C_2-1" target="2GweMm-97WBy52uL0C_2-18" edge="1">
+        <mxCell id="cbP9f4uM4HIjnrCk8jKD-29" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;fontColor=#000000;strokeColor=#FF0000;dashed=1;exitX=0.851;exitY=-0.01;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="2GweMm-97WBy52uL0C_2-1" target="2GweMm-97WBy52uL0C_2-18" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="230" y="-20" />
+              <mxPoint x="140" y="-20" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -64,6 +64,9 @@
           <mxGeometry x="0.2107" y="-4" relative="1" as="geometry">
             <mxPoint x="-1" as="offset" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="dckh1uIvCje_pxhcAvwl-8" value="&lt;b&gt;ALTA ENTIDAD CONDOR ???? (VALIDAR)&lt;/b&gt;" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;fontColor=#FF0000;strokeColor=#FF0000;" edge="1" parent="1" source="2GweMm-97WBy52uL0C_2-3" target="2GweMm-97WBy52uL0C_2-42">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="2GweMm-97WBy52uL0C_2-3" value="BPM" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
           <mxGeometry x="440" y="337.5" width="212.5" height="212.5" as="geometry" />
@@ -131,10 +134,10 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="2GweMm-97WBy52uL0C_2-15" value="BOW" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
-          <mxGeometry x="1110" y="422.5" width="80" height="80" as="geometry" />
+          <mxGeometry x="1080" y="420" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="2GweMm-97WBy52uL0C_2-17" value="CRM (Dynamics)" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
-          <mxGeometry x="-240" y="805" width="80" height="80" as="geometry" />
+          <mxGeometry x="-260" y="830" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="2GweMm-97WBy52uL0C_2-18" value="ERP (AX - Dynamics)" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
           <mxGeometry x="470" y="-58.120000000000005" width="136.25" height="136.25" as="geometry" />
@@ -178,7 +181,7 @@
         <mxCell id="C7pWc2QvePRb7oZ6GKvy-4" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;strokeColor=#FF0000;" parent="1" source="2GweMm-97WBy52uL0C_2-34" target="2GweMm-97WBy52uL0C_2-18" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="C7pWc2QvePRb7oZ6GKvy-5" value="&lt;font color=&quot;#ff0000&quot;&gt;Alta Proveedor&amp;nbsp; (Agente) /Clientes (Empresas) / Inventario, etc.&amp;nbsp;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="C7pWc2QvePRb7oZ6GKvy-4" vertex="1" connectable="0">
+        <mxCell id="C7pWc2QvePRb7oZ6GKvy-5" value="&lt;font color=&quot;#ff0000&quot;&gt;Alta Proveedor&amp;nbsp; (Agente) /Clientes (Empresas - CASH-OUT) / Inventario, etc.&amp;nbsp;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="C7pWc2QvePRb7oZ6GKvy-4" vertex="1" connectable="0">
           <mxGeometry x="0.0786" y="-2" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
@@ -329,20 +332,33 @@
         <mxCell id="cbP9f4uM4HIjnrCk8jKD-24" value="&lt;font color=&quot;#ff0000&quot;&gt;Alta Empresas&lt;/font&gt;" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;strokeColor=#FF0000;dashed=1;" parent="1" source="cbP9f4uM4HIjnrCk8jKD-23" target="2GweMm-97WBy52uL0C_2-12" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="dckh1uIvCje_pxhcAvwl-2" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#FF0000;dashed=1;" edge="1" parent="1" source="cbP9f4uM4HIjnrCk8jKD-23" target="2GweMm-97WBy52uL0C_2-18">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="610" y="50" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="890" y="50" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dckh1uIvCje_pxhcAvwl-3" value="&lt;font color=&quot;#ff0000&quot;&gt;Alta Cliente Contable (Empresas)&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="dckh1uIvCje_pxhcAvwl-2">
+          <mxGeometry x="-0.1067" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="cbP9f4uM4HIjnrCk8jKD-23" value="Thuban (Proc. Gire Soluciones)" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="870" y="90" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="cbP9f4uM4HIjnrCk8jKD-26" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontColor=#000000;strokeColor=#000000;" parent="1" source="cbP9f4uM4HIjnrCk8jKD-25" target="2GweMm-97WBy52uL0C_2-34" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="cbP9f4uM4HIjnrCk8jKD-25" value="&lt;font color=&quot;#000000&quot;&gt;Inicio Alta Convenios&amp;nbsp;(Empresas)&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;fontColor=#FF0000;" parent="1" vertex="1">
+        <mxCell id="cbP9f4uM4HIjnrCk8jKD-25" value="&lt;font color=&quot;#000000&quot;&gt;Inicio Alta Convenios&amp;nbsp;(Empresas - PAGOS)&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;fontColor=#FF0000;" parent="1" vertex="1">
           <mxGeometry x="1390" y="-14.99" width="170" height="50" as="geometry" />
         </mxCell>
         <mxCell id="cbP9f4uM4HIjnrCk8jKD-28" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;strokeColor=#000000;" parent="1" source="cbP9f4uM4HIjnrCk8jKD-27" target="cbP9f4uM4HIjnrCk8jKD-23" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="cbP9f4uM4HIjnrCk8jKD-27" value="Inicio Alta empresas GS" style="ellipse;whiteSpace=wrap;html=1;fontColor=#000000;" parent="1" vertex="1">
-          <mxGeometry x="707" y="90" width="120" height="50" as="geometry" />
+        <mxCell id="cbP9f4uM4HIjnrCk8jKD-27" value="Inicio Alta empresas / Cobranzas" style="ellipse;whiteSpace=wrap;html=1;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="690" y="90" width="137" height="50" as="geometry" />
         </mxCell>
         <mxCell id="cbP9f4uM4HIjnrCk8jKD-32" value="Genera Casos y Consulta Datos Agentes" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;strokeColor=#000000;" parent="1" source="cbP9f4uM4HIjnrCk8jKD-31" target="2GweMm-97WBy52uL0C_2-1" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -382,7 +398,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="cbP9f4uM4HIjnrCk8jKD-31" value="&lt;font color=&quot;#000000&quot;&gt;Portal de Agentes&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#FF0000;" parent="1" vertex="1">
-          <mxGeometry x="280" y="78.13" width="120" height="60" as="geometry" />
+          <mxGeometry x="250" y="60" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="cbP9f4uM4HIjnrCk8jKD-42" value="RAPIPOS (Producto Discontinuado):&lt;br&gt;Existe una integración con Umbral para la Generación de Entrega del Equipo al agente.&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="-500" y="962.5" width="150" height="90" as="geometry" />
@@ -395,14 +411,26 @@
             <mxPoint y="-1" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="cbP9f4uM4HIjnrCk8jKD-46" value="Grupo Hasard" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#000000;" parent="1" vertex="1">
+        <mxCell id="cbP9f4uM4HIjnrCk8jKD-46" value="Grupo Hasard: PROVEEDOR" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="-120" y="730" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Nmzj_k4G-2G7u6Uw6uze-2" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Nmzj_k4G-2G7u6Uw6uze-1" target="cbP9f4uM4HIjnrCk8jKD-4" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Nmzj_k4G-2G7u6Uw6uze-1" value="Grupo-Tech" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="Nmzj_k4G-2G7u6Uw6uze-1" value="Grupo-Tech: PROVEEDOR" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="50" y="730" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dckh1uIvCje_pxhcAvwl-5" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#FF0000;strokeColor=#000000;" edge="1" parent="1" source="dckh1uIvCje_pxhcAvwl-4" target="2GweMm-97WBy52uL0C_2-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dckh1uIvCje_pxhcAvwl-4" value="Script - Configuraciones" style="shape=card;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="900" y="750" width="120" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="dckh1uIvCje_pxhcAvwl-7" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#FF0000;strokeColor=#FF0000;dashed=1;" edge="1" parent="1" source="dckh1uIvCje_pxhcAvwl-6" target="dckh1uIvCje_pxhcAvwl-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dckh1uIvCje_pxhcAvwl-6" value="&lt;font color=&quot;#000000&quot;&gt;Inicio - Pedido de Cambio de Parametrizaciones a TI (Funcionalidades que no están&amp;nbsp;en el BO)&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;fontColor=#FF0000;" vertex="1" parent="1">
+          <mxGeometry x="1170" y="757.5" width="220" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
