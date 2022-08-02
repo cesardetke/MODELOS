@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-08-02T19:08:09.944Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="cp_XKQgG06r2wdD21H1i" version="20.2.1" type="github" pages="8">
+<mxfile host="app.diagrams.net" modified="2022-08-02T19:18:42.310Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="louL6mJIGbZHNO8PuRRF" version="20.2.1" type="github" pages="9">
   <diagram id="-yTASM7wlE7EB9uLyVTQ" name="Interconexión - Sistemas (AS-IS))">
     <mxGraphModel dx="1695" dy="1619" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -536,7 +536,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="tNc0z0353hS1kYq3Ibpv" name="Info SAP para Backo (Maestros Clientes, Agentes, empresas,etc.)">
-    <mxGraphModel dx="868" dy="450" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="868" dy="393" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -630,7 +630,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="hJJUxag3C6yO59x4_P0A" name="ALTAS ENTIDADES RP">
-    <mxGraphModel dx="868" dy="450" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="868" dy="393" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -713,8 +713,16 @@
       </root>
     </mxGraphModel>
   </diagram>
+  <diagram id="BdyKbICEKUJv-fnuysdk" name="Página-9">
+    <mxGraphModel dx="868" dy="393" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+      </root>
+    </mxGraphModel>
+  </diagram>
   <diagram id="5MDN2zQQOS42FGS97hmN" name="Info de Proc.Centrales a SAP">
-    <mxGraphModel dx="868" dy="450" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="868" dy="393" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -783,7 +791,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="KA7eIlNLXUfMSYpGhnMd" name="Page-2">
-    <mxGraphModel dx="868" dy="450" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="868" dy="393" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -827,7 +835,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="ZzglG6QuIiZE-535taEk" name="Page-3">
-    <mxGraphModel dx="868" dy="450" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="868" dy="393" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -895,7 +903,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="4yWGS7wI6XXn2wa3e4dk" name="Integraciones ERP">
-    <mxGraphModel dx="1447" dy="750" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1447" dy="655" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1058,7 +1066,7 @@
     </mxGraphModel>
   </diagram>
   <diagram name="Copia de Página-4" id="cCsYimuQiZfw4yk3dfeG">
-    <mxGraphModel dx="868" dy="450" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1021" dy="462" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="cJK5BZTAKqq46EfIT6oK-0" />
         <mxCell id="cJK5BZTAKqq46EfIT6oK-1" parent="cJK5BZTAKqq46EfIT6oK-0" />
@@ -1142,7 +1150,7 @@
         <mxCell id="6Az8CiqUzCKZzTbwFZCV-4" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=none;startFill=0;endArrow=classic;endFill=1;strokeColor=#000000;" parent="cJK5BZTAKqq46EfIT6oK-1" source="cJK5BZTAKqq46EfIT6oK-21" target="cJK5BZTAKqq46EfIT6oK-29" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="700" y="410" />
+              <mxPoint x="680" y="420" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -1194,6 +1202,18 @@
         </mxCell>
         <mxCell id="cJK5BZTAKqq46EfIT6oK-32" value="3" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="cJK5BZTAKqq46EfIT6oK-1" vertex="1">
           <mxGeometry x="195" y="260" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zX_ZnrsbR2CzoEsBMAVb-0" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="cJK5BZTAKqq46EfIT6oK-1" source="cJK5BZTAKqq46EfIT6oK-33" target="cJK5BZTAKqq46EfIT6oK-29">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="730" y="370" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zX_ZnrsbR2CzoEsBMAVb-1" value="TXs Condor" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="zX_ZnrsbR2CzoEsBMAVb-0">
+          <mxGeometry x="0.0437" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="cJK5BZTAKqq46EfIT6oK-33" value="BD Condor" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;rotation=0;" parent="cJK5BZTAKqq46EfIT6oK-1" vertex="1">
           <mxGeometry x="650" y="260" width="50" height="60" as="geometry" />
